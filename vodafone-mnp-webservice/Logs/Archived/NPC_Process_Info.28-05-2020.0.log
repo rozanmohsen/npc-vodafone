@@ -1,0 +1,404 @@
+28-05-2020 01:00:45.349 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:00:45.360 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:00:47.338 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:00:47.504 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:00:47.505 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:00:47.507 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:00:49.014 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 01:00:49.685 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 01:00:49.685 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 01:00:49.845 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 01:01:23.993 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:01:24.000 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:01:24.004 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:01:24.171 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:01:24.171 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:01:24.173 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:01:25.514 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 01:01:26.164 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 01:01:26.165 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 01:01:26.324 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 01:03:00.859 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:03:00.866 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:03:00.870 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:03:01.037 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:03:01.038 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:03:01.040 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:03:03.039 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 01:03:03.688 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 01:03:03.689 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 01:03:03.863 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 01:05:03.766 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:05:03.772 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:05:03.776 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:05:03.944 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:05:03.944 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:05:03.946 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:05:05.371 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 01:05:06.018 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 01:05:06.019 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 01:05:06.190 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 01:10:47.957 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:11:57.879 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:11:57.914 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:11:58.841 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:12:24.181 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:12:24.199 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:13:19.437 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 01:13:28.570 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 01:13:28.575 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 01:13:29.618 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 01:41:04.926 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:41:04.932 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:41:04.936 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:41:05.091 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:41:05.092 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:41:05.094 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:41:06.997 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 01:41:08.180 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 01:41:08.180 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 01:41:08.353 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 01:45:42.412 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:45:42.419 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:45:42.423 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:45:42.580 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:45:42.580 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:45:42.583 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:48:14.167 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:48:14.212 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:48:14.242 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:50:34.657 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:50:34.662 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:50:34.695 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:57:04.472 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:57:04.477 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:57:04.481 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:57:04.653 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:57:04.654 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:57:04.657 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:01:04.669 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:01:04.676 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:01:04.680 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:01:04.849 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:01:04.849 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:01:04.852 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:04:17.726 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:04:17.732 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:04:17.737 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:04:17.892 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:04:17.893 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:04:17.895 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:56:00.513 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:56:00.521 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:56:23.333 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:56:23.334 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:56:23.337 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 01:59:19.019 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:59:19.026 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:59:41.906 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 01:59:41.907 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 01:59:41.909 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:02:18.225 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:02:18.232 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:02:18.236 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:02:18.396 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:02:18.397 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:02:18.398 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:07:44.412 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:07:44.457 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:07:44.485 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:08:11.475 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:08:11.478 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:08:11.507 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:11:22.897 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:11:22.902 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:11:22.906 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:11:23.073 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:11:23.074 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:11:23.076 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:12:26.211 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:12:26.217 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:12:26.222 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:12:26.402 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:12:26.402 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:12:26.405 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:14:40.355 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:14:40.392 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:14:40.421 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:22:05.515 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:22:05.521 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:22:07.481 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:22:07.603 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:22:07.604 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:22:07.608 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:22:41.593 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:22:41.623 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:22:41.652 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:25:34.442 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:25:34.497 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:26:23.974 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:26:23.986 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:26:26.678 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:27:12.469 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:27:12.478 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:28:02.558 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:28:02.559 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:33:53.010 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:33:53.014 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:33:53.018 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:33:53.177 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:33:53.177 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:33:53.179 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:36:35.379 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:36:35.409 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:36:35.438 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:38:02.303 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:38:02.314 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:38:02.358 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:43:07.604 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:43:07.637 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:43:10.311 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:44:51.983 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:44:51.992 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:44:53.483 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:51:14.849 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:51:14.879 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:51:14.909 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:55:20.328 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:55:20.332 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:55:20.337 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:55:21.925 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 02:55:22.557 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 02:55:22.557 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 02:55:22.706 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 02:55:22.714 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:55:22.715 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:55:22.717 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:55:23.991 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 02:55:24.581 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 02:55:24.581 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 02:55:24.730 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 02:55:53.472 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:55:53.525 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:55:53.553 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:56:30.869 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 02:56:30.911 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 02:56:58.088 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 02:56:58.091 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 02:56:58.128 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 02:57:16.713 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 02:57:17.331 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 02:57:17.333 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 02:57:17.497 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:20:04.957 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:20:04.961 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:20:04.965 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:20:06.519 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:20:07.143 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:20:07.143 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:20:07.303 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:20:07.313 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:20:07.314 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:20:07.317 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:20:08.648 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:20:09.270 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:20:09.271 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:20:09.431 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:23:39.579 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:23:39.584 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:23:39.589 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:23:41.371 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:23:42.015 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:23:42.015 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:23:42.170 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:23:42.183 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:23:42.183 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:23:42.185 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:23:43.533 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:23:44.163 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:23:44.165 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:23:44.330 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:24:37.575 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:24:37.579 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:24:37.583 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:24:39.084 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:24:39.728 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:24:39.729 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:24:39.886 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:24:39.893 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:24:39.893 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:24:39.897 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:24:41.255 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:24:44.074 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:26:13.033 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:26:13.038 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:26:13.041 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:26:15.689 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:26:16.275 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:26:16.275 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:26:16.432 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:26:16.436 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:26:16.436 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:26:16.439 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:26:17.719 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:26:18.316 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:26:18.318 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:26:18.474 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:29:54.222 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:29:54.227 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:29:54.230 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:29:55.766 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:29:56.353 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:29:56.353 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:29:56.497 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:29:56.502 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:29:56.502 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:29:56.505 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:34:22.491 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:34:22.518 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:34:22.547 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:34:35.812 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:34:36.450 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:34:36.451 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:34:36.605 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:34:47.739 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:34:47.745 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:34:47.775 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:34:59.694 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:35:00.392 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:35:00.393 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:35:00.556 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:36:35.605 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:36:35.612 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:36:35.615 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:36:37.111 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:36:37.698 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:36:37.699 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:36:37.847 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:36:37.850 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:36:37.851 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:36:37.853 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:36:39.271 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:36:39.866 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:36:39.867 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:36:40.013 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:41:05.861 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:41:05.868 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:41:05.872 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:41:07.532 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:41:08.152 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:41:08.153 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:41:08.319 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:41:08.328 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:41:08.328 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:41:08.333 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:41:10.029 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:41:10.652 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:41:10.653 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:41:10.820 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:44:54.983 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:44:54.987 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:44:54.992 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:46:38.007 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:46:38.012 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:46:38.016 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:47:18.235 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:47:18.240 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:47:18.244 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:48:31.153 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:48:31.158 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:48:33.500 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:48:35.021 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:48:35.654 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:48:35.655 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:48:35.824 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:48:35.830 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:48:35.831 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:48:35.833 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:48:36.850 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:48:37.472 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:48:37.473 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:48:37.632 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:49:44.510 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:49:44.545 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:49:44.575 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:50:00.062 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:50:00.751 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:50:00.753 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:50:00.913 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:50:29.020 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:50:29.026 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:50:29.056 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:51:02.002 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:51:02.639 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:51:02.640 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:51:02.808 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:52:52.407 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:52:52.413 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:52:52.416 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:52:54.024 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:52:54.657 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:52:54.657 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:52:54.814 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:52:54.821 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:52:54.821 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:52:54.824 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:52:56.148 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:52:56.774 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:52:56.774 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:52:56.936 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:57:23.650 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:57:23.657 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:57:23.661 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 03:57:25.269 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 03:57:25.892 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 03:57:25.892 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 03:57:26.054 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 03:57:26.060 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 03:57:26.060 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 03:57:26.061 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 04:03:19.498 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 04:03:19.502 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 04:03:19.506 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 04:03:21.632 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 04:03:22.090 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 04:03:22.090 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 04:03:22.253 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 04:03:22.257 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 04:03:22.258 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 04:03:22.259 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 04:03:24.819 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 04:03:25.603 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 04:03:25.603 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 04:03:25.781 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 04:05:31.817 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 04:05:31.825 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 04:05:31.830 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 09:07:43.709 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 09:07:43.714 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 09:07:43.718 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 09:07:45.874 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 09:07:46.484 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 09:07:46.485 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 09:07:46.631 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 09:07:46.636 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 09:07:46.637 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 09:07:46.639 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 09:07:47.928 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 09:07:48.509 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 09:07:48.510 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 09:07:48.657 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 09:14:29.598 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 09:14:29.634 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 09:14:29.667 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 09:14:59.686 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 09:15:00.462 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 09:15:00.464 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 09:15:00.624 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+28-05-2020 09:15:33.751 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Validation connection with web service for user : voda
+28-05-2020 09:15:33.764 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service has been done successully for user : voda
+28-05-2020 09:15:33.796 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user :voda
+28-05-2020 09:15:49.012 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+28-05-2020 09:15:49.648 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+28-05-2020 09:15:49.648 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+28-05-2020 09:15:49.819 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully

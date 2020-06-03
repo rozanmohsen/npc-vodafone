@@ -1,0 +1,17 @@
+02-06-2020 14:43:46.707 INFO  [RMI TCP Connection(7)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+02-06-2020 14:43:46.729 INFO  [RMI TCP Connection(7)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ae50ce6: startup date [Mon Jun 01 21:55:23 EET 2020]; root of context hierarchy
+02-06-2020 14:43:46.742 INFO  [RMI TCP Connection(7)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+02-06-2020 17:25:00.968 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+02-06-2020 17:25:00.977 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+02-06-2020 17:25:00.980 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+02-06-2020 17:25:06.239 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+02-06-2020 17:25:07.651 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+02-06-2020 17:25:07.651 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+02-06-2020 17:25:07.806 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully
+02-06-2020 17:25:07.809 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+02-06-2020 17:25:07.810 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+02-06-2020 17:25:07.811 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+02-06-2020 17:25:09.459 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Updating Port Data and Process Activation and Deactivation 
+02-06-2020 17:25:10.630 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully
+02-06-2020 17:25:10.630 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Starting Save Sync Messages Process
+02-06-2020 17:25:10.852 INFO  [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Process of Saving Sync Messages has done Successfully

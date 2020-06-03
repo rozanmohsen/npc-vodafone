@@ -1,0 +1,142 @@
+14-05-2020 11:07:56.572 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a03bcb1: startup date [Thu May 14 11:07:56 EET 2020]; root of context hierarchy
+14-05-2020 11:07:56.817 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 11:07:57.013 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+14-05-2020 11:07:57.039 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 11:07:57.086 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - calling WS URL ...
+http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 11:07:59.312 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a03bcb1: startup date [Thu May 14 11:07:56 EET 2020]; root of context hierarchy
+14-05-2020 11:09:02.969 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42bc14c1: startup date [Thu May 14 11:09:02 EET 2020]; root of context hierarchy
+14-05-2020 11:09:02.980 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 11:09:02.987 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 11:09:02.996 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - calling WS URL ...
+http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 11:09:05.039 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@42bc14c1: startup date [Thu May 14 11:09:02 EET 2020]; root of context hierarchy
+14-05-2020 11:09:53.692 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a03bcb1: startup date [Thu May 14 11:09:53 EET 2020]; root of context hierarchy
+14-05-2020 11:09:53.898 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 11:09:53.947 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+14-05-2020 11:09:53.958 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 11:09:53.986 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - calling WS URL ...
+http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 11:09:54.380 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a03bcb1: startup date [Thu May 14 11:09:53 EET 2020]; root of context hierarchy
+14-05-2020 11:09:54.380 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374599</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251047445032</PortID>
+            <RejectCode>SP08</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+14-05-2020 11:14:57.151 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f2f577: startup date [Thu May 14 11:14:57 EET 2020]; root of context hierarchy
+14-05-2020 11:14:57.485 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 11:14:57.531 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+14-05-2020 11:14:57.550 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 11:14:57.601 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - calling WS URL ...
+http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 11:14:57.746 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f2f577: startup date [Thu May 14 11:14:57 EET 2020]; root of context hierarchy
+14-05-2020 11:14:57.747 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374599</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251047445032</PortID>
+            <RejectCode>SP08</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+14-05-2020 12:34:39.418 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3d8bbcdc: startup date [Thu May 14 12:34:39 EET 2020]; root of context hierarchy
+14-05-2020 12:34:39.805 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 12:34:39.883 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+14-05-2020 12:34:39.907 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 12:34:39.962 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - calling WS URL ...
+http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 12:34:42.202 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3d8bbcdc: startup date [Thu May 14 12:34:39 EET 2020]; root of context hierarchy
+14-05-2020 12:37:22.087 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41a90fa8: startup date [Thu May 14 12:37:22 EET 2020]; root of context hierarchy
+14-05-2020 12:37:22.452 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 12:37:22.505 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+14-05-2020 12:37:22.527 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 12:37:22.581 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - calling WS URL ...
+http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 12:37:23.130 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@41a90fa8: startup date [Thu May 14 12:37:22 EET 2020]; root of context hierarchy
+14-05-2020 12:37:23.131 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374600</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304261237479061</PortID>
+            <RejectCode>SP01</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+14-05-2020 16:10:47.314 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a03bcb1: startup date [Thu May 14 16:10:47 EET 2020]; root of context hierarchy
+14-05-2020 16:10:47.593 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 16:10:47.653 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+14-05-2020 16:10:47.666 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 16:10:47.703 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+14-05-2020 16:10:47.703 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 16:10:47.703 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sent Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374602</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251051145048</PortID>
+            <RejectCode>SP08</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+14-05-2020 16:10:49.832 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a03bcb1: startup date [Thu May 14 16:10:47 EET 2020]; root of context hierarchy
+14-05-2020 16:11:51.939 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42bc14c1: startup date [Thu May 14 16:11:51 EET 2020]; root of context hierarchy
+14-05-2020 16:11:51.994 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 16:11:52.021 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 16:11:52.057 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+14-05-2020 16:11:52.058 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 16:11:52.059 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sent Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374602</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251051145048</PortID>
+            <RejectCode>SP08</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+14-05-2020 16:11:54.076 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@42bc14c1: startup date [Thu May 14 16:11:51 EET 2020]; root of context hierarchy
+14-05-2020 16:12:56.062 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a1a3478: startup date [Thu May 14 16:12:56 EET 2020]; root of context hierarchy
+14-05-2020 16:12:56.071 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+14-05-2020 16:12:56.079 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+14-05-2020 16:12:56.084 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+14-05-2020 16:12:56.084 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+14-05-2020 16:12:56.084 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sent Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374602</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251051145048</PortID>
+            <RejectCode>SP08</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+14-05-2020 16:12:56.360 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a1a3478: startup date [Thu May 14 16:12:56 EET 2020]; root of context hierarchy
+14-05-2020 16:12:56.360 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned Response from NTRA Web service = Runner Done Successfully

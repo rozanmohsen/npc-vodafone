@@ -1,0 +1,1246 @@
+27-05-2020 19:53:55.677 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+27-05-2020 19:54:21.958 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+27-05-2020 20:46:26.660 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+27-05-2020 20:47:28.141 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+27-05-2020 20:47:28.167 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:06:27.717 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+27-05-2020 21:09:48.016 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+27-05-2020 21:09:48.042 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:27:23.475 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:27:23.479 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:31:20.364 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:31:20.367 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:31:46.630 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:31:46.634 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:33:57.717 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:33:57.722 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:36:50.175 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:36:50.178 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:40:09.955 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:40:09.961 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:40:43.984 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:40:43.988 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:43:41.059 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:43:41.064 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:44:29.315 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:44:29.319 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:47:48.989 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:47:48.993 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:55:35.508 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:55:35.512 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:56:49.555 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:56:49.558 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:58:43.624 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 21:58:43.628 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 21:59:04.847 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 21:59:04.847 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:17:46.234 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 22:17:46.237 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:18:07.473 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 22:18:07.474 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:20:08.700 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 22:20:08.703 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:20:28.275 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 22:20:28.280 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:20:36.513 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+27-05-2020 22:20:36.625 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+27-05-2020 22:20:36.728 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 22:20:36.736 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+27-05-2020 22:20:36.744 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: 20202020 | MessageCode: NPR | PortID:  | MSISDN: 01099999999 | Message TimeStamp: Wed May 27 22:20:36 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Etis
+27-05-2020 22:20:36.890 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 22:20:36.904 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+27-05-2020 22:20:36.914 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: 20202020 | MessageCode: NPR | PortID:  | MSISDN: 01099999999 | Message TimeStamp: Wed May 27 22:20:36 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Etis
+27-05-2020 22:20:37.754 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498453
+27-05-2020 22:20:37.754 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498454
+27-05-2020 22:26:13.162 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498453 and Internal Port ID 4498334
+27-05-2020 22:26:13.165 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498453 and Internal Port ID 4498334 has done successfully
+27-05-2020 22:26:14.886 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498454 and Internal Port ID 4498334
+27-05-2020 22:26:14.889 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498454 and Internal Port ID 4498334 has done successfully
+27-05-2020 22:26:19.395 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498453 and Internal Port ID 4498334 has done successfully and the port Status updated with Status "20-Request-R"
+27-05-2020 22:26:19.397 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498453 and Internal Port ID 4498334 has completed...
+27-05-2020 22:26:19.596 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498454 and Internal Port ID 4498334 has done successfully and the port Status updated with Status "20-Request-R"
+27-05-2020 22:26:19.599 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498454 and Internal Port ID 4498334 has completed...
+27-05-2020 22:26:19.776 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498453 and Internal Port ID 4498334 has completed...
+27-05-2020 22:26:19.776 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498453 and Internal Port ID 4498334 has completed...
+27-05-2020 22:26:19.777 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498453 and Internal Port ID 4498334  =  "success"
+27-05-2020 22:26:19.933 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498454 and Internal Port ID 4498334 has completed...
+27-05-2020 22:26:19.934 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498454 and Internal Port ID 4498334 has completed...
+27-05-2020 22:26:19.935 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498454 and Internal Port ID 4498334  =  "success"
+27-05-2020 22:27:08.980 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 22:27:08.983 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:28:20.997 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 22:28:20.997 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:29:23.422 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+27-05-2020 22:29:23.439 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: 20202020 | MessageCode: NPR | PortID:  | MSISDN: 01099999999 | Message TimeStamp: Wed May 27 22:29:23 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Etis
+27-05-2020 22:31:14.076 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498455
+27-05-2020 22:31:36.874 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498455 and Internal Port ID 4498334
+27-05-2020 22:31:36.876 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498455 and Internal Port ID 4498334 has done successfully
+27-05-2020 22:32:34.058 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 22:32:34.063 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:32:55.305 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 22:32:55.305 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:33:35.643 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+27-05-2020 22:33:35.650 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 22:33:56.867 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 22:33:56.867 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:01:52.984 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:02:14.193 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>         </SubscriberData>         <Comments1>Comment1 Test</Comments1>         <Comments2>Comment2 Test</Comments2>      </PortMessage>   </NPCMessages></NPCData>
+27-05-2020 23:02:14.193 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:02:26.086 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 23:02:26.087 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:08:08.792 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:13:08.580 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
+<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>         </SubscriberData>         <Comments1>Comment1 Test</Comments1>         <Comments2>Comment2 Test</Comments2>      </PortMessage>   </NPCMessages></NPCData>
+27-05-2020 23:13:08.581 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:13:08.608 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:13:08.618 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 23:13:08.618 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:17:39.616 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:18:00.878 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?> <NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>         </SubscriberData>         <Comments1>Comment1 Test</Comments1>         <Comments2>Comment2 Test</Comments2>      </PortMessage>   </NPCMessages></NPCData>
+27-05-2020 23:18:00.879 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:18:21.888 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:18:42.905 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 23:18:42.905 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:22:38.728 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:22:59.971 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?> <NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>         </SubscriberData>         <Comments1>Comment1 Test</Comments1>         <Comments2>Comment2 Test</Comments2>      </PortMessage>   </NPCMessages></NPCData>
+27-05-2020 23:22:59.971 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:23:20.988 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 23:23:42.001 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user vodaand Received Message :<?xml version='1.0' encoding='UTF-8'?><NPCData><NPCMessages><PortMessage><MessageID>20202020</MessageID><MessageCode>NPR</MessageCode><ServiceType>MOBILE</ServiceType> <NumbersToPort><NumberFrom>01099999999</NumberFrom><NumberTo>01199999999</NumberTo><DataNumber>0552280126</DataNumber><FaxNumber>0704123456</FaxNumber></NumbersToPort><PortReqFormID>P20170423092999</PortReqFormID><DonorID>Voda</DonorID><RecipientID>Etis</RecipientID><TransferFee>52.02</TransferFee><AverageInvoiceFee>57.87</AverageInvoiceFee><SubscriberData><CompanyFlag>false</CompanyFlag><CorporationName>Giza Systems</CorporationName><Name>Ali Sami</Name><AccountNum>33345</AccountNum><SIMCardNum>89310410106543789301</SIMCardNum><NIC>52404193527</NIC> <CNIC>6110123456789</CNIC> <PassportNum>C12345678</PassportNum> <OtherId>Senator</OtherId> <DateOfBirth>19930515</DateOfBirth> <ContactPhone>0552280126</ContactPhone> <Fax>0704123456</Fax> <City>Cairo</City><Street>Farouk St</Street><Number>1</Number><Locality>Al Tahrir</Locality><PostCode>123123</PostCode><GroupID>My GroupID</GroupID><AuthorizedPersonName>Rami Sad</AuthorizedPersonName><CorporationAddress>Giza Systems</CorporationAddress><CommercialRegistrationNum>002345</CommercialRegistrationNum><TaxRegistrationNum>132544</TaxRegistrationNum></SubscriberData><Comments1>Comment1 Test</Comments1><Comments2>Comment2 Test</Comments2></PortMessage></NPCMessages></NPCData>
+27-05-2020 23:23:42.002 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..

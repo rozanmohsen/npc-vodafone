@@ -1,0 +1,12 @@
+02-06-2020 17:16:16.709 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection..
+02-06-2020 17:16:24.645 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+02-06-2020 17:16:24.688 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+02-06-2020 17:16:29.056 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+02-06-2020 17:19:47.882 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection..
+02-06-2020 17:19:51.547 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+02-06-2020 17:19:52.382 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+02-06-2020 17:19:52.427 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+02-06-2020 17:22:11.393 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection..
+02-06-2020 17:22:15.417 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+02-06-2020 17:22:15.443 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+02-06-2020 17:22:20.503 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda

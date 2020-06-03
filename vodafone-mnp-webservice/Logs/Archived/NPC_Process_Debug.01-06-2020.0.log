@@ -1,0 +1,926 @@
+01-06-2020 10:56:29.879 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 10:56:48.076 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 10:57:01.296 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 10:57:01.319 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 10:57:03.523 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 10:57:03.547 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 10:57:03 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 10:57:10.101 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498511
+01-06-2020 10:58:11.427 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 10:59:15.021 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 10:59:15.041 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 10:59:16.529 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 10:59:16.536 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 10:59:16 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:16:42.097 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:16:44.710 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:16:44.717 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:16:44.719 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:16:44.728 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:16:44 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:16:45.129 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498512
+01-06-2020 11:16:48.475 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498512 and Internal Port ID 4498330
+01-06-2020 11:16:48.476 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498512 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:16:49.556 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498512 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:16:49.557 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498512 and Internal Port ID 4498330 has completed...
+01-06-2020 11:16:49.719 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498512 and Internal Port ID 4498330 has completed...
+01-06-2020 11:16:49.719 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498512 and Internal Port ID 4498330 has completed...
+01-06-2020 11:16:49.719 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498512 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:16:49.724 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:16:49.913 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:16:49 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:18:05.712 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:18:08.103 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:08.111 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:18:08.114 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:08.125 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:18:08 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:18:08.616 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498514
+01-06-2020 11:18:09.949 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498514 and Internal Port ID 4498330
+01-06-2020 11:18:09.949 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498514 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:18:10.575 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498514 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:18:10.576 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498514 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:10.726 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498514 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:10.726 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498514 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:10.726 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498514 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:18:10.730 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:10.896 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:18:10 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:18:52.057 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:18:54.236 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:54.245 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:18:54.248 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:54.261 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:18:54 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:18:54.724 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498516
+01-06-2020 11:18:56.265 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498516 and Internal Port ID 4498330
+01-06-2020 11:18:56.266 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498516 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:18:56.998 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498516 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:18:56.998 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498516 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:57.189 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498516 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:57.190 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498516 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:57.191 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498516 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:18:57.195 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:57.196 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:18:57.198 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:18:57.201 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:18:57 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:18:57.512 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498517
+01-06-2020 11:18:58.676 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498517 and Internal Port ID 4498330
+01-06-2020 11:18:58.677 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498517 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:18:59.268 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498517 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:18:59.268 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498517 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:59.420 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498517 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:59.420 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498517 and Internal Port ID 4498330 has completed...
+01-06-2020 11:18:59.421 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498517 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:18:59.574 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:18:59 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:29:35.564 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:29:37.724 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:29:37.731 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:29:37.735 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:29:37.746 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:29:37 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:29:38.187 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498519
+01-06-2020 11:29:39.309 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498519 and Internal Port ID 4498330
+01-06-2020 11:29:39.309 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498519 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:29:39.955 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498519 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:29:39.955 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498519 and Internal Port ID 4498330 has completed...
+01-06-2020 11:29:40.100 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498519 and Internal Port ID 4498330 has completed...
+01-06-2020 11:29:40.100 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498519 and Internal Port ID 4498330 has completed...
+01-06-2020 11:29:40.101 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498519 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:29:40.105 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:29:40.107 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:29:40.109 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:29:40.113 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:29:40 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:29:40.339 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498520
+01-06-2020 11:29:41.442 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498520 and Internal Port ID 4498330
+01-06-2020 11:29:41.443 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498520 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:29:42.060 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498520 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:29:42.061 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498520 and Internal Port ID 4498330 has completed...
+01-06-2020 11:29:42.214 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498520 and Internal Port ID 4498330 has completed...
+01-06-2020 11:29:42.215 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498520 and Internal Port ID 4498330 has completed...
+01-06-2020 11:29:42.216 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498520 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:32:40.155 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:32:42.537 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:32:42.546 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:32:42.548 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:32:42.560 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:32:42 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:32:43.133 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498521
+01-06-2020 11:32:44.860 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498521 and Internal Port ID 4498330
+01-06-2020 11:32:44.861 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498521 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:32:45.460 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498521 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:32:45.461 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498521 and Internal Port ID 4498330 has completed...
+01-06-2020 11:32:45.609 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498521 and Internal Port ID 4498330 has completed...
+01-06-2020 11:32:45.609 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498521 and Internal Port ID 4498330 has completed...
+01-06-2020 11:32:45.610 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498521 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:32:45.613 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:32:45.614 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:32:45.615 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:32:45.618 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:32:45 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:32:45.849 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498522
+01-06-2020 11:32:46.929 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498522 and Internal Port ID 4498330
+01-06-2020 11:32:46.929 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498522 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:32:47.535 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498522 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:32:47.535 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498522 and Internal Port ID 4498330 has completed...
+01-06-2020 11:32:47.683 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498522 and Internal Port ID 4498330 has completed...
+01-06-2020 11:32:47.683 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498522 and Internal Port ID 4498330 has completed...
+01-06-2020 11:32:47.684 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498522 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:32:47.689 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:32:47 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:39:51.449 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:39:53.408 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:39:53.419 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:39:53.422 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:39:53.436 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:39:53 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:39:53.936 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498523
+01-06-2020 11:39:55.177 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498523 and Internal Port ID 4498330
+01-06-2020 11:39:55.178 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498523 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:39:55.803 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498523 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:39:55.803 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498523 and Internal Port ID 4498330 has completed...
+01-06-2020 11:39:55.942 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498523 and Internal Port ID 4498330 has completed...
+01-06-2020 11:39:55.942 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498523 and Internal Port ID 4498330 has completed...
+01-06-2020 11:39:55.943 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498523 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:39:55.948 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:39:55.949 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:39:55.950 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:39:55.952 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:39:55 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:39:56.183 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498524
+01-06-2020 11:39:57.235 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498524 and Internal Port ID 4498330
+01-06-2020 11:39:57.235 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498524 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:39:57.849 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498524 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:39:57.849 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498524 and Internal Port ID 4498330 has completed...
+01-06-2020 11:39:57.994 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498524 and Internal Port ID 4498330 has completed...
+01-06-2020 11:39:57.994 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498524 and Internal Port ID 4498330 has completed...
+01-06-2020 11:39:57.995 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498524 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:53:35.974 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:53:38.140 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:53:38.148 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:53:38.151 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:53:38.163 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:53:38 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:53:38.616 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498525
+01-06-2020 11:53:39.749 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498525 and Internal Port ID 4498330
+01-06-2020 11:53:39.750 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498525 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:53:40.435 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498525 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:53:40.436 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498525 and Internal Port ID 4498330 has completed...
+01-06-2020 11:53:40.589 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498525 and Internal Port ID 4498330 has completed...
+01-06-2020 11:53:40.589 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498525 and Internal Port ID 4498330 has completed...
+01-06-2020 11:53:40.590 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498525 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:53:40.593 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:53:40.595 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:53:40.597 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:53:40.600 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:53:40 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:53:40.847 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498526
+01-06-2020 11:53:42.237 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498526 and Internal Port ID 4498330
+01-06-2020 11:53:42.238 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498526 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:53:42.827 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498526 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:53:42.827 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498526 and Internal Port ID 4498330 has completed...
+01-06-2020 11:53:42.974 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498526 and Internal Port ID 4498330 has completed...
+01-06-2020 11:53:42.974 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498526 and Internal Port ID 4498330 has completed...
+01-06-2020 11:53:42.975 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498526 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:55:20.657 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:55:22.635 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:55:22.643 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:55:22.648 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:55:22.659 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:55:22 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:55:23.097 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498527
+01-06-2020 11:55:24.444 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498527 and Internal Port ID 4498330
+01-06-2020 11:55:24.445 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498527 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:55:25.024 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498527 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:55:25.025 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498527 and Internal Port ID 4498330 has completed...
+01-06-2020 11:55:25.168 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498527 and Internal Port ID 4498330 has completed...
+01-06-2020 11:55:25.168 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498527 and Internal Port ID 4498330 has completed...
+01-06-2020 11:55:25.169 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498527 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:55:25.173 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:55:25.174 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:55:25.174 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:55:25.177 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:55:25 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:55:25.404 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498528
+01-06-2020 11:55:26.514 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498528 and Internal Port ID 4498330
+01-06-2020 11:55:26.515 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498528 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:55:27.132 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498528 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:55:27.133 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498528 and Internal Port ID 4498330 has completed...
+01-06-2020 11:55:27.279 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498528 and Internal Port ID 4498330 has completed...
+01-06-2020 11:55:27.279 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498528 and Internal Port ID 4498330 has completed...
+01-06-2020 11:55:27.279 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498528 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:57:34.767 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:57:36.892 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:57:36.900 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:57:36.903 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:57:36.917 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:57:36 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:57:37.398 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498529
+01-06-2020 11:57:38.433 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498529 and Internal Port ID 4498330
+01-06-2020 11:57:38.433 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498529 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:57:39.081 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498529 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:57:39.081 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498529 and Internal Port ID 4498330 has completed...
+01-06-2020 11:57:39.228 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498529 and Internal Port ID 4498330 has completed...
+01-06-2020 11:57:39.228 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498529 and Internal Port ID 4498330 has completed...
+01-06-2020 11:57:39.228 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498529 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:57:39.232 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:57:39.233 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:57:39.233 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:57:39.236 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:57:39 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:57:39.471 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498530
+01-06-2020 11:57:40.624 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498530 and Internal Port ID 4498330
+01-06-2020 11:57:40.626 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498530 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:57:41.260 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498530 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:57:41.260 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498530 and Internal Port ID 4498330 has completed...
+01-06-2020 11:57:41.421 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498530 and Internal Port ID 4498330 has completed...
+01-06-2020 11:57:41.421 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498530 and Internal Port ID 4498330 has completed...
+01-06-2020 11:57:41.422 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498530 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:58:16.375 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 11:58:18.390 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:58:18.397 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:58:18.400 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:58:18.413 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:58:18 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:58:18.913 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498531
+01-06-2020 11:58:19.965 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498531 and Internal Port ID 4498330
+01-06-2020 11:58:19.965 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498531 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:58:20.565 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498531 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:58:20.566 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498531 and Internal Port ID 4498330 has completed...
+01-06-2020 11:58:20.710 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498531 and Internal Port ID 4498330 has completed...
+01-06-2020 11:58:20.711 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498531 and Internal Port ID 4498330 has completed...
+01-06-2020 11:58:20.712 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498531 and Internal Port ID 4498330  =  "success"
+01-06-2020 11:58:20.717 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:58:20.718 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 11:58:20.720 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 11:58:20.724 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 11:58:20 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 11:58:20.980 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498532
+01-06-2020 11:58:22.040 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498532 and Internal Port ID 4498330
+01-06-2020 11:58:22.041 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498532 and Internal Port ID 4498330 has done successfully
+01-06-2020 11:58:22.642 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498532 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 11:58:22.642 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498532 and Internal Port ID 4498330 has completed...
+01-06-2020 11:58:22.798 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498532 and Internal Port ID 4498330 has completed...
+01-06-2020 11:58:22.798 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498532 and Internal Port ID 4498330 has completed...
+01-06-2020 11:58:22.799 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498532 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:02:49.126 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 12:07:57.353 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 12:24:13.781 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 12:24:13.801 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:24:15.273 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:24:15.279 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:24:15 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:28:33.158 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:28:35.383 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:28:35.391 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:28:35.394 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:28:35.407 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:28:35 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:28:35.849 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498533
+01-06-2020 12:28:37.012 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498533 and Internal Port ID 4498330
+01-06-2020 12:28:37.012 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498533 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:28:37.626 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498533 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:28:37.626 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498533 and Internal Port ID 4498330 has completed...
+01-06-2020 12:28:37.769 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498533 and Internal Port ID 4498330 has completed...
+01-06-2020 12:28:37.769 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498533 and Internal Port ID 4498330 has completed...
+01-06-2020 12:28:37.770 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498533 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:28:37.776 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:28:37.777 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:28:37.778 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:28:37.783 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:28:37 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:28:38.009 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498534
+01-06-2020 12:28:39.079 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498534 and Internal Port ID 4498330
+01-06-2020 12:28:39.079 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498534 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:28:39.673 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498534 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:28:39.673 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498534 and Internal Port ID 4498330 has completed...
+01-06-2020 12:28:39.815 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498534 and Internal Port ID 4498330 has completed...
+01-06-2020 12:28:39.816 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498534 and Internal Port ID 4498330 has completed...
+01-06-2020 12:28:39.816 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498534 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:29:23.529 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:29:25.563 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:29:25.571 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:29:25.574 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:29:25.586 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:29:25 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:29:26.032 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498535
+01-06-2020 12:29:27.135 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498535 and Internal Port ID 4498330
+01-06-2020 12:29:27.136 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498535 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:29:27.783 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498535 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:29:27.783 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498535 and Internal Port ID 4498330 has completed...
+01-06-2020 12:29:27.974 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498535 and Internal Port ID 4498330 has completed...
+01-06-2020 12:29:27.975 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498535 and Internal Port ID 4498330 has completed...
+01-06-2020 12:29:27.975 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498535 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:29:27.979 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:29:27.980 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:29:27.982 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:29:27.985 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:29:27 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:29:28.225 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498536
+01-06-2020 12:29:29.418 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498536 and Internal Port ID 4498330
+01-06-2020 12:29:29.418 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498536 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:29:30.009 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498536 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:29:30.009 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498536 and Internal Port ID 4498330 has completed...
+01-06-2020 12:29:30.159 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498536 and Internal Port ID 4498330 has completed...
+01-06-2020 12:29:30.159 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498536 and Internal Port ID 4498330 has completed...
+01-06-2020 12:29:30.160 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498536 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:34:22.975 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 12:34:48.722 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 12:35:00.527 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 12:35:00.529 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:35:01.948 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:35:01.953 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:35:01 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:35:02.307 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498537
+01-06-2020 12:35:03.623 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498537 and Internal Port ID 4498330
+01-06-2020 12:35:03.624 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498537 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:35:04.605 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498537 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:35:04.605 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498537 and Internal Port ID 4498330 has completed...
+01-06-2020 12:35:04.803 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498537 and Internal Port ID 4498330 has completed...
+01-06-2020 12:35:04.804 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498537 and Internal Port ID 4498330 has completed...
+01-06-2020 12:35:04.804 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498537 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:38:49.697 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:38:51.657 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:38:51.666 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:38:51.668 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:38:51.680 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:38:51 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:38:52.111 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498538
+01-06-2020 12:38:53.238 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498538 and Internal Port ID 4498330
+01-06-2020 12:38:53.238 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498538 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:38:53.835 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498538 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:38:53.835 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498538 and Internal Port ID 4498330 has completed...
+01-06-2020 12:38:53.982 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498538 and Internal Port ID 4498330 has completed...
+01-06-2020 12:38:53.982 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498538 and Internal Port ID 4498330 has completed...
+01-06-2020 12:38:53.983 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498538 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:38:53.987 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:38:53.988 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:38:53.989 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:38:53.993 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:38:53 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:38:54.241 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498539
+01-06-2020 12:38:55.503 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498539 and Internal Port ID 4498330
+01-06-2020 12:38:55.504 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498539 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:38:56.097 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498539 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:38:56.097 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498539 and Internal Port ID 4498330 has completed...
+01-06-2020 12:38:56.239 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498539 and Internal Port ID 4498330 has completed...
+01-06-2020 12:38:56.239 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498539 and Internal Port ID 4498330 has completed...
+01-06-2020 12:38:56.240 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498539 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:39:17.240 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:39:19.478 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:39:19.487 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:39:19.490 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:39:19.504 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:39:19 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:39:20.015 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498540
+01-06-2020 12:39:21.086 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498540 and Internal Port ID 4498330
+01-06-2020 12:39:21.087 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498540 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:39:21.680 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498540 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:39:21.680 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498540 and Internal Port ID 4498330 has completed...
+01-06-2020 12:39:21.826 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498540 and Internal Port ID 4498330 has completed...
+01-06-2020 12:39:21.826 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498540 and Internal Port ID 4498330 has completed...
+01-06-2020 12:39:21.826 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498540 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:39:21.832 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:39:21.833 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:39:21.834 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:39:21.838 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:39:21 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:39:22.090 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498541
+01-06-2020 12:39:23.161 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498541 and Internal Port ID 4498330
+01-06-2020 12:39:23.161 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498541 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:39:23.762 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498541 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:39:23.762 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498541 and Internal Port ID 4498330 has completed...
+01-06-2020 12:39:23.917 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498541 and Internal Port ID 4498330 has completed...
+01-06-2020 12:39:23.917 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498541 and Internal Port ID 4498330 has completed...
+01-06-2020 12:39:23.918 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498541 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:40:09.878 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:40:11.931 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:40:11.939 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:40:11.942 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:40:11.958 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:40:11 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:40:12.419 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498542
+01-06-2020 12:40:13.717 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498542 and Internal Port ID 4498330
+01-06-2020 12:40:13.717 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498542 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:40:14.336 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498542 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:40:14.336 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498542 and Internal Port ID 4498330 has completed...
+01-06-2020 12:40:14.476 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498542 and Internal Port ID 4498330 has completed...
+01-06-2020 12:40:14.476 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498542 and Internal Port ID 4498330 has completed...
+01-06-2020 12:40:14.477 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498542 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:40:14.481 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:40:14.483 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:40:14.485 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:40:14.489 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:40:14 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:40:14.724 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498543
+01-06-2020 12:40:15.791 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498543 and Internal Port ID 4498330
+01-06-2020 12:40:15.792 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498543 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:40:16.378 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498543 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:40:16.378 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498543 and Internal Port ID 4498330 has completed...
+01-06-2020 12:40:16.521 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498543 and Internal Port ID 4498330 has completed...
+01-06-2020 12:40:16.521 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498543 and Internal Port ID 4498330 has completed...
+01-06-2020 12:40:16.522 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498543 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:41:11.609 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 12:41:13.585 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:41:13.592 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:41:13.595 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:41:13.608 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:41:13 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:41:14.105 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498544
+01-06-2020 12:41:15.217 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498544 and Internal Port ID 4498330
+01-06-2020 12:41:15.217 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498544 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:41:15.819 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498544 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:41:15.820 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498544 and Internal Port ID 4498330 has completed...
+01-06-2020 12:41:15.969 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498544 and Internal Port ID 4498330 has completed...
+01-06-2020 12:41:15.969 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498544 and Internal Port ID 4498330 has completed...
+01-06-2020 12:41:15.970 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498544 and Internal Port ID 4498330  =  "success"
+01-06-2020 12:41:15.974 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:41:15.975 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>    <NPCMessages>       <PortMessage>          <MessageID>AD1202</MessageID>          <MessageCode>NPR</MessageCode>          <ServiceType>MOBILE</ServiceType>          <PortID>P201704230921270130</PortID>          <NumbersToPort>             <NumberFrom>01011234575</NumberFrom>             <NumberTo>01011234575</NumberTo>             <DataNumber>0552280126</DataNumber>             <FaxNumber>0704123456</FaxNumber>          </NumbersToPort>          <PortReqFormID>P993F0S2641AF</PortReqFormID>          <DonorID>Voda</DonorID>          <RecipientID>Mobi</RecipientID>          <OriginatorID>NPDB</OriginatorID>          <ResponseDueDate>20170515043721</ResponseDueDate>          <NewRoute>Mobi_Net</NewRoute>          <TransferFee>52.02</TransferFee>          <AverageInvoiceFee>57.87</AverageInvoiceFee>          <SubscriberData>             <CompanyFlag>false</CompanyFlag>             <CorporationName>Giza Systems</CorporationName>             <Name>Ali Sami</Name>             <AccountNum>33345</AccountNum>             <SIMCardNum>89310410106543789301</SIMCardNum>             <NIC>52404193527</NIC>             <CNIC>6110123456789</CNIC>             <PassportNum>C12345678</PassportNum>             <OtherId>Senator</OtherId>             <DateOfBirth>19930515</DateOfBirth>             <ContactPhone>0552280126</ContactPhone>             <Fax>0704123456</Fax>             <City>Cairo</City>             <Street>Farouk St</Street>             <Number>1</Number>             <Locality>Al Tahrir</Locality>             <PostCode>123123</PostCode>             <GroupID>My GroupID</GroupID>             <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>             <CorporationAddress>Giza Systems</CorporationAddress>             <CommercialRegistrationNum>002345</CommercialRegistrationNum>             <TaxRegistrationNum>132544</TaxRegistrationNum>          </SubscriberData>          <Comments1>Comment1 Test</Comments1>          <Comments2>Comment2 Test</Comments2>       </PortMessage>    </NPCMessages> </NPCData>
+01-06-2020 12:41:15.976 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 12:41:15.979 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 12:41:15 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 12:41:16.214 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498545
+01-06-2020 12:41:17.245 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498545 and Internal Port ID 4498330
+01-06-2020 12:41:17.246 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498545 and Internal Port ID 4498330 has done successfully
+01-06-2020 12:41:17.821 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498545 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 12:41:17.821 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498545 and Internal Port ID 4498330 has completed...
+01-06-2020 12:41:17.960 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498545 and Internal Port ID 4498330 has completed...
+01-06-2020 12:41:17.961 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498545 and Internal Port ID 4498330 has completed...
+01-06-2020 12:41:17.961 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498545 and Internal Port ID 4498330  =  "success"
+01-06-2020 18:37:10.887 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 18:37:12.839 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 18:37:12.848 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+01-06-2020 18:37:12.851 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 18:37:12.861 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 18:37:12 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 18:37:13.283 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498546
+01-06-2020 18:37:14.590 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498546 and Internal Port ID 4498330
+01-06-2020 18:37:14.591 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498546 and Internal Port ID 4498330 has done successfully
+01-06-2020 18:37:15.249 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498546 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 18:37:15.250 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498546 and Internal Port ID 4498330 has completed...
+01-06-2020 18:37:15.406 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498546 and Internal Port ID 4498330 has completed...
+01-06-2020 18:37:15.406 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498546 and Internal Port ID 4498330 has completed...
+01-06-2020 18:37:15.407 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498546 and Internal Port ID 4498330  =  "success"
+01-06-2020 18:37:15.412 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 18:37:15.413 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user voda and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+01-06-2020 18:37:15.414 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 18:37:15.418 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 18:37:15 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 18:37:15.646 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498547
+01-06-2020 18:37:16.700 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498547 and Internal Port ID 4498330
+01-06-2020 18:37:16.700 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498547 and Internal Port ID 4498330 has done successfully
+01-06-2020 18:37:17.299 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498547 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 18:37:17.299 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498547 and Internal Port ID 4498330 has completed...
+01-06-2020 18:37:17.459 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498547 and Internal Port ID 4498330 has completed...
+01-06-2020 18:37:17.459 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498547 and Internal Port ID 4498330 has completed...
+01-06-2020 18:37:17.461 DEBUG [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498547 and Internal Port ID 4498330  =  "success"
+01-06-2020 21:11:50.321 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 21:12:00.097 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user : voda  and Received Message :<NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 21:12:00.100 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 21:12:09.276 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 21:12:09.291 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 21:12:09 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 21:12:10.421 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498548
+01-06-2020 21:12:17.745 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498548 and Internal Port ID 4498330
+01-06-2020 21:12:17.746 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498548 and Internal Port ID 4498330 has done successfully
+01-06-2020 21:12:21.466 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498548 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 21:12:21.468 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498548 and Internal Port ID 4498330 has completed...
+01-06-2020 21:12:22.473 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498548 and Internal Port ID 4498330 has completed...
+01-06-2020 21:12:22.474 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498548 and Internal Port ID 4498330 has completed...
+01-06-2020 21:12:22.478 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498548 and Internal Port ID 4498330 ='\u0022' success '\u0022'
+01-06-2020 21:25:59.218 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 21:26:05.003 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user : voda  and Received Message : <NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1202</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 21:26:05.006 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 21:26:18.004 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 21:26:18.017 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1202 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 21:26:18 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi
+01-06-2020 21:26:19.751 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498549
+01-06-2020 21:26:30.571 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498549 and Internal Port ID 4498330
+01-06-2020 21:26:30.572 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498549 and Internal Port ID 4498330 has done successfully
+01-06-2020 21:26:36.681 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498549 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 21:26:36.682 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498549 and Internal Port ID 4498330 has completed...
+01-06-2020 21:26:38.351 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498549 and Internal Port ID 4498330 has completed...
+01-06-2020 21:26:38.351 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498549 and Internal Port ID 4498330 has completed...
+01-06-2020 21:26:38.351 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498549 and Internal Port ID 4498330 = " success" 
+01-06-2020 21:55:23.096 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+01-06-2020 21:55:51.883 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - NPC Message Request for user : voda  and Received Message : <NPCData>
+   <NPCMessages>
+      <PortMessage>
+         <MessageID>AD1301</MessageID>
+         <MessageCode>NPR</MessageCode>
+         <ServiceType>MOBILE</ServiceType>
+         <PortID>P201704230921270130</PortID>
+         <NumbersToPort>
+            <NumberFrom>01011234575</NumberFrom>
+            <NumberTo>01011234575</NumberTo>
+            <DataNumber>0552280126</DataNumber>
+            <FaxNumber>0704123456</FaxNumber>
+         </NumbersToPort>
+         <PortReqFormID>P993F0S2641AF</PortReqFormID>
+         <DonorID>Voda</DonorID>
+         <RecipientID>Mobi</RecipientID>
+         <OriginatorID>NPDB</OriginatorID>
+         <ResponseDueDate>20170515043721</ResponseDueDate>
+         <NewRoute>Mobi_Net</NewRoute>
+         <TransferFee>52.02</TransferFee>
+         <AverageInvoiceFee>57.87</AverageInvoiceFee>
+         <SubscriberData>
+            <CompanyFlag>false</CompanyFlag>
+            <CorporationName>Giza Systems</CorporationName>
+            <Name>Ali Sami</Name>
+            <AccountNum>33345</AccountNum>
+            <SIMCardNum>89310410106543789301</SIMCardNum>
+            <NIC>52404193527</NIC>
+            <CNIC>6110123456789</CNIC>
+            <PassportNum>C12345678</PassportNum>
+            <OtherId>Senator</OtherId>
+            <DateOfBirth>19930515</DateOfBirth>
+            <ContactPhone>0552280126</ContactPhone>
+            <Fax>0704123456</Fax>
+            <City>Cairo</City>
+            <Street>Farouk St</Street>
+            <Number>1</Number>
+            <Locality>Al Tahrir</Locality>
+            <PostCode>123123</PostCode>
+            <GroupID>My GroupID</GroupID>
+            <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+            <CorporationAddress>Giza Systems</CorporationAddress>
+            <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+            <TaxRegistrationNum>132544</TaxRegistrationNum>
+         </SubscriberData>
+         <Comments1>Comment1 Test</Comments1>
+         <Comments2>Comment2 Test</Comments2>
+      </PortMessage>
+   </NPCMessages>
+</NPCData>
+         
+01-06-2020 21:55:51.885 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+01-06-2020 21:56:02.896 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.intializeDataBaseConnection - initializing Database Connection..
+01-06-2020 21:56:02.901 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: AD1301 | MessageCode: NPR | PortID: P201704230921270130 | MSISDN: 01011234575 | Message TimeStamp: Mon Jun 01 21:56:02 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi |
+01-06-2020 21:56:05.332 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID 4498550
+01-06-2020 21:56:13.426 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID 4498550 and Internal Port ID 4498330
+01-06-2020 21:56:13.428 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Updating time frames for NPC message id 4498550 and Internal Port ID 4498330 has done successfully
+01-06-2020 21:56:17.627 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - Updating port information for NPC message id 4498550 and Internal Port ID 4498330 has done successfully and the port Status updated with Status "20-Request-R"
+01-06-2020 21:56:17.629 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.callUpdatePortDataAndprocessActivationAndDeactivation - The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID 4498550 and Internal Port ID 4498330 has completed...
+01-06-2020 21:56:18.636 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting or removing from SYNC table for NPC Message ID 4498550 and Internal Port ID 4498330 has completed...
+01-06-2020 21:56:18.638 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.saveSyncMessage - The process of inserting into SYNC History table for NPC Message ID 4498550 and Internal Port ID 4498330 has completed...
+01-06-2020 21:56:18.640 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498550 and Internal Port ID 4498330 = " success " 

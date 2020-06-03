@@ -1,0 +1,2 @@
+01-06-2020 11:16:49.725 ERROR [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - SOP0003E: Invalid password, please retry with the correct password
+01-06-2020 11:18:10.731 ERROR [main]  c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - SOP0003E: Invalid password, please retry with the correct password

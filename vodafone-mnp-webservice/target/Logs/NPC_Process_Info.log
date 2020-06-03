@@ -1,0 +1,36 @@
+18-05-2020 13:45:28.782 INFO  [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication v1.0.0-SNAPSHOT on Mohamed-Hamdy with PID 646392 (C:\Users\mohammed.hamdy\Downloads\Vodafone MNP Deliverables\Src Code\npc-vodafone\vodafone-mnp-webservice\target\vodafone-mnp-webservice-1.0.0-SNAPSHOT.jar started by mohammed.hamdy in C:\Users\mohammed.hamdy\Downloads\Vodafone MNP Deliverables\Src Code\npc-vodafone\vodafone-mnp-webservice\target)
+18-05-2020 13:45:29.094 INFO  [main]  c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+18-05-2020 13:45:29.195 INFO  [background-preinit]  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+18-05-2020 13:45:29.404 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ab2bfe1: startup date [Mon May 18 13:45:29 EET 2020]; root of context hierarchy
+18-05-2020 13:45:32.317 INFO  [main]  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$3c0c6fb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-05-2020 13:45:32.343 INFO  [main]  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a7f7219f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-05-2020 13:45:32.431 INFO  [main]  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+18-05-2020 13:45:33.804 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+18-05-2020 13:45:33.842 INFO  [main]  o.a.catalina.core.StandardService.log - Starting service Tomcat
+18-05-2020 13:45:33.847 INFO  [main]  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+18-05-2020 13:45:34.302 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+18-05-2020 13:45:34.361 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 4957 ms
+18-05-2020 13:45:34.737 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+18-05-2020 13:45:34.741 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+18-05-2020 13:45:34.748 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-05-2020 13:45:34.749 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-05-2020 13:45:34.750 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-05-2020 13:45:34.750 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+18-05-2020 13:45:35.423 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ab2bfe1: startup date [Mon May 18 13:45:29 EET 2020]; root of context hierarchy
+18-05-2020 13:45:35.620 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-05-2020 13:45:35.627 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-05-2020 13:45:35.681 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-05-2020 13:45:35.682 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-05-2020 13:45:35.759 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-05-2020 13:45:36.206 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+18-05-2020 13:45:36.281 INFO  [main]  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+18-05-2020 13:45:36.334 INFO  [main]  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+18-05-2020 13:45:36.388 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+18-05-2020 13:45:36.526 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+18-05-2020 13:45:36.543 INFO  [main]  c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 8.902 seconds (JVM running for 10.365)
+18-05-2020 13:45:51.943 INFO  [http-nio-9090-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+18-05-2020 13:45:51.943 INFO  [http-nio-9090-exec-1]  o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+18-05-2020 13:45:51.959 INFO  [http-nio-9090-exec-1]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+18-05-2020 13:45:51.983 INFO  [http-nio-9090-exec-1]  o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 38 ms
+18-05-2020 13:47:07.446 INFO  [Thread-2]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ab2bfe1: startup date [Mon May 18 13:45:29 EET 2020]; root of context hierarchy
+18-05-2020 13:47:07.448 INFO  [Thread-2]  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown

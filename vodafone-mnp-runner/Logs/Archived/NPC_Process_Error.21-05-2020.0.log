@@ -1,0 +1,28 @@
+21-05-2020 17:37:39.440 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Error In Sending npc Message
+org.springframework.ws.client.WebServiceIOException: Error In Sending npc Message
+	at com.asset.vodafone.npc.webservice.client.NPCWebserviceProxy.processNPCMsg(NPCWebserviceProxy.java:84)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendMessage(NPCProcessHandler.java:167)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessage(NPCProcessHandler.java:302)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:373)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:618)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:668)
+21-05-2020 17:37:39.444 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_GENERAL_ERROR]: [NPC_WEB_SERVICE_ERROR_01]: Error in sending npc message
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_GENERAL_ERROR]: [NPC_WEB_SERVICE_ERROR_01]: Error in sending npc message
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessage(NPCProcessHandler.java:306)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:373)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:618)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:668)
+21-05-2020 17:38:43.515 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Error In Sending npc Message
+org.springframework.ws.client.WebServiceIOException: Error In Sending npc Message
+	at com.asset.vodafone.npc.webservice.client.NPCWebserviceProxy.processNPCMsg(NPCWebserviceProxy.java:84)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendMessage(NPCProcessHandler.java:167)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessage(NPCProcessHandler.java:302)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:373)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:618)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:668)
+21-05-2020 17:38:43.517 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_GENERAL_ERROR]: [NPC_WEB_SERVICE_ERROR_01]: Error in sending npc message
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_GENERAL_ERROR]: [NPC_WEB_SERVICE_ERROR_01]: Error in sending npc message
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessage(NPCProcessHandler.java:306)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:373)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:618)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:668)

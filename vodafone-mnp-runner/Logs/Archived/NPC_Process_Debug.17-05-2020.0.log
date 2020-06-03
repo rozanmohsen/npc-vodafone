@@ -1,0 +1,3 @@
+17-05-2020 11:14:28.813 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+17-05-2020 11:14:50.275 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+17-05-2020 11:15:11.292 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..

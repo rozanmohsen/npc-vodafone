@@ -1,0 +1,11 @@
+31-05-2020 17:41:58.784 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+31-05-2020 17:42:20.202 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+31-05-2020 17:42:41.218 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+31-05-2020 17:43:02.236 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+31-05-2020 17:43:02.239 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+31-05-2020 17:43:23.255 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+31-05-2020 17:43:44.260 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+31-05-2020 17:43:46.773 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+31-05-2020 17:43:46.774 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+31-05-2020 17:43:46.778 DEBUG [Finalizer]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@5204062d
+31-05-2020 17:45:38.595 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..

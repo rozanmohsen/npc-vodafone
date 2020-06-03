@@ -1,0 +1,135 @@
+21-05-2020 17:37:36.670 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message... 
+21-05-2020 17:37:36.853 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374608</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251150185616</PortID>
+            <RejectCode>SP01</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+21-05-2020 17:37:36.986 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Thu May 21 17:37:36 EET 2020]; root of context hierarchy
+21-05-2020 17:37:37.200 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+21-05-2020 17:37:37.280 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+21-05-2020 17:37:37.293 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+21-05-2020 17:37:37.331 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+21-05-2020 17:37:37.331 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+21-05-2020 17:37:39.443 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Thu May 21 17:37:36 EET 2020]; root of context hierarchy
+21-05-2020 17:38:41.373 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message... 
+21-05-2020 17:38:41.446 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374608</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251150185616</PortID>
+            <RejectCode>SP01</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+21-05-2020 17:38:41.448 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@38831718: startup date [Thu May 21 17:38:41 EET 2020]; root of context hierarchy
+21-05-2020 17:38:41.458 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+21-05-2020 17:38:41.465 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+21-05-2020 17:38:41.475 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+21-05-2020 17:38:41.475 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+21-05-2020 17:38:43.516 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@38831718: startup date [Thu May 21 17:38:41 EET 2020]; root of context hierarchy
+21-05-2020 17:39:21.750 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message... 
+21-05-2020 17:39:21.869 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374608</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251150185616</PortID>
+            <RejectCode>SP01</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+21-05-2020 17:39:22.004 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@57250572: startup date [Thu May 21 17:39:22 EET 2020]; root of context hierarchy
+21-05-2020 17:39:22.209 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+21-05-2020 17:39:22.256 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+21-05-2020 17:39:22.266 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+21-05-2020 17:39:22.297 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+21-05-2020 17:39:22.297 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+21-05-2020 17:39:22.614 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@57250572: startup date [Thu May 21 17:39:22 EET 2020]; root of context hierarchy
+21-05-2020 17:39:22.615 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = "Runner Done Successfully"
+21-05-2020 17:39:22.615 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start updating Fields after sending message...
+21-05-2020 17:39:22.900 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Fields after sending message has done successfully...
+21-05-2020 17:39:23.533 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Updating Port Data... 
+21-05-2020 17:39:24.272 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Port Data has done successfully with Internal Port ID 1282207
+21-05-2020 17:39:24.272 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Process Activation Status... 
+21-05-2020 17:39:24.272 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Process Activation Status has done successfully...
+21-05-2020 17:39:24.272 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Process Deactivation Done... 
+21-05-2020 17:39:24.272 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Process Deactivation Done has done successfully...
+21-05-2020 17:39:24.273 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Save Sync Message... 
+21-05-2020 17:39:24.402 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Save Sync Message has done successfully...
+21-05-2020 17:39:24.402 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Save Sync History Message...
+21-05-2020 17:39:24.537 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Save Sync History Message has done Successfully...
+21-05-2020 17:46:20.225 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message... 
+21-05-2020 17:46:20.335 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374609</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304251057195123</PortID>
+            <RejectCode>SP08</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+21-05-2020 17:46:20.472 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@57250572: startup date [Thu May 21 17:46:20 EET 2020]; root of context hierarchy
+21-05-2020 17:46:20.686 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+21-05-2020 17:46:20.738 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+21-05-2020 17:46:20.751 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+21-05-2020 17:46:20.780 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+21-05-2020 17:46:20.780 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+21-05-2020 17:46:20.889 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@57250572: startup date [Thu May 21 17:46:20 EET 2020]; root of context hierarchy
+21-05-2020 17:46:20.889 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = "Runner Done Successfully"
+21-05-2020 17:46:20.890 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start updating Fields after sending message...
+21-05-2020 17:46:21.147 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Fields after sending message has done successfully...
+21-05-2020 17:46:21.737 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Updating Port Data... 
+21-05-2020 17:46:22.309 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Port Data has done successfully with Internal Port ID 1281980 and updated Port Status with Status "20-Reject-S"
+21-05-2020 17:46:22.309 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Process Activation Status... 
+21-05-2020 17:46:22.310 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Process Activation Status has done successfully...
+21-05-2020 17:46:22.310 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Process Deactivation Done... 
+21-05-2020 17:46:22.310 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Process Deactivation Done has done successfully...
+21-05-2020 17:46:22.310 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Save Sync Message... 
+21-05-2020 17:46:22.449 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Save Sync Message has done successfully...
+21-05-2020 17:46:22.449 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Save Sync History Message...
+21-05-2020 17:46:22.953 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Save Sync History Message has done Successfully...
+21-05-2020 18:26:50.172 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message... 
+21-05-2020 18:26:50.281 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>4374298</MessageID>
+            <MessageCode>NPR Reject</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201304250905144604</PortID>
+            <RejectCode>SP01</RejectCode>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+21-05-2020 18:26:50.410 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@57250572: startup date [Thu May 21 18:26:50 EET 2020]; root of context hierarchy
+21-05-2020 18:26:50.613 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+21-05-2020 18:26:50.673 INFO  [main]  c.a.v.n.w.client.NPCWebserviceProxy.<clinit> - Verifying SSL certificate
+21-05-2020 18:26:50.686 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+21-05-2020 18:26:50.716 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName :vodau1
+21-05-2020 18:26:50.716 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint :http://localhost:8080/NPC-SOAP/NPCWebService
+21-05-2020 18:26:50.812 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@57250572: startup date [Thu May 21 18:26:50 EET 2020]; root of context hierarchy
+21-05-2020 18:26:50.813 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = "Runner Done Successfully"
+21-05-2020 18:26:50.813 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start updating Fields after sending message...
+21-05-2020 18:26:51.187 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Fields after sending message has done successfully...
+21-05-2020 18:26:51.432 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Updating Port Data... 
+21-05-2020 18:26:51.888 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Port Data has done successfully with Internal Port ID 1281692 and updated Port Status with Status "20-Reject-S"

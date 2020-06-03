@@ -1,0 +1,17 @@
+26-05-2020 16:19:58.714 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 16:30:27.862 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 16:30:27.881 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+26-05-2020 16:30:33.015 DEBUG [main]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@491cc5c9
+26-05-2020 16:30:33.159 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+26-05-2020 16:31:52.606 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 16:31:52.618 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+26-05-2020 16:32:47.665 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+26-05-2020 18:38:12.480 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 18:38:42.652 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 18:38:53.539 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 18:39:41.356 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 18:39:41.371 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+26-05-2020 18:41:01.085 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+26-05-2020 19:53:38.648 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+26-05-2020 19:53:38.666 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+26-05-2020 19:54:00.062 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..

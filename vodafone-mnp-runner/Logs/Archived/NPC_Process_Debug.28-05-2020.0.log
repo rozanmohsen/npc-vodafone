@@ -1,0 +1,159 @@
+28-05-2020 04:07:56.024 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:07:56.035 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 04:07:58.913 DEBUG [main]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@37374a5e
+28-05-2020 04:07:59.162 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+28-05-2020 04:11:33.507 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:11:33.515 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 04:11:54.678 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+28-05-2020 04:14:06.746 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:14:06.750 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 04:14:09.602 DEBUG [main]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@74ad1f1f
+28-05-2020 04:14:09.748 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+28-05-2020 04:16:00.158 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:16:00.181 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 04:16:00.351 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 04:16:04.267 DEBUG [main]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@33ecda92
+28-05-2020 04:16:04.480 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+28-05-2020 04:16:36.272 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:17:33.501 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:19:11.626 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:46:43.525 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:56:00.164 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:56:35.123 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:59:54.677 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 04:59:55.034 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 04:59:55.034 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 04:59:55.479 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 04:59:55.508 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 05:00:41.603 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 05:00:41.933 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:00:41.933 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:00:42.335 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 05:00:42.359 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 05:03:18.839 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 05:03:19.205 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:03:19.206 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:03:19.618 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 05:03:19.642 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 05:03:48.204 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 05:03:48.542 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:03:48.543 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:03:48.942 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 05:03:48.968 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 05:53:53.189 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 05:53:53.627 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:53:53.628 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:53:54.028 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 05:53:54.056 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 05:55:29.043 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 05:55:29.403 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:55:29.404 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 05:55:29.815 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 05:55:29.843 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:04:05.756 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:04:06.114 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:04:06.115 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:04:06.515 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:04:06.541 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:04:28.764 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:04:32.110 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:04:32.111 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:04:33.037 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:04:33.072 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:09:36.661 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:09:36.981 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:09:36.981 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:09:37.395 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:09:37.420 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:10:47.899 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:10:48.256 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:10:48.256 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:10:48.656 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:10:48.689 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:23:18.266 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:23:18.659 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:23:18.659 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:23:19.077 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:23:19.110 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:24:48.782 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:24:49.154 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:24:49.156 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:24:49.673 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:24:49.711 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:25:30.789 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:25:31.121 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:25:31.122 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:25:31.538 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:25:31.571 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:35:34.107 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:35:34.454 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:35:34.455 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:35:34.857 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:35:34.884 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:36:38.168 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:36:38.534 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:36:38.535 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:36:38.955 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:36:38.987 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:37:21.811 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:37:22.217 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:37:22.218 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:37:22.667 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:37:22.695 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:38:06.653 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:38:07.013 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:38:07.014 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:38:07.425 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:38:07.452 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:41:46.636 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:42:07.834 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:42:28.851 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:42:49.873 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 06:42:49.875 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:43:10.891 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:43:31.909 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:43:53.141 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:43:53.143 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 06:43:53.629 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 06:43:53.657 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 06:43:53.783 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:44:14.801 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 06:44:35.806 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:10:46.393 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:10:48.931 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 07:10:49.161 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:10:49.162 DEBUG [Finalizer]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@1060b431
+28-05-2020 07:10:49.480 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 07:10:49.512 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 07:10:50.726 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:10:50.726 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:15:48.177 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:16:09.351 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:16:30.358 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:16:51.380 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 07:16:51.382 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:16:53.462 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:16:53.464 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:16:53.752 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 07:16:53.784 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 07:18:15.687 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:19:04.404 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:19:25.425 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:19:26.980 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 07:19:27.163 DEBUG [Finalizer]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@4d49af10
+28-05-2020 07:19:27.317 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:19:27.318 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:19:27.485 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 07:19:27.516 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 07:19:27.760 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:20:48.072 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:21:09.077 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:27:22.958 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:28:23.323 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+28-05-2020 07:28:25.400 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+28-05-2020 07:28:25.562 DEBUG [Finalizer]  c.a.v.npc.core.service.NPCService.releaseConnection - oracle.jdbc.driver.T4CConnection@543788f3
+28-05-2020 07:28:25.703 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:28:25.704 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+28-05-2020 07:28:25.831 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+28-05-2020 07:28:25.857 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+28-05-2020 07:28:26.003 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..

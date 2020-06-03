@@ -1,0 +1,25 @@
+27-05-2020 11:32:27.960 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:35:20.843 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:35:38.522 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:37:49.451 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:39:25.130 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:39:52.597 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:40:49.318 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:41:10.878 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:42:03.246 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 11:47:45.159 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 12:02:52.241 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 12:02:52.267 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 12:03:12.697 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+27-05-2020 12:20:11.288 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 12:20:11.296 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 15:55:42.081 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 15:55:42.089 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 15:56:03.465 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+27-05-2020 16:48:36.677 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 16:48:36.682 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 16:48:57.862 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..
+27-05-2020 17:37:59.215 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda: e41858c810005053
+27-05-2020 17:37:59.269 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+27-05-2020 17:37:59.458 DEBUG [Finalizer]  c.a.v.n.c.handler.NPCProcessHandler.finalize - Releasing the Database Connection..
+27-05-2020 17:38:20.577 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.saveActivatedNumbers - Releasing the Database Connection..

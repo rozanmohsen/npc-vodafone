@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: vodafone-mnp-webservice
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: mohammed.hamdy
+Implementation-Vendor-Id: eg.com.vodafone
+Build-Jdk: 1.8.0_60
+Implementation-URL: http://projects.spring.io/spring-boot/vodafone-mnp
+ -webservice/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

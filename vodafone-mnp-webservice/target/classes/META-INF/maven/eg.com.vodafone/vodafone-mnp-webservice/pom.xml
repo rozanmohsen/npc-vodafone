@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.2.RELEASE</version>
+	</parent>
+	  <groupId>eg.com.vodafone</groupId>
+	<artifactId>vodafone-mnp-webservice</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>vodafone-mnp-webservice</name>
+	<description>Vodafone mobile number portability web service</description> 
+	
+		<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eg.com.vodafone</groupId>
+			<artifactId>npc-webservice-wsdl</artifactId>
+			<version>1.0.0-RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>eg.com.vodafone</groupId>
+			<artifactId>vodafone-mnp-core</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mega.encryption</groupId>
+			<artifactId>blowfish</artifactId>
+			<version>1.0</version>
+		</dependency>
+	  	<dependency>
+			<groupId>oracle.jdbc.driver</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<scope>test</scope>
+</dependency>
+	</dependencies>
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>blowfish</id>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>com.mega.encryption</groupId>
+							<artifactId>blowfish</artifactId>
+							<version>1.0</version>
+							<packaging>jar</packaging>
+							<file>${project.basedir}/src/main/resources/lib/blowfishEncryption.jar</file>
+							<generatePom>true</generatePom>
+						</configuration>
+					</execution>
+					<execution>
+						<id>ojdbc14</id>
+						<goals>
+							<goal>install-file</goal>
+						</goals>
+						<configuration>
+							<groupId>oracle.jdbc.driver</groupId>
+							<artifactId>ojdbc14</artifactId>
+							<version>1.0</version>
+							<packaging>jar</packaging>
+							<file>${project.basedir}/src/main/resources/lib/ojdbc14.jar</file>
+							<generatePom>true</generatePom>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

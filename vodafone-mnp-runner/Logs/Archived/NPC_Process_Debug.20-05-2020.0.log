@@ -1,0 +1,13 @@
+20-05-2020 13:00:18.183 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+20-05-2020 13:00:26.866 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has done successfully..
+20-05-2020 13:00:26.867 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages:1
+20-05-2020 13:00:27.212 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+20-05-2020 13:00:27.777 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+20-05-2020 13:00:28.291 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message with ID 4374607 has done successfully...
+20-05-2020 13:00:29.082 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating sent flag, returned meassge and message XML fields has done successfully...
+20-05-2020 13:00:30.276 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Port Data has done successfully...
+20-05-2020 18:39:22.499 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..
+20-05-2020 18:39:28.511 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has done successfully..
+20-05-2020 18:39:28.512 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages:0
+20-05-2020 18:40:30.049 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has done successfully..
+20-05-2020 18:40:30.050 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages:0

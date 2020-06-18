@@ -408,6 +408,7 @@ public class NPCMessageDAO {
 		ResultSet rs = null;
 		String selectStmt = "";
 		try {
+
 			stmt = conn.createStatement();
 			selectStmt = "SELECT NPC_Message.NPC_MESSAGE_ID,IsPort,Sent,TO_CHAR(Transaction_Date,'DD/MM/YYYY HH24:MI:SS') AS Transaction_Date,ReturnMessage,TO_CHAR(Current_Message_Max_Date,'DD/MM/YYYY HH24:MI:SS') AS Current_Message_Max_Date,TO_CHAR(Current_Message_Min_Date,'DD/MM/YYYY HH24:MI:SS') AS Current_Message_Min_Date,Create_User,TO_CHAR(NPC_Message.Create_Date,'DD/MM/YYYY HH24:MI:SS') AS Create_Date,TO_CHAR(Next_Message_Max_Date,'DD/MM/YYYY HH24:MI:SS') AS Next_Message_Max_Date,TO_CHAR(Next_Message_Min_Date,'DD/MM/YYYY HH24:MI:SS') AS Next_Message_Min_Date,User_Comment,MessageXML FROM NPC_Message,PORT_MESSAGE WHERE NPC_Message.NPC_MESSAGE_ID = PORT_MESSAGE.NPC_MESSAGE_ID AND NPC_Message.Sent = 1 AND MESSAGECODE IN "
 					+ DBTypeConverter.inStatement(portMessageModel.getPortMessageType().getMessageCode()) + " AND "

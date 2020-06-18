@@ -7,8 +7,6 @@ import com.asset.vodafone.npc.webservice.xsd.portmessage.ObjectFactory;
 
 public class NumbersToPortModel {
 
-
-
 	public static NumbersToPortModel createNumbersToPort() throws JAXBException {
 		ObjectFactory objectFactory = new ObjectFactory();
 		NumbersToPortModel numbersToPortModel = new NumbersToPortModel();

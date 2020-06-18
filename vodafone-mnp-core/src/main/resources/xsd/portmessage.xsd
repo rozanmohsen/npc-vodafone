@@ -120,6 +120,13 @@
 			<xsd:pattern value="[0-9]*"/>
 		</xsd:restriction>
 	</xsd:simpleType>
+	<xsd:simpleType name="DigitsLen14">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value='1'/>
+			<xsd:maxLength value='14'/>
+			<xsd:pattern value="[0-9]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 	<xsd:simpleType name="Len10Str">
 		<xsd:restriction base="xsd:string">
 			<xsd:minLength value='1'/>
@@ -173,7 +180,7 @@
 			<xsd:element name="Name" type="Len50Str" minOccurs="1"/>
 			<xsd:element name="AccountNum" type="Len24Str" minOccurs="1"/>
 			<xsd:element name="SIMCardNum" type="SIMCardNumType" minOccurs="0"/>
-			<xsd:element name="NIC" type="DigitsLen11" minOccurs="0"/>
+			<xsd:element name="NIC" type="DigitsLen14" minOccurs="0"/>
 			<xsd:element name="CNIC" type="DigitsLen13" minOccurs="0"/>
 			<xsd:element name="PassportNum" type="PassPortDataType" minOccurs="0"/>
 			<xsd:element name="OtherId" type="AlphaNumLen15" minOccurs="0"/>

@@ -24,7 +24,7 @@ public class NumbersToPortDAO {
 		Statement stmt = null;
 		String insertStmt = "";
 		try {
-			
+
 			NumberDataType numberDataType = numbersToPortModel.getNumberDataType();
 			stmt = conn.createStatement();
 			insertStmt = "INSERT INTO NUMBERSTOPORT(NPC_MESSAGE_ID, NUMBERFROM, NUMBERTO, DATANUMBER, FAXNUMBER)"
@@ -34,7 +34,7 @@ public class NumbersToPortDAO {
 					+ DBTypeConverter.toSQLVARCHAR2(numberDataType.getDataNumber()) + ","
 					+ DBTypeConverter.toSQLVARCHAR2(numberDataType.getFaxNumber()) + ")";
 			stmt.execute(insertStmt);
-			
+
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
 			logger.error(message, ex);
@@ -46,8 +46,8 @@ public class NumbersToPortDAO {
 		}
 	}
 
-	public static List<NumbersToPortModel> getNumbersToPortList(Connection conn,
-			NumbersToPortModel numbersToPortModel) throws SQLException, JAXBException {
+	public static List<NumbersToPortModel> getNumbersToPortList(Connection conn, NumbersToPortModel numbersToPortModel)
+			throws SQLException, JAXBException {
 		Statement stmt = null;
 		ResultSet rs = null;
 		String selectStmt = "";

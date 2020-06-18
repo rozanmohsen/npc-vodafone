@@ -14,7 +14,7 @@ public class NPCMessageModel {
 		nextMessageMinDate = "";
 		userCommnet = "";
 		messageXML = "";
-		pickedBy="";
+		pickedBy = "";
 	}
 
 	public NPCMessageModel(long npcMessageID) {
@@ -29,7 +29,7 @@ public class NPCMessageModel {
 		nextMessageMinDate = "";
 		userCommnet = "";
 		messageXML = "";
-		pickedBy="";
+		pickedBy = "";
 		this.npcMessageID = npcMessageID;
 	}
 
@@ -45,7 +45,7 @@ public class NPCMessageModel {
 		nextMessageMinDate = "";
 		userCommnet = "";
 		messageXML = "";
-		pickedBy="";
+		pickedBy = "";
 		this.npcMessageID = npcMessageID;
 		port = isPort;
 	}
@@ -103,10 +103,10 @@ public class NPCMessageModel {
 		}
 		if (fieldName.equals("MessageXML")) {
 			npcMessageModel.setMessageXML(String.valueOf(fieldValue));
-			return;
-		}	
+
+		}
 		if (fieldName.equals("Picked_By"))
-			 npcMessageModel.setMessageXML(String.valueOf(fieldValue));
+			npcMessageModel.setPickedBy(String.valueOf(fieldValue));
 	}
 
 	public void setSent(boolean sent) {

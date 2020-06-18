@@ -1,7 +1,5 @@
 package com.asset.vodafone.npc.core.models;
 
-
-
 public class PortDataModel {
 	private PortDataModel() {
 	}
@@ -26,17 +24,17 @@ public class PortDataModel {
 		setPortingRequestFormID(portMessageModel.getPortMessageType().getPortReqFormID());
 		setNewRoute(portMessageModel.getPortMessageType().getNewRoute());
 		setInternalPortID(portMessageModel.getInternalPortID());
-		
+
 		if (portMessageModel.getPortMessageType().getTransferFee() != null)
 			setTransferFee(portMessageModel.getPortMessageType().getTransferFee().longValue());
 		else
 			setTransferFee(-1L);
-		
+
 		if (portMessageModel.getPortMessageType().getAverageInvoiceFee() != null)
 			setAverageInvoiceFee(portMessageModel.getPortMessageType().getAverageInvoiceFee().longValue());
 		else
 			setAverageInvoiceFee(-1L);
-		
+
 		if (portMessageModel.getPortMessageType().getPaymentDue() != null)
 			setPaymentDue(portMessageModel.getPortMessageType().getPaymentDue().longValue());
 		else
@@ -54,8 +52,6 @@ public class PortDataModel {
 			setComments(portMessageModel.getReturnedMessage());
 		setErrorMessageReceived((short) 0);
 	}
-
-	
 
 	public void copyPortData(PortDataModel portDataModel) {
 		if (donorID == null || "".equals(donorID))

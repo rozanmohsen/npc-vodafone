@@ -1,23 +1,31 @@
 package com.asset.vodafone.npc.core.handler;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.net.ServerSocket;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
+import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +36,6 @@ import com.asset.vodafone.npc.core.exception.NPCException;
 import com.asset.vodafone.npc.core.models.BulkSyncMessageModel;
 import com.asset.vodafone.npc.core.models.NPCMessageModel;
 import com.asset.vodafone.npc.core.models.NumbersToPortModel;
-import com.asset.vodafone.npc.core.models.PortDataModel;
 import com.asset.vodafone.npc.core.models.PortMessageModel;
 import com.asset.vodafone.npc.core.models.SubscriberDataModel;
 import com.asset.vodafone.npc.core.models.SyncHistoryModel;
@@ -86,7 +93,7 @@ public class NPCProcessHandler {
 	/**
 	 * finalize Method used to release connection of database
 	 */
-	
+
 	public void releaseConnection() {
 		try {
 			if (npcService != null)
@@ -160,8 +167,8 @@ public class NPCProcessHandler {
 		try {
 
 			ntraWebserviceProxy.setDefaultUri(endpoint);
-			logger.info("Start Sending Request to NTRA for UserName : {} ", username);
-			logger.info("Calling NTRA Web Service  EndPoint : {} ", endpoint);
+			logger.debug("Start Sending Request to NTRA for UserName : {} ", username);
+			logger.debug("Calling NTRA Web Service  EndPoint : {} ", endpoint);
 
 			return ntraWebserviceProxy.processNPCMsg(req).getResult();
 
@@ -184,15 +191,35 @@ public class NPCProcessHandler {
 	 * @return
 	 * @throws NPCException
 	 */
-	private String getNPCMessageXML(NPCData npcData) throws NPCException {
+	private String getNPCMessageXML(NPCData npcData) throws NPCException, Exception {
 		ByteArrayOutputStream outputSream = null;
 		try {
 			outputSream = new ByteArrayOutputStream();
 			JAXBContext jaxbContext = JAXBContext.newInstance(
 					"com.asset.vodafone.npc.webservice.xsd.portmessage:com.asset.vodafone.npc.webservice.xsd.bulksyncmessage");
 			Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty("jaxb.formatted.output", Boolean.TRUE);
+			ClassLoader classLoader = getClass().getClassLoader();
+
+			URL portmessageresource = classLoader.getResource("xsd/portmessage.xsd");
+			URL bulksyncmessageresource = classLoader.getResource("xsd/bulksyncmessage.xsd");
+			if (portmessageresource == null || bulksyncmessageresource == null) {
+				throw new FileNotFoundException("XSD Schema file not found!");
+			}
+
+			File portmessage = new File(portmessageresource.getFile());
+			File bulkSyncMessage = new File(bulksyncmessageresource.getFile());
+
+			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+
+			Schema xsdSchema = schemaFactory
+					.newSchema(new Source[] { new StreamSource(portmessage), new StreamSource(bulkSyncMessage) });
+			marshaller.setSchema(xsdSchema);
+			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+			
 			marshaller.marshal(npcData, outputSream);
+
 			try {
 				return outputSream.toString("utf-8");
 
@@ -202,6 +229,7 @@ public class NPCProcessHandler {
 			}
 		} catch (JAXBException e) {
 			logger.error(e.getMessage(), e);
+
 			try {
 
 				outputSream.close();
@@ -209,7 +237,7 @@ public class NPCProcessHandler {
 				logger.error(ex.getMessage(), ex);
 				throw new NPCException(ex);
 			}
-			throw new NPCException(e);
+			throw new NPCException(e, NPCException.JAXB_CREATE_OBJECT_ERROR_CODE, "Cannot Create JAXB Object");
 		}
 	}
 
@@ -274,7 +302,7 @@ public class NPCProcessHandler {
 	 * @param npcMessageModel
 	 * @throws NPCException
 	 */
-	private void sendPendingMessage(NPCMessageModel npcMessageModel) throws NPCException {
+	private void sendPendingMessage(NPCMessageModel npcMessageModel) throws NPCException, Exception {
 		String internalUserName = System.getenv("INTERNAL_USER_NAME");
 		String internalPassword = System.getenv("INTERNAL_PASSWORD");
 		NPCData npcData = null;
@@ -291,6 +319,7 @@ public class NPCProcessHandler {
 			throw new NPCException(ex, NPCException.JAXB_CREATE_OBJECT_ERROR_CODE, "Cannot Create JAXB Object");
 		}
 		String messageXML = getNPCMessageXML(npcData);
+
 		logger.debug("Creating Message XML has done successfully..");
 		String username = decrypt(internalUserName);
 		byte[] password = decrypt(internalPassword).getBytes();
@@ -351,40 +380,44 @@ public class NPCProcessHandler {
 	public void sendPendingMessages() {
 		if (!initializeNPCService())
 			return;
+
 		NPCMessageModel npcMessageModel = null;
-		PortDataModel portDataModel = null;
+
 		List<NPCMessageModel> unsentMessages = new ArrayList<>();
-			try {
-				unsentMessages = npcService.getUnsentMessages();
-				logger.debug("Retrieving unsent messges has done successfully..");
-				logger.debug("Number of unsent messsages = {} ", unsentMessages.size());
-			} catch (NPCException e1) {
-				logger.error(e1.getErrorStackTrace(), (Throwable) e1);
-			}
-			
+		try {
+			logger.debug("Start retrieving unsent messages");
+			unsentMessages = npcService.getUnsentMessages();
+			logger.debug("Retrieving unsent messges has been done Successfully...");
+			logger.debug("Number of unsent messsages = {} ", unsentMessages.size());
+		} catch (NPCException e1) {
+			logger.error(e1.getErrorStackTrace(), (Throwable) e1);
+		}
 
 		for (int i = 0; i < unsentMessages.size(); i++) {
 			try {
 				npcMessageModel = unsentMessages.get(i);
-				portDataModel = npcService.getPortDataModel(npcMessageModel);
+
 				PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
-				logger.info("Start sending NPC message... ");
+
+				logger.debug("Start sending NPC message...");
 				sendPendingMessage(npcMessageModel);
-				logger.debug("Sending NPC message with ID: {}  and Internal Port ID: {} has done successfully... ",
+				logger.debug("Sending NPC message with ID: {}  and Internal Port ID: {} has done successfully...",
 						npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
-				logger.info("Start updating Fields after sending message...");
+				logger.debug("Start updating Fields after sending message...");
 				npcService.updateFieldsAfterSending(npcMessageModel);
-				logger.info("Updating Fields after sending message has done successfully...");
+				logger.debug("Updating Fields after sending message has done successfully...");
 				npcService.updateNPCMessageCurrentAndNextDate(npcMessageModel);
-				logger.debug("Updating sent flag, returned meassge and message XML fields has done successfully...");
-				logger.info("Start Updating Port Data... ");
+
+				logger.debug("Start Updating Port Data... ");
 				npcService.updatePortData(npcMessageModel, "SUB_ACTION_SENT");
+
 				logger.debug(
-						"Updating Port Data has done successfully with Internal Port ID: {} and updated Port Status with Status: \" {} \"",
-						portMessageModel.getInternalPortID(), portDataModel.getPortStatus());
-				logger.info(
-						"Updating Port Data has done successfully with Internal Port ID: {} and updated Port Status with Status: \" {} \" ",
-						portMessageModel.getInternalPortID(), portDataModel.getPortStatus());
+						"MessageID: {} | MessageCode: {} | PortID: {}  | Message TimeStamp: {} | Message Type: Sent | DonerID: {} | RecipientID: {} |",
+						portMessageModel.getPortMessageType().getMessageID(),
+						portMessageModel.getPortMessageType().getMessageCode(),
+						portMessageModel.getPortMessageType().getPortID(), new Date(),
+						portMessageModel.getPortMessageType().getDonorID(),
+						portMessageModel.getPortMessageType().getRecipientID());
 
 				npcService.processActivationStatus(npcMessageModel);
 				npcService.processDeactivationDone(npcMessageModel);
@@ -445,6 +478,7 @@ public class NPCProcessHandler {
 					return false;
 			}
 		while (numberOfRetries < connectionRetries && !connectionSucceeded);
+
 		return connectionSucceeded;
 	}
 
@@ -481,7 +515,7 @@ public class NPCProcessHandler {
 	 * file that contained Activated Numbers obtained from NTRA
 	 * 
 	 * @param syncMessageXML
-	 * @throws NPCException 
+	 * @throws NPCException
 	 */
 	public void saveActivatedNumbers(String syncMessageXML) throws NPCException {
 		FileInputStream inputStream = null;
@@ -514,13 +548,13 @@ public class NPCProcessHandler {
 
 		catch (NPCException ex3) {
 			logger.error(ex3.getMessage(), (Throwable) ex3);
-			throw new NPCException( ex3.getMessage()); 
+			throw new NPCException(ex3.getMessage());
 		} finally {
 			try {
 				if (npcService != null) {
 					npcService.releaseConnection();
 				}
-				
+
 			} catch (NPCException ex4) {
 				logger.error(ex4.getMessage(), (Throwable) ex4);
 			}
@@ -578,9 +612,9 @@ public class NPCProcessHandler {
 	 * @throws IOException
 	 * @throws Exception
 	 */
-	private static void encryptMode(String[] plainText) throws  Exception {
+	private static void encryptMode(String[] plainText) throws Exception {
 		NPCProcessHandler handler = getInstance();
-		String encypted = "" ;
+		String encypted = "";
 		for (int i = 1; i >= 1 && i < plainText.length; i++) {
 			encypted = handler.encrypt(plainText[i]);
 			logger.debug(plainText[i], " : {} ", encypted);
@@ -595,7 +629,7 @@ public class NPCProcessHandler {
 	 * @throws IOException
 	 * @throws Exception
 	 */
-	private static void syncMode(String syncMessageXML) throws  Exception {
+	private static void syncMode(String syncMessageXML) throws Exception {
 		NPCProcessHandler handler = getInstance();
 		handler.saveActivatedNumbers(syncMessageXML);
 	}
@@ -649,13 +683,13 @@ public class NPCProcessHandler {
 			if (args.length != 0) {
 				if (args[0].equals("enc")) {
 					encryptMode(args);
-				
+
 				} else if (args[0].equals("sync")) {
 					syncMode(args[1]);
-					
+
 				} else if (args[0].equals("test")) {
 					testMode(args[1], args[2]);
-					
+
 				}
 			} else {
 				ServerSocket serverSocket = null;
@@ -695,10 +729,10 @@ public class NPCProcessHandler {
 	 * @param xmlFileName
 	 * @throws Exception
 	 */
-	private static void testMode(String testParty, String xmlFileName) throws Exception  {
+	private static void testMode(String testParty, String xmlFileName) throws Exception {
 		try {
 			NPCProcessHandler handler = getInstance();
-			String messageDebug = ""; 
+			String messageDebug = "";
 			if (testParty != null && testParty.equalsIgnoreCase("ntra")) {
 				messageDebug = handler.sendMessage(handler.decrypt(npcProperties.getString("INTERNAL_USER_NAME")),
 						handler.decrypt(npcProperties.getString("INTERNAL_PASSWORD")).getBytes(),

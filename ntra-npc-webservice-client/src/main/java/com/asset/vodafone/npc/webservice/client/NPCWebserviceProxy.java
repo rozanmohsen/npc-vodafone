@@ -50,7 +50,7 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 		try {
 			sc = SSLContext.getInstance("SSL");
 			sc.init(null, trustAllCerts, new java.security.SecureRandom());
-			loggerObj.info("Verifying SSL certificate");
+		
 		} catch (Exception e) {
 			loggerObj.error(e.getMessage());
 		}
@@ -61,7 +61,9 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 				return true;
 			}
 		};
+	
 		HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+		
 	}
 
 	/**
@@ -80,8 +82,11 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 			return (ProcessNPCMsgResponse) ((JAXBElement<?>) getWebServiceTemplate().marshalSendAndReceive(processNPCMsg))
 					.getValue();
 			
-		}catch(WebServiceIOException e) {
-			throw new WebServiceIOException("Error In Sending npc Message");
+	}catch(WebServiceIOException e) {
+			//throw new WebServiceIOException(e.getMessage());
+			
+			
+			throw new WebServiceIOException("Error In Sending npc Message",e);
 			
 		}
 

@@ -4,8 +4,6 @@ import java.math.BigDecimal;
 
 public class SyncModel {
 
-	
-
 	public void setMsisdn(String msisdn) {
 		this.msisdn = msisdn;
 	}

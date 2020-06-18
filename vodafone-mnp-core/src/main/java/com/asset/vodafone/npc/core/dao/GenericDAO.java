@@ -17,9 +17,9 @@ import com.asset.vodafone.npc.core.utils.DBTypeConverter;
 
 public class GenericDAO {
 	static final Logger logger = LoggerFactory.getLogger(GenericDAO.class.getName());
+
 	private GenericDAO() {
 	}
-
 
 	/**
 	 * Method to get Next value of sequence of column in database table
@@ -118,8 +118,8 @@ public class GenericDAO {
 		insertFields.append("INSERT INTO ");
 		insertFields.append(tableName);
 		insertFields.append("(");
-	
-		StringBuilder insertValues=new StringBuilder();
+
+		StringBuilder insertValues = new StringBuilder();
 		insertValues.append(" VALUES(");
 		String fieldValue = "";
 		DatabaseMetaData metaData = conn.getMetaData();
@@ -129,31 +129,32 @@ public class GenericDAO {
 		while (rs.next()) {
 			columnName = rs.getString("COLUMN_NAME");
 			columnType = rs.getString("TYPE_NAME");
-			for (int i = 0; i < insertColNames.length; i++) 
+			for (int i = 0; i < insertColNames.length; i++)
 				if (columnName.equalsIgnoreCase(String.valueOf(insertColNames[i]))) {
 					fieldValue = String.valueOf(fields.get(insertColNames[i]));
-					insertFields.append(columnName);  
+					insertFields.append(columnName);
 					insertFields.append(",");
-					
+
 					if (columnType.equalsIgnoreCase("Number")) {
-						insertValues.append( "TO_NUMBER(" );
-					insertValues.append( fieldValue);
-					insertValues.append( "),");
-					
-						}else if (columnType.equalsIgnoreCase("Varchar2")) {
-						insertValues.append("TO_CHAR('") ;
+						insertValues.append("TO_NUMBER(");
+						insertValues.append(fieldValue);
+						insertValues.append("),");
+
+					} else if (columnType.equalsIgnoreCase("Varchar2")) {
+						insertValues.append("TO_CHAR('");
 						insertValues.append(fieldValue);
 						insertValues.append("'),");
-					}else if (columnType.equalsIgnoreCase("Date")
+					} else if (columnType.equalsIgnoreCase("Date")
 							|| columnType.toUpperCase().startsWith("TimeStamp".toUpperCase())) {
-						insertValues.append( "TO_DATE('") ;
-					insertValues.append(fieldValue );
-					insertValues.append("','") ;
-					insertValues.append("DD/MM/YYYY HH24:MI:SS");
-					insertValues.append( "'),");
-						}
+						insertValues.append("TO_DATE('");
+						insertValues.append(fieldValue);
+						insertValues.append("','");
+						insertValues.append("DD/MM/YYYY HH24:MI:SS");
+						insertValues.append("'),");
+					}
 
-				}}
+				}
+		}
 		insertStmt = insertFields.substring(0, insertFields.length() - 1) + ")"
 				+ insertValues.substring(0, insertValues.length() - 1) + ")";
 		try {
@@ -164,9 +165,9 @@ public class GenericDAO {
 			logger.error(message, ex);
 			throw new SQLException(message + "[" + insertStmt + "]");
 		} finally {
-			
-				rs.close();
-			
+
+			rs.close();
+
 			if (stmt != null) {
 				stmt.close();
 			}
@@ -292,7 +293,7 @@ public class GenericDAO {
 			return rs.getLong("INTERNAL_PORT_ID");
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
-		logger.error(message, ex);
+			logger.error(message, ex);
 			throw new SQLException(message + "[" + selectStmt + "]");
 		} finally {
 			if (rs != null) {

@@ -1,2 +1,0 @@
-13-05-2020 15:37:40.780 DEBUG [main]  c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
-13-05-2020 15:38:03.532 DEBUG [http-nio-9090-exec-1]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing a new Database Connection..

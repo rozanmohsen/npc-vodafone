@@ -1,9 +1,12 @@
 package com.asset.vodafone.npc.core.handler;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringReader;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -19,6 +22,10 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +33,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import com.asset.vodafone.npc.core.exception.NPCException;
 import com.asset.vodafone.npc.core.models.BulkSyncMessageModel;
@@ -56,10 +64,10 @@ public class NPCWSHandler {
 	private String returnedMessage = "";
 	private NPCMessageModel npcMessageModel = null;
 	private PortMessageModel portMessageModel = null;
-	private static final String NPCJAXB= "NPC_JAXB";
-	private static final String NPCDATABASE ="NPC_DATABASE";
+	private static final String NPCJAXB = "NPC_JAXB";
+	private static final String NPCDATABASE = "NPC_DATABASE";
 
-	private NPCWSHandler() throws  NPCException {
+	private NPCWSHandler() throws NPCException {
 		try {
 			npcProperties = loadNPCPropertiesFile("npc_web_service.properties");
 
@@ -146,7 +154,7 @@ public class NPCWSHandler {
 	public String processNPCMessage(String username, byte[] password, String message) {
 		try {
 			returnedMessage = "";
-			logger.info("Start validating the web service credentail for user: {} " , username);
+			logger.debug("Start validating the web service credentail for user: {} ", username);
 			returnedMessage = checkWSCredentials(username, password);
 
 			if (!returnedMessage.equals(validCredentials)) {
@@ -155,15 +163,15 @@ public class NPCWSHandler {
 				return returnedMessage;
 
 			}
-			logger.info("Validating service credential has been done successully for user : {}" , username);
-			logger.debug("Received NPC Message Request for user : {}  and the Message is : {}" ,username, message);
+			logger.debug("Validating service credential has been done successully for user : {}", username);
+			logger.info("Received NPC Message Request for user : {}  and the Message is : {}", username, message);
 			if (intializeDataBaseConnection().equals(connectionFailureMessage)) {
 				returnedMessage = connectionFailureMessage;
 				logger.error(returnedMessage);
 				return returnedMessage;
 
 			}
-			logger.info("Start Parsing Received Message from user : {}" , username);
+			logger.debug("Start Parsing Received Message from user : {}", username);
 			returnedMessage = parsingAndUpdatingMessageTimeFrame(message);
 			if (returnedMessage.equals(databaseFailureMessage)
 
@@ -172,21 +180,25 @@ public class NPCWSHandler {
 				logger.error(returnedMessage);
 				return returnedMessage;
 			}
-			logger.info("Start Updating Port Data and Process Activation and Deactivation ");
+
 			returnedMessage = callUpdatePortDataAndprocessActivationAndDeactivation();
-			logger.info(
-					"The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS  has completed Successfully");
+
 			if (!returnedMessage.equals(""))
 				return returnedMessage;
-			logger.info("Starting Save Sync Messages Process");
+
 			returnedMessage = saveSyncMessage();
 			if (!returnedMessage.equals(""))
 				return returnedMessage;
-			logger.info("Process of Saving Sync Messages has done Successfully");
+
 			String successMessage = npcProperties.getString("RETURNED_MESSAGE_SUCCESS").trim();
-			logger.debug("Returned Message for the request with NPC Message ID {} and Internal Port ID {} = \" {} \" "
-					,npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID(),successMessage );
-					
+			if (npcMessageModel instanceof PortMessageModel) {
+				logger.debug(
+						"Returned Message for the request with NPC Message ID {} and Internal Port ID {} = \" {} \" ",
+						npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID(), successMessage);
+			} else {
+				logger.debug("Returned Message for the Bulk Sync Message  with NPC Message ID {}  = \" {} \" ",
+						npcMessageModel.getNPCMessageID(), successMessage);
+			}
 			return successMessage;
 		} catch (Exception ex) {
 			NPCException npcException = new NPCException(ex, NPCException.GENERAL_ERROR_CODE, "Unknown Error");
@@ -223,7 +235,7 @@ public class NPCWSHandler {
 			return MessageFormat.format(npcProperties.getString("RETURNED_MESSAGE_INVALID_USER_NAME").trim(), username);
 
 		if (!decrypt(npcPassword.trim()).equals(Base64.getEncoder().encodeToString((password)))) {
-		
+
 			return npcProperties.getString("RETURNED_MESSAGE_INVALID_PASSWORD").trim();
 		}
 		return validCredentials;
@@ -233,7 +245,7 @@ public class NPCWSHandler {
 		npcService = null;
 		try {
 			npcService = NPCService.initiateDBConnection(npcProperties);
-		
+
 		}
 
 		catch (NPCException e) {
@@ -249,7 +261,7 @@ public class NPCWSHandler {
 
 	}
 
-	public void logRequest(String message)  {
+	public void logRequest(String message) {
 		final String xmlStr = message;
 
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -269,60 +281,101 @@ public class NPCWSHandler {
 			String mSISDN = "";
 			String donorID = "";
 			String recipientID = "";
+			String syncID = "";
+			String startDate = "";
+			String endDate = "";
+			String comments1 = "";
+			String comments2 = "";
 
-			NodeList messageNodes = doc.getElementsByTagName("PortMessage");
+			NodeList portMessageNodes = doc.getElementsByTagName("PortMessage");
+			NodeList bulkSyncMessageNodes = doc.getElementsByTagName("BulkSyncMessage");
 			NodeList numbersToPort = doc.getElementsByTagName("NumbersToPort");
 
 			Element elementNumbersToport = (Element) numbersToPort.item(0);
-			Element element = (Element) messageNodes.item(0);
+			Element portMEssageElement = (Element) portMessageNodes.item(0);
+			Element bulkSyncMessageElement = (Element) bulkSyncMessageNodes.item(0);
 
-			if (messageNodes.getLength() > 0) {
-				if (element.getElementsByTagName("MessageID").getLength() > 0)
-					messageID = element.getElementsByTagName("MessageID").item(0).getTextContent();
+			if (portMessageNodes.getLength() > 0) {
+				if (portMEssageElement.getElementsByTagName("MessageID").getLength() > 0)
+					messageID = portMEssageElement.getElementsByTagName("MessageID").item(0).getTextContent();
 
-				if (element.getElementsByTagName("MessageCode").getLength() > 0)
-					messageCode = element.getElementsByTagName("MessageCode").item(0).getTextContent();
+				if (portMEssageElement.getElementsByTagName("MessageCode").getLength() > 0)
+					messageCode = portMEssageElement.getElementsByTagName("MessageCode").item(0).getTextContent();
 
-				if (element.getElementsByTagName("PortID").getLength() > 0)
-					portID = element.getElementsByTagName("PortID").item(0).getTextContent();
-				if (element.getElementsByTagName("DonorID").getLength() > 0)
-					donorID = element.getElementsByTagName("DonorID").item(0).getTextContent();
-				if (element.getElementsByTagName("RecipientID").getLength() > 0)
-					recipientID = element.getElementsByTagName("RecipientID").item(0).getTextContent();
+				if (portMEssageElement.getElementsByTagName("PortID").getLength() > 0)
+					portID = portMEssageElement.getElementsByTagName("PortID").item(0).getTextContent();
 
+				if (portMEssageElement.getElementsByTagName("DonorID").getLength() > 0)
+					donorID = portMEssageElement.getElementsByTagName("DonorID").item(0).getTextContent();
+
+				if (portMEssageElement.getElementsByTagName("RecipientID").getLength() > 0)
+					recipientID = portMEssageElement.getElementsByTagName("RecipientID").item(0).getTextContent();
+
+				if (numbersToPort.getLength() > 0
+						&& elementNumbersToport.getElementsByTagName("NumberFrom").getLength() > 0) {
+
+					mSISDN = elementNumbersToport.getElementsByTagName("NumberFrom").item(0).getTextContent();
+				}
+				logger.debug(
+						"MessageID: {} | MessageCode: {} | PortID: {} | MSISDN: {} | Message TimeStamp: {} | Message Type: Received | DonerID: {} | RecipientID: {} ",
+						messageID, messageCode, portID, mSISDN, new Date(), donorID, recipientID);
 			}
-			if (numbersToPort.getLength() > 0
-					&& elementNumbersToport.getElementsByTagName("NumberFrom").getLength() > 0) {
 
-				mSISDN = elementNumbersToport.getElementsByTagName("NumberFrom").item(0).getTextContent();
+			if (bulkSyncMessageNodes.getLength() > 0) {
+				if (bulkSyncMessageElement.getElementsByTagName("MessageID").getLength() > 0)
+					messageID = bulkSyncMessageElement.getElementsByTagName("MessageID").item(0).getTextContent();
+
+				if (bulkSyncMessageElement.getElementsByTagName("MessageCode").getLength() > 0)
+					messageCode = bulkSyncMessageElement.getElementsByTagName("MessageCode").item(0).getTextContent();
+
+				if (bulkSyncMessageElement.getElementsByTagName("SyncID").getLength() > 0)
+					syncID = bulkSyncMessageElement.getElementsByTagName("SyncID").item(0).getTextContent();
+
+				if (bulkSyncMessageElement.getElementsByTagName("StartDate").getLength() > 0)
+					startDate = bulkSyncMessageElement.getElementsByTagName("StartDate").item(0).getTextContent();
+
+				if (bulkSyncMessageElement.getElementsByTagName("EndDate").getLength() > 0)
+					endDate = bulkSyncMessageElement.getElementsByTagName("EndDate").item(0).getTextContent();
+
+				if (bulkSyncMessageElement.getElementsByTagName("Comments1").getLength() > 0)
+					comments1 = bulkSyncMessageElement.getElementsByTagName("Comments1").item(0).getTextContent();
+
+				if (bulkSyncMessageElement.getElementsByTagName("Comments2").getLength() > 0)
+					comments2 = bulkSyncMessageElement.getElementsByTagName("Comments2").item(0).getTextContent();
+
+				logger.debug(
+						"MessageID: {} | MessageCode: {} | SyncID: {} | StartDate: {} | EndDate: {} | Message TimeStamp: {} | Message Type: Received | Comments1: {} | Comments2: {} ",
+						messageID, messageCode, syncID, startDate, endDate, new Date(), comments1, comments2);
 			}
-
-			logger.debug("MessageID: {} | MessageCode: {} | PortID: {} | MSISDN: {} | Message TimeStamp: {} | Message Type: Received | DonerID: {} | RecipientID: {} |",
-					messageID,messageCode,portID,mSISDN,new Date(),donorID,recipientID);
-
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 		}
 
 	}
 
-	public String parsingAndUpdatingMessageTimeFrame(String message) throws NPCException {
+	public String parsingAndUpdatingMessageTimeFrame(String message) throws NPCException, SAXException, Exception {
 
 		try {
 			logRequest(message);
 			npcMessageModel = parseMessage(npcService, message);
-			portMessageModel = (PortMessageModel) npcMessageModel;
-		
+
 			if (npcMessageModel != null) {
-				logger.debug("Parsing message XML  has done successfully with NPC Message ID: {} ", npcMessageModel.getNPCMessageID());
+
+				logger.debug("Parsing message XML  has done successfully with NPC Message ID: {} ",
+						npcMessageModel.getNPCMessageID());
+
 				npcMessageModel.setSent(true);
 				npcMessageModel.setMessageXML(message);
 				npcService.insertNPCMessage(npcMessageModel);
-				
-				logger.debug("Inserting message into Database has done successfully with NPC Message ID: {}  and Internal Port ID: {}", npcMessageModel.getNPCMessageID(),portMessageModel.getInternalPortID());
+
+				if (npcMessageModel instanceof PortMessageModel) {
+					portMessageModel = (PortMessageModel) npcMessageModel;
+					logger.debug(
+							"Inserting message into Database has done successfully with NPC Message ID: {}  and Internal Port ID: {}",
+							npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
+				}
 
 				npcService.updateNPCMessageCurrentAndNextDate(npcMessageModel);
-				logger.debug("Updating time frames for NPC Message ID: {}  and Internal Port ID: {} has done successfully" , npcMessageModel.getNPCMessageID(),portMessageModel.getInternalPortID());
 
 			} else {
 				throw new NPCException(NPCException.JAXB_CREATE_OBJECT_ERROR_CODE);
@@ -346,18 +399,10 @@ public class NPCWSHandler {
 
 	public String callUpdatePortDataAndprocessActivationAndDeactivation() {
 		try {
-			logger.debug("Start Update port data table ");
+
 			npcService.updatePortData(npcMessageModel, "SUB_ACTION_RECEIVED");
-			PortDataModel portDataModel=npcService.getPortDataModel(portMessageModel);
-
-			logger.info("Updating port data for NPC Message ID: {}  and Internal Port ID: {} has done successfully and the port Status updated with Status \" {} \"",
-					 npcMessageModel.getNPCMessageID(),portMessageModel.getInternalPortID(), portDataModel.getPortStatus() );
-
 			npcService.processActivationStatus(npcMessageModel);
 			npcService.processDeactivationDone(npcMessageModel);
-			logger.info(
-					"The process of inserting into PORT_ACTIVATION_STATUS and PORT_DISCONNECT_STATUS in case of message code is NP_ACTIVATED_STATUS_MESSAGE or NP_DEACT_STATUS for NPC Message ID: {}  and Internal Port ID: {}  has completed..."
-							 ,npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
 
 		} catch (NPCException ex2) {
 			logger.error(ex2.getMessage(), ex2);
@@ -377,11 +422,9 @@ public class NPCWSHandler {
 			portDataModel = npcService.getPortDataModel(npcMessageModel);
 
 			npcService.saveSyncMessageByNPCMessage(npcMessageModel, portDataModel);
-			logger.debug("The process of inserting or removing from SYNC table for NPC Message ID: {}  and Internal Port ID: {}   has completed..."
-					,npcMessageModel.getNPCMessageID() ,portDataModel.getInternalPortID());
+
 			npcService.saveSyncHistoryMessageByNPCMessage(npcMessageModel, portDataModel);
-			logger.debug("The process of inserting into SYNC History table for NPC Message ID: {} and Internal Port ID: {}   has completed..."
-					, npcMessageModel.getNPCMessageID() ,portDataModel.getInternalPortID());
+
 		} catch (NPCException ex3) {
 			logger.error(ex3.getMessage(), ex3);
 			if (ex3.getCode().startsWith(NPCJAXB))
@@ -401,18 +444,40 @@ public class NPCWSHandler {
 	 * @param message
 	 * @return
 	 * @throws NPCException
+	 * @throws SAXException
+	 * 
 	 */
-	private NPCMessageModel parseMessage(NPCService npcService, String message) throws NPCException {
+	private NPCMessageModel parseMessage(NPCService npcService, String message) throws Exception {
 		ByteArrayInputStream inputStream = null;
 		try {
+
 			JAXBContext jaxbContext = JAXBContext.newInstance(
 					"com.asset.vodafone.npc.webservice.xsd.portmessage:com.asset.vodafone.npc.webservice.xsd.bulksyncmessage");
+
 			Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
+			ClassLoader classLoader = getClass().getClassLoader();
+
+			URL portmessageresource = classLoader.getResource("xsd/portmessage.xsd");
+			URL bulksyncmessageresource = classLoader.getResource("xsd/bulksyncmessage.xsd");
+			if (portmessageresource == null || bulksyncmessageresource == null) {
+				throw new FileNotFoundException("XSD Schema file not found!");
+			}
+
+			File portmessage = new File(portmessageresource.getFile());
+			File bulkSyncMessage = new File(bulksyncmessageresource.getFile());
+
+			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+
+			Schema xsdSchema = schemaFactory
+					.newSchema(new Source[] { new StreamSource(portmessage), new StreamSource(bulkSyncMessage) });
+			unmarshaller.setSchema(xsdSchema);
 			inputStream = new ByteArrayInputStream(message.getBytes(StandardCharsets.UTF_8));
-			
+
 			NPCData npcData = (NPCData) unmarshaller.unmarshal(inputStream);
-			
+
 			return createNPCMessage(npcService, npcData);
 
 		} catch (JAXBException ex) {
@@ -423,7 +488,9 @@ public class NPCWSHandler {
 				throw new NPCException(e, NPCException.GENERAL_ERROR_CODE, "Unknown Error");
 			}
 			throw new NPCException(ex, NPCException.JAXB_CREATE_OBJECT_ERROR_CODE, "Cannot Create JAXB Object");
+
 		}
+
 	}
 
 	/**
@@ -450,9 +517,12 @@ public class NPCWSHandler {
 					portMessageModelInstance.setPort(true);
 					SubscriberDataType subscriberDataType = portMessageType.getSubscriberData();
 					SubscriberDataModel subscriberDataModel = null;
+
 					if (subscriberDataType != null) {
+
 						subscriberDataModel = SubscriberDataModel.createSubscriberData();
 						subscriberDataModel.setNPCMessageID(portMessageModelInstance.getNPCMessageID());
+
 						subscriberDataModel.setSubscriberDataType(subscriberDataType);
 					}
 					ArrayList<NumbersToPortModel> numbersToPortList = new ArrayList<>();

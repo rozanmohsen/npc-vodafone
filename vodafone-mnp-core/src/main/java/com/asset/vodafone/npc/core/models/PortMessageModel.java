@@ -116,7 +116,7 @@ public class PortMessageModel extends NPCMessageModel {
 		if (fieldName.equals("TRANSFERFEE")) {
 			try {
 				portMessageModel.getPortMessageType().setTransferFee(new BigDecimal(String.valueOf(fieldValue)));
-			
+
 			} catch (NumberFormatException ex) {
 				portMessageModel.getPortMessageType().setTransferFee(null);
 			}
@@ -125,7 +125,7 @@ public class PortMessageModel extends NPCMessageModel {
 		if (fieldName.equals("AVERAGEINVOICEFEE")) {
 			try {
 				portMessageModel.getPortMessageType().setAverageInvoiceFee(new BigDecimal(String.valueOf(fieldValue)));
-				
+
 			} catch (NumberFormatException ex) {
 				portMessageModel.getPortMessageType().setAverageInvoiceFee(null);
 			}
@@ -146,7 +146,7 @@ public class PortMessageModel extends NPCMessageModel {
 		if (fieldName.equals("PAYMENTDUE"))
 			try {
 				portMessageModel.getPortMessageType().setPaymentDue(new BigDecimal(String.valueOf(fieldValue)));
-				
+
 			} catch (NumberFormatException ex) {
 				portMessageModel.getPortMessageType().setPaymentDue(null);
 			}

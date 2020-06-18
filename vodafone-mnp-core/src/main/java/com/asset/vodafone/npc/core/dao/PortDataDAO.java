@@ -14,7 +14,7 @@ import com.asset.vodafone.npc.core.utils.DBTypeConverter;
 public class PortDataDAO {
 
 	static final Logger logger = LoggerFactory.getLogger(PortDataDAO.class.getName());
-	
+
 	public static void insertPortData(Connection conn, PortDataModel portDataModel) throws SQLException {
 		Statement stmt = null;
 		String insertStmt = "";

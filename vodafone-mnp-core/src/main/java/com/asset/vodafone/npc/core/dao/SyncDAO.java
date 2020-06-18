@@ -13,6 +13,7 @@ import com.asset.vodafone.npc.core.utils.DBTypeConverter;
 
 public class SyncDAO {
 	private static final Logger logger = LoggerFactory.getLogger(SyncDAO.class.getName());
+
 	public static void insertSync(Connection conn, SyncModel syncModel) throws SQLException {
 		Statement stmt = null;
 		String insertStmt = "";

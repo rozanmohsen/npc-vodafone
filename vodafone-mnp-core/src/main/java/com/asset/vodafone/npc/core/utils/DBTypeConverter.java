@@ -72,10 +72,9 @@ public class DBTypeConverter {
 	public static String inStatement(String commaSeparatedText) {
 		String[] values = commaSeparatedText.split("\\s*,\\s*");
 		String result = "(";
-		StringBuilder sb=new StringBuilder();
 		for (int i = 0; i < values.length; i++)
-			sb.append(result+ toSQLVARCHAR2(values[i].trim()) + ",");
-		result=sb.toString();
+			result = result + toSQLVARCHAR2(values[i].trim()) + ",";
+
 		return result.substring(0, result.length() - 1) + ")";
 	}
 }

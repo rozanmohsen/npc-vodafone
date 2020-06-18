@@ -1,0 +1,4 @@
+com\asset\vodafone\npc\webservice\NPCWebServiceApplication.class
+com\asset\vodafone\npc\core\handler\NPCWSHandler.class
+com\asset\vodafone\npc\webservice\config\NPCWebServiceConfig.class
+com\asset\vodafone\npc\webservice\endpoint\NPCWebServiceEndpoint.class

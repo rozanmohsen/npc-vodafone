@@ -1,6 +1,5 @@
 package com.asset.vodafone.npc.core.dao;
 
-
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -10,25 +9,26 @@ import java.sql.Statement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import com.asset.vodafone.npc.core.models.SubscriberDataModel;
 import com.asset.vodafone.npc.core.utils.DBTypeConverter;
 import com.asset.vodafone.npc.webservice.xsd.portmessage.SubscriberDataType;
 
 public class SubscriberDataDAO {
 	private static final Logger logger = LoggerFactory.getLogger(SubscriberDataDAO.class.getName());
+
 	private SubscriberDataDAO() {
 
 	}
 
 	public static void insertSubscriberData(Connection conn, SubscriberDataModel subscriberDataModel)
 			throws SQLException {
-		logger.debug("Start inserting subscirber data into SUBSCRIBER_DATA table");
+
 		Statement stmt = null;
 		String insertStmt = "";
 		SubscriberDataType subscriberDataType = subscriberDataModel.getSubscriberDataType();
 		String corporationName = subscriberDataType.getCorporationName();
 		String name = subscriberDataType.getName();
+
 		if (corporationName != null && !"".equals(corporationName.trim()))
 
 			subscriberDataType.setCorporationName(
@@ -41,6 +41,7 @@ public class SubscriberDataDAO {
 			subscriberDataType.setName(new String(name.getBytes(StandardCharsets.UTF_8), StandardCharsets.UTF_8));
 
 		try {
+
 			stmt = conn.createStatement();
 			insertStmt = "INSERT INTO SUBSCRIBER_DATA(NPC_MESSAGE_ID, COMPANYFLAG, CORPORATIONNAME, NAME, ACCOUNTNUM, SIMCARDNUM, NIC, CNIC, PASSPORTNUM, OTHERID, DATEOFBIRTH, CONTACTPHONE, FAX, CITY, STREET, LOCALITY, POSTCODE, GROUP_ID, AUTHORIZED_PERSON_NAME, CORPORATION_ADDRESS, COMMERCIAL_REGISTRATION_NUM, TAX_REGISTRATION_NUM)"
 					+ "VALUES (" + DBTypeConverter.toSQLNumber(subscriberDataModel.getNPCMessageID()) + ",";
@@ -70,7 +71,7 @@ public class SubscriberDataDAO {
 					+ DBTypeConverter.toSQLVARCHAR2(subscriberDataType.getCommercialRegistrationNum()) + ","
 					+ DBTypeConverter.toSQLVARCHAR2(subscriberDataType.getTaxRegistrationNum()) + ")";
 			stmt.execute(insertStmt);
-			logger.debug("Inserting subscriber data has been done successfully in table ");
+
 		} catch (SQLException ex) {
 			String message = ex.getMessage();
 			logger.error(message, ex);

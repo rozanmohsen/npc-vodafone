@@ -1,0 +1,82 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">XML Schema for NPC Bulk sync output</xsd:documentation>
+	</xsd:annotation>
+	<xsd:simpleType name="Action">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="Port|PortBack|DisConn"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Comments">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value='1000'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IDNumber">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value='19' fixed='true'/>
+			<xsd:pattern value="[A-Za-z0-9]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="NewRoute">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value='1'/>
+			<xsd:maxLength value='20'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="NPDateFormat">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value='14' fixed='true'/>
+			<xsd:pattern value="[0-9]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ParticipantId">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value='1'/>
+			<xsd:maxLength value='8'/>
+			<xsd:pattern value="[A-Za-z0-9]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TelephoneNumber">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value='1'/>
+			<xsd:maxLength value='15'/>
+			<xsd:pattern value="[0-9]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MessageCode">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value='1'/>
+			<xsd:maxLength value='80'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ActivatedNumberType">
+		<xsd:all>
+			<xsd:element name="IDNumber" type="IDNumber" minOccurs="1"/>
+			<xsd:element name="NumberFrom" type="TelephoneNumber" minOccurs="1"/>
+			<xsd:element name="NumberTo" type="TelephoneNumber" minOccurs="1"/>
+			<xsd:element name="DonorId" type="ParticipantId" minOccurs="0"/>
+			<xsd:element name="RecipientId" type="ParticipantId" minOccurs="1"/>
+			<xsd:element name="NewRoute" type="NewRoute" minOccurs="0"/>
+			<xsd:element name="Action" type="Action" minOccurs="1"/>
+		</xsd:all>
+	</xsd:complexType>
+	<xsd:complexType name="ActivatedNumbersType">
+		<xsd:choice maxOccurs="5000" minOccurs="0">
+			<xsd:element name="ActivatedNumber" type="ActivatedNumberType" minOccurs="1"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:element name="NPCBulkSyncData">
+		<xsd:complexType>
+			<xsd:all>
+				<xsd:element name="MessageCode" type="MessageCode" minOccurs="1" />
+				<xsd:element name="IDNumber" type="IDNumber" minOccurs="1"/>
+				<xsd:element name="NumberOfMessages" type="xsd:integer" minOccurs="1"/>
+				<xsd:element name="TimeStampOfLastBroadCast" type="NPDateFormat" minOccurs="1"/>
+				<xsd:element name="Comments1" type="Comments" minOccurs="0"/>
+				<xsd:element name="Comments2" type="Comments" minOccurs="0"/>
+				<xsd:element name="ActivatedNumbers" type ="ActivatedNumbersType" minOccurs="0" />
+			</xsd:all>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

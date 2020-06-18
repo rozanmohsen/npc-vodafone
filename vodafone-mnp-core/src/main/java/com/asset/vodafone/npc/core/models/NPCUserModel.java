@@ -2,8 +2,6 @@ package com.asset.vodafone.npc.core.models;
 
 public class NPCUserModel {
 
-	
-
 	public void setUsername(String username) {
 		this.username = username;
 	}

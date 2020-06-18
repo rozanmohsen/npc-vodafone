@@ -2,8 +2,6 @@ package com.asset.vodafone.npc.core.models;
 
 public class FailedMessagesModel {
 
-
-
 	public void setNPCMessageID(long npcMessageID) {
 		this.npcMessageID = npcMessageID;
 	}

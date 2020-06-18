@@ -55,7 +55,7 @@ public class SyncHistoryDAO extends SyncDAO {
 			for (seqNumber = 0L; rs.next(); seqNumber = rs.getLong("SEQ_NUM"))
 				;
 			return seqNumber;
-			 
+
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
 			logger.error(message, ex);

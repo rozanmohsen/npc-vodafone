@@ -59,8 +59,7 @@ public class NPCService {
 	private String subAction;
 	private String processCode;
 	private String mnpSchemaName;
-	
-	
+
 	/**
 	 * constructor of NPCService class
 	 */
@@ -73,7 +72,7 @@ public class NPCService {
 		initializeMessageCodesTimeFrames();
 		initializeTimeFramesDependencies();
 		initializePortingActions();
-		mnpSchemaName=System.getenv("MNP_SCHEMA_NAME");
+		mnpSchemaName = System.getenv("MNP_SCHEMA_NAME");
 	}
 
 	public static String getRunnerFetchedRowNumber() {
@@ -90,20 +89,21 @@ public class NPCService {
 	 */
 	public static NPCService initiateDBConnection(ResourceBundle npcProperties) throws NPCException {
 		NPCService.npcProperties = npcProperties;
-	
+
 		try {
 
 			conn = getDBConnection();
+
 		} catch (ClassNotFoundException ex) {
 			throw new NPCException(ex, NPCException.DATABASE_CONNECTION_DRIVER_ERROR_CODE,
-					String.format("Invalid or Wrong JDBC Driver %s",  ex.getMessage()));
+					String.format("Invalid or Wrong JDBC Driver %s", ex.getMessage()));
 
 		} catch (SQLException ex) {
-			logger.error("Cannot Establish Database Connection",ex.getMessage());
-			throw new NPCException(ex, NPCException.DATABASE_CONNECTION_ESTABLISHING_ERROR_CODE,ex.getMessage());
-		}catch(Exception e) {
+			logger.error("Cannot Establish Database Connection", ex.getMessage());
+			throw new NPCException(ex, NPCException.DATABASE_CONNECTION_ESTABLISHING_ERROR_CODE, ex.getMessage());
+		} catch (Exception e) {
 			throw new NPCException(e, NPCException.DATABASE_CONNECTION_ESTABLISHING_ERROR_CODE,
-					String.format("Cannot Establish Database Connection %s ",e.getMessage()));
+					String.format("Cannot Establish Database Connection %s ", e.getMessage()));
 		}
 		return new NPCService();
 	}
@@ -128,10 +128,12 @@ public class NPCService {
 
 		if (conn == null || conn.isClosed()) {
 
-			logger.debug("Initializing Database Connection..");
+			logger.debug("Start Initializing Database Connection..");
 			Class.forName(String.valueOf(npcProperties.getString("DB_DRIVER")));
 			conn = DriverManager.getConnection(dbURL, String.valueOf(dbUserName), String.valueOf(dbPassword));
+			logger.debug("Initializing Database Connection has been done Successfully...");
 		}
+
 		return conn;
 	}
 
@@ -149,37 +151,60 @@ public class NPCService {
 			npcMessageModel.setCreatedDate(currentDate);
 			npcMessageModel.setTransactionDate(currentDate);
 		} catch (SQLException ex) {
-			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE, String.format("Error in Select statement %s", ex));
+			
+			logger.error("Error in Insert statement", ex.getMessage());
+			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE, "Error in Select statement  ");
 		}
 		try {
-			logger.debug("Start inserting NPC message data");
+			logger.debug("Start inserting into NPC_MESSAGE table with NPC Message ID {}",
+					npcMessageModel.getNPCMessageID());
 			NPCMessageDAO.insertNPCMessage(conn, npcMessageModel);
-			logger.debug("NPC message has been insterted in NPC_message successfully");
+			logger.debug("NPC message has been insterted into NPC_MESSAGE table successfully");
 			if (npcMessageModel instanceof PortMessageModel) {
 				PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
 				long internalPortID = GenericDAO.getInternalPortIDByPortIDOrMSISDN(conn, portMessageModel);
 				if (internalPortID == -1L)
 					internalPortID = GenericDAO.getNextValueOfSequence(conn, "INTERNAL_PORT_ID_SEQ ");
 				portMessageModel.setInternalPortID(String.valueOf(internalPortID));
-				logger.debug("Start inserting port message data");
+				logger.debug("Start inserting into PORT_MESSAGE table with NPC Message ID {}",
+						npcMessageModel.getNPCMessageID());
 				PortMessageDAO.insertPortMessage(conn, portMessageModel);
-				if (portMessageModel.getSubscriberDataModel() != null)
+				logger.debug("NPC message has been insterted into PORT_MESSAGE table successfully");
+				if (portMessageModel.getSubscriberDataModel() != null) {
+					logger.debug("Start inserting into SUBSCRIBER_DATA table with NPC Message ID {}",
+							npcMessageModel.getNPCMessageID());
 					SubscriberDataDAO.insertSubscriberData(conn, portMessageModel.getSubscriberDataModel());
-			
+					logger.debug("Subscriber data has been inserted into SUBSCRIBER_DATA table successfully  ");
+				}
 				ArrayList<NumbersToPortModel> numbersToPortList = (ArrayList<NumbersToPortModel>) portMessageModel
 						.getNumbersToPortList();
-				logger.debug("Start inserting number data into NUMBERSTOPORT table");
-				for (int i = 0; i < numbersToPortList.size(); i++) 
+				logger.debug("Start inserting number data into NUMBERSTOPORT table with NPC Message ID {}",
+						npcMessageModel.getNPCMessageID());
+				for (int i = 0; i < numbersToPortList.size(); i++)
 					NumbersToPortDAO.insertNumberData(conn, numbersToPortList.get(i));
-					
-				logger.debug("Inserting numbers data into NUMBERSTOPORT table has been done Successfully");
+
+				logger.debug("Number data has been inserted into NUMBERSTOPORT table  successfully");
 				return;
 			}
 			if (npcMessageModel instanceof BulkSyncMessageModel) {
 				BulkSyncMessageModel bulkSyncMessageModel = (BulkSyncMessageModel) npcMessageModel;
+				logger.debug("Start inserting into BULK_SYNC_MESSAGE table with NPC Message ID {}",
+						npcMessageModel.getNPCMessageID());
 				BulkSyncMessageDAO.insertBulkSyncMessage(conn, bulkSyncMessageModel);
-				
+				logger.debug(
+						"Bulk Sync Message has been inserted into BULK_SYNC_MESSAGE table successfully with NPC Message ID: {} | MEssage Code: {} | MEssage ID: {} | SyncID: {} | Start Date: {} | End Date: {} | Comments1: {} | Comments2: {}  ",
+						bulkSyncMessageModel.getNPCMessageID(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getMessageCode(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getMessageID(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getSyncID(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getStartDate(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getEndDate(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getComments1(),
+						bulkSyncMessageModel.getBulkSyncMessageType().getComments2());
 			}
+				
+				
+			
 		} catch (SQLException ex) {
 			logger.error("Error in Insert statement", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE, "Error in Insert statement ");
@@ -208,10 +233,10 @@ public class NPCService {
 			failedMessagesModel.setNPCMessageID(npcMessageID);
 			failedMessagesModel.setReason(exception.getErrorStackTrace());
 			FailedMessagesDAO.insertFailedMessage(conn, failedMessagesModel);
-		
+
 		} catch (SQLException ex) {
 			logger.error("Error in Insert statement ", ex.getMessage());
-			throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE,"Error in Insert statement ");
+			throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE, "Error in Insert statement ");
 		}
 	}
 
@@ -228,7 +253,7 @@ public class NPCService {
 			return NPCMessageDAO.getNPCMessage(conn, npcMessageModel, requiredMessageCodes, optionalMessageCodes);
 		} catch (SQLException ex) {
 			logger.error("Error in Select statement ", ex.getMessage());
-			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE,"Error in Select statement");
+			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE, "Error in Select statement");
 		}
 	}
 
@@ -243,7 +268,11 @@ public class NPCService {
 		try {
 			npcMessageModel.setTransactionDate(GenericDAO.getCurrentDateTime(conn, "DD/MM/YYYY HH24:MI:SS"));
 			NPCMessageDAO.updateFieldsAfterSending(conn, npcMessageModel);
-		
+			logger.debug(
+					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Returned Message = \" {} \" | Message Xml = \" {} \" | Machine IP address = \" {} \" ",
+					npcMessageModel.isSent() ? 1 : 0, npcMessageModel.getTransactionDate(),
+					npcMessageModel.getReturnedMessage(), npcMessageModel.getMessageXML(),
+					npcMessageModel.getPickedBy());
 		} catch (SQLException ex) {
 			logger.error("Error in Update statement ", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE, "Error in Update statement ");
@@ -280,7 +309,7 @@ public class NPCService {
 			NPCMessageDAO.updateReturnedMessageField(conn, npcMessageModel);
 		} catch (SQLException ex) {
 			logger.error("Error in Update statement ", ex.getMessage());
-			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE,"Error in Update statement");
+			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE, "Error in Update statement");
 		}
 	}
 
@@ -295,7 +324,8 @@ public class NPCService {
 		try {
 			return NPCMessageDAO.getUnsentMessages(conn, requiredMessageCodes, optionalMessageCodes);
 		} catch (SQLException ex) {
-			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE,String.format("Error in Select statement %s", ex.getMessage()) );
+			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE,
+					String.format("Error in Select statement %s", ex.getMessage()));
 		} catch (JAXBException ex) {
 			logger.error("Cannot Create JAXB Object", ex.getMessage());
 			throw new NPCException(ex, NPCException.JAXB_CREATE_OBJECT_ERROR_CODE, "Cannot Create JAXB Object");
@@ -337,13 +367,13 @@ public class NPCService {
 			propertyKey = String.valueOf(keys.nextElement());
 			if (propertyKey.endsWith("TIME_FRAME")) {
 				if (propertyKey.endsWith("CURRENT_MAX_TIME_FRAME"))
-						processInitializingMessageCodesTimeFrames(propertyKey, (short) 0);
+					 processInitializingMessageCodesTimeFrames(propertyKey, (short) 0);
 			} else if (propertyKey.endsWith("CURRENT_MIN_TIME_FRAME")) {
-						processInitializingMessageCodesTimeFrames(propertyKey, (short) 1);
+					 processInitializingMessageCodesTimeFrames(propertyKey, (short) 1);
 			} else if (propertyKey.endsWith("NEXT_MAX_TIME_FRAME")) {
-						processInitializingMessageCodesTimeFrames(propertyKey, (short) 2);
+					 processInitializingMessageCodesTimeFrames(propertyKey, (short) 2);
 			} else if (propertyKey.endsWith("NEXT_MIN_TIME_FRAME"))
-						processInitializingMessageCodesTimeFrames(propertyKey, (short) 3);
+					 processInitializingMessageCodesTimeFrames(propertyKey, (short) 3);
 		}
 	}
 
@@ -360,10 +390,10 @@ public class NPCService {
 				String keyValue = npcProperties.getString(propertyKey);
 				String[] fields = (keyValue + ",").split("\\s*,\\s*");
 				StringBuilder sb = new StringBuilder();
-				String dependentMessageCodes="";
+				String dependentMessageCodes = "";
 				for (int i = 1; i < fields.length; i++) {
-					sb.append(dependentMessageCodes +fields[i] + ",");
-					dependentMessageCodes=sb.toString();
+					sb.append(dependentMessageCodes + fields[i] + ",");
+					dependentMessageCodes = sb.toString();
 				}
 
 				timeFrameDependeny.put(fields[0],
@@ -419,10 +449,10 @@ public class NPCService {
 	public void releaseConnection() throws NPCException {
 		try {
 			if (conn != null) {
-				logger.debug("Log {} ",conn);
+				logger.debug("Log {} ", conn);
 
 				conn.close();
-				
+
 			}
 		} catch (SQLException ex) {
 			logger.error("NPC General Error", ex.getMessage());
@@ -469,11 +499,11 @@ public class NPCService {
 	 */
 	public void updateNPCMessageCurrentAndNextDate(NPCMessageModel npcMessageModel) throws NPCException {
 		if (npcMessageModel instanceof PortMessageModel) {
-			
+
 			PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
 			updateNPCMessageCurrentDate(portMessageModel);
 			updateNPCMessageNextDate(portMessageModel);
-		
+
 		}
 	}
 
@@ -486,8 +516,7 @@ public class NPCService {
 	 */
 	private void updateNPCMessageCurrentDate(PortMessageModel portMessageModel) throws NPCException {
 		String[] timeFrames = messageCodesTimeFrames.get(portMessageModel.getPortMessageType().getMessageCode());
-		
-		
+
 		if (timeFrames == null)
 			return;
 		String currentMaxDateDependencyMessage = String.valueOf(timeFrameDependeny.get(timeFrames[0]));
@@ -498,21 +527,21 @@ public class NPCService {
 						currentMaxDateDependencyMessage);
 				if (currentMaxDate != null) {
 					portMessageModel.setCurrentMessageMaxDate(currentMaxDate);
-					logger.debug("Start updating current message max date");
+					logger.debug("Start updating message current max date");
 					NPCMessageDAO.updateCurrentMessageMaxDateField(conn, portMessageModel);
-					logger.debug("Updating current message max date has been done successfully");
+					logger.debug("Updating message current max date has been done successfully");
 				}
 			}
 			if (!"null".equals(currentMinDateDependencyMessage)) {
-			
+
 				String currentMinDate = getNPCMessageDate(portMessageModel, timeFrames[1],
 						currentMinDateDependencyMessage);
 				if (currentMinDate != null) {
 					portMessageModel.setCurrentMessageMinDate(currentMinDate);
-					logger.debug("Start updating current message min date");
+					logger.debug("Start updating message current min date");
 					NPCMessageDAO.updateCurrentMessageMinDateField(conn, portMessageModel);
-					logger.debug("Updating current message min date has been done successfully");
-					
+					logger.debug("Updating message current min date has been done successfully");
+
 				}
 			}
 		} catch (SQLException ex) {
@@ -555,7 +584,13 @@ public class NPCService {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			java.util.Date currentDate = sdf.parse(datePortMessageModel.getTransactionDate());
 			TimeSlotModel timeSlotModel = new TimeSlotModel(timeSlot);
-			timeSlotModel = TimeSlotDAO.getTimeSlotValue(conn, timeSlotModel);
+			try {
+				String companyFlag = portMessageModel.getSubscriberDataModel().getSubscriberDataType().getCompanyFlag();
+				timeSlotModel = TimeSlotDAO.getTimeSlotValue(conn, timeSlotModel, companyFlag);
+			} catch (Exception e) {
+				timeSlotModel = TimeSlotDAO.getTimeSlotValue(conn, timeSlotModel, null);
+			}
+
 			if (timeSlotModel == null)
 				return null;
 			java.util.Date resultDate = null;
@@ -575,6 +610,9 @@ public class NPCService {
 		} catch (ParseException ex) {
 			logger.error("Error in parsing date", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_DATE_PARSING_ERROR_CODE, "Error in parsing date");
+		} catch (NPCException ex) {
+			logger.error("Error in Company flag tag ", ex.getMessage());
+			throw new NPCException(ex.getMessage(), "Error in TimeSlotValue ");
 		}
 	}
 
@@ -588,7 +626,7 @@ public class NPCService {
 	 */
 	private void updateNPCMessageNextDate(PortMessageModel portMessageModel) throws NPCException {
 		String[] timeFrames = messageCodesTimeFrames.get(portMessageModel.getPortMessageType().getMessageCode());
-		
+
 		if (timeFrames == null)
 			return;
 		String nextMaxDateDependencyMessage = String.valueOf(timeFrameDependeny.get(timeFrames[2]));
@@ -598,23 +636,23 @@ public class NPCService {
 				String nextMaxDate = getNPCMessageDate(portMessageModel, timeFrames[2], nextMaxDateDependencyMessage);
 				if (nextMaxDate != null) {
 					portMessageModel.setNextMessageMaxDate(nextMaxDate);
-					logger.debug("Start Updating Next message max date ");
+					logger.debug("Start Updating message Next max date ");
 					NPCMessageDAO.updateNextMessageMaxDateField(conn, portMessageModel);
-					logger.debug("Updating Next message max date has been done successfully ");
+					logger.debug("Updating message  Next max date has been done successfully ");
 				}
 			}
 			if (!"null".equals(nextMinDateDependencyMessage)) {
 				String nextMinDate = getNPCMessageDate(portMessageModel, timeFrames[3], nextMinDateDependencyMessage);
 				if (nextMinDate != null) {
 					portMessageModel.setNextMessageMinDate(nextMinDate);
-					logger.debug("Start Updating Next message max date ");
+					logger.debug("Start Updating message Next max date ");
 					NPCMessageDAO.updateNextMessageMinDateField(conn, portMessageModel);
-					logger.debug("Updating Next message max date has been done successfully ");
-					
+					logger.debug("Updating message Next max date has been done successfully ");
+
 				}
 			}
 		} catch (SQLException ex) {
-			logger.error("Error in Update statement",ex.getMessage() );
+			logger.error("Error in Update statement", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE, "Error in Update statement");
 		}
 	}
@@ -638,6 +676,7 @@ public class NPCService {
 		if (obtainedPortDataModel != null)
 			portDataModel.copyPortData(obtainedPortDataModel);
 		try {
+			logger.debug("Start Update PORT_DATA table ");
 			if (!messageCode.equals(npcProperties.getString("ERROR_NOTIFICATION_MESSAGE_CODE"))) {
 				ParticipantModel participantModel = new ParticipantModel();
 				participantModel.setParticipantID(npcProperties.getString("PARTICIPANT_ID"));
@@ -676,11 +715,11 @@ public class NPCService {
 		} catch (ArrayIndexOutOfBoundsException ex) {
 			logger.error(ex.getMessage());
 			portDataModel.setPortStatus(null);
-		}		
+		}
 		populatePortData(portDataModel, obtainedPortDataModel);
-		logger.debug("Updating port data for NPC Message ID: {}  and Internal Port ID: {} has done successfully and the port Status updated with Status \" {} \"",
-				 portDataModel.getLastNPCMessageID(),portMessageModel.getInternalPortID(), portDataModel.getPortStatus() );
-
+		logger.debug(
+				"Updating PORT_DATA table for NPC Message ID: {}  and Internal Port ID: {} has been done successfully and the port Status updated with Status \" {} \"",
+				npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID(), portDataModel.getPortStatus());
 		action = "";
 		subAction = "";
 		processCode = "";
@@ -719,7 +758,7 @@ public class NPCService {
 		try {
 			portDataModel.setPortDataID(obtainedPortDataModel.getPortDataID());
 			PortDataDAO.updatePortData(conn, portDataModel);
-		
+
 		} catch (SQLException ex) {
 			logger.error("Error in Update statement", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE, "Error in Update statement");
@@ -785,17 +824,17 @@ public class NPCService {
 		if (!"".equals(donorID) && donorID != null && ("".equals(recipientID) || recipientID == null)) {
 			if (donorID.equals(participantModel.getParticipantID())) {
 				processCode = npcProperties.getString(processOutKey);
-			
+
 			}
 		} else if (!"".equals(recipientID) && recipientID != null && ("".equals(donorID) || donorID == null)) {
 			if (recipientID.equals(participantModel.getParticipantID())) {
 				processCode = npcProperties.getString(processInKey);
-			
+
 			}
 		} else if (!"".equals(donorID) && donorID != null && !"".equals(recipientID) && recipientID != null) {
 			if (donorID.equals(participantModel.getParticipantID())) {
 				processCode = npcProperties.getString(processOutKey);
-				
+
 			}
 			if (recipientID.equals(participantModel.getParticipantID()))
 				processCode = npcProperties.getString(processInKey);
@@ -816,7 +855,8 @@ public class NPCService {
 		PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
 		String messageCode = portMessageModel.getPortMessageType().getMessageCode();
 		if (messageCode.equals(npcProperties.getString("NP_ACTIVATED_STATUS_MESSAGE_CODE"))) {
-			logger.debug("Start Process Activation Status for port ID {}  and Internal Port ID {} ", portMessageModel.getPortMessageType().getPortID(), portMessageModel.getInternalPortID()); 
+			logger.debug("Start Process Activation Status for port ID {}  and Internal Port ID {} ",
+					portMessageModel.getPortMessageType().getPortID(), portMessageModel.getInternalPortID());
 			String comments2 = portMessageModel.getPortMessageType().getComments2();
 			if ("null".equals(comments2) || comments2 == null)
 				return;
@@ -825,18 +865,20 @@ public class NPCService {
 			fields.put("ACTIVATION_COMMENT", comments2);
 			fields.put("TRANSACTION_DATE", npcMessageModel.getTransactionDate());
 			try {
-				if(mnpSchemaName==null) {
-					mnpSchemaName=npcProperties.getString("MNP_SCHEMA_NAME");
-				} 
+				if (mnpSchemaName == null) {
+					mnpSchemaName = npcProperties.getString("MNP_SCHEMA_NAME");
+				}
 				GenericDAO.insertIntoTable(conn, mnpSchemaName, "PORT_ACTIVATION_STATUS", fields);
-				
-				logger.debug("Process Activation status has been done successfully for Port ID {} and Internal Port ID {}",portMessageModel.getPortMessageType().getPortID(),portMessageModel.getInternalPortID());
-				
+
+				logger.debug(
+						"Process Activation status has been done successfully for Port ID {} and Internal Port ID {}",
+						portMessageModel.getPortMessageType().getPortID(), portMessageModel.getInternalPortID());
+
 			} catch (SQLException ex) {
 				logger.error("Error in Insert statement", ex.getMessage());
 				throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE, "Error in Insert statement");
 			}
-			
+
 		}
 	}
 
@@ -853,7 +895,8 @@ public class NPCService {
 		PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
 		String messageCode = portMessageModel.getPortMessageType().getMessageCode();
 		if (messageCode.equals(npcProperties.getString("NP_DEACT_STATUS_MESSAGE_CODE"))) {
-			logger.debug("Start Process Deactivation Done for port ID {}  and Internal Port ID {} ", portMessageModel.getPortMessageType().getPortID(), portMessageModel.getInternalPortID());
+			logger.debug("Start Process Deactivation Done for port ID {}  and Internal Port ID {} ",
+					portMessageModel.getPortMessageType().getPortID(), portMessageModel.getInternalPortID());
 			String comments2 = portMessageModel.getPortMessageType().getComments2();
 			if ("null".equals(comments2) || comments2 == null)
 				return;
@@ -862,17 +905,19 @@ public class NPCService {
 			fields.put("DISCONNECT_COMMENT", comments2);
 			fields.put("TRANSACTION_DATE", npcMessageModel.getTransactionDate());
 			try {
-				if(mnpSchemaName==null) {
-					mnpSchemaName=npcProperties.getString("MNP_SCHEMA_NAME");
-				} 
+				if (mnpSchemaName == null) {
+					mnpSchemaName = npcProperties.getString("MNP_SCHEMA_NAME");
+				}
 				GenericDAO.insertIntoTable(conn, mnpSchemaName, "PORT_DISCONNECT_STATUS", fields);
-			
-				logger.debug("Process Deactivation Done has been done successfully for Port ID {} and Internal Port ID {}",portMessageModel.getPortMessageType().getPortID(),portMessageModel.getInternalPortID());
+
+				logger.debug(
+						"Process Deactivation Done has been done successfully for Port ID {} and Internal Port ID {}",
+						portMessageModel.getPortMessageType().getPortID(), portMessageModel.getInternalPortID());
 			} catch (SQLException ex) {
 				logger.error("Error in Insert statement", ex.getMessage());
 				throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE, "Error in Insert statement");
 			}
-		} 
+		}
 	}
 
 	/**
@@ -895,17 +940,23 @@ public class NPCService {
 			}
 			if (isMSISDNExists)
 				try {
+					logger.debug("Start Updating SYNC table for MSISDN: {} ",syncModel.getMsisdn());
 					SyncDAO.updateSync(conn, syncModel);
+					logger.debug("Updating SYNC table has been done successfully for MSISDN: {}  ",syncModel.getMsisdn());
 				} catch (SQLException ex) {
 					logger.error("Error in Update statement", ex.getMessage());
-					throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE,"Error in Update statement");
+					throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE,
+							"Error in Update statement");
 				}
 			else
 				try {
+					logger.debug("Start inserting into SYNC table for MSISDN: {} ",syncModel.getMsisdn());
 					SyncDAO.insertSync(conn, syncModel);
+					logger.debug("Inserting into SYNC table has been done successfully for MSISDN: {}  ",syncModel.getMsisdn());
 				} catch (SQLException ex) {
 					logger.error("Error in Insert statement", ex.getMessage());
-					throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE,"Error in Insert statement");
+					throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE,
+							"Error in Insert statement");
 				}
 		}
 	}
@@ -918,7 +969,7 @@ public class NPCService {
 	 */
 	public void saveSyncHistoryMessages(List<SyncModel> syncMessages) throws NPCException {
 		SyncHistoryModel syncHistoryModel = null;
-		long lastMSISDNSeqNumber ;
+		long lastMSISDNSeqNumber;
 		for (int i = 0; i < syncMessages.size(); i++) {
 			syncHistoryModel = (SyncHistoryModel) syncMessages.get(i);
 			try {
@@ -932,7 +983,9 @@ public class NPCService {
 			else
 				syncHistoryModel.setSeqNumber(lastMSISDNSeqNumber + 1L);
 			try {
+				logger.debug("Start inserting into SYNC_HISTORY table for MSISDN: {} ",syncHistoryModel.getMsisdn());
 				SyncHistoryDAO.insertSyncHistory(conn, syncHistoryModel);
+				logger.debug("Inserting into SYNC_HISTORY table has been done successfully for MSISDN: {}  ",syncHistoryModel.getMsisdn());
 			} catch (SQLException ex) {
 				logger.error("Error in Insert statement", ex.getMessage());
 				throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE, "Error in Insert statement");
@@ -951,7 +1004,9 @@ public class NPCService {
 		for (int i = 0; i < syncMessages.size(); i++) {
 			syncModel = syncMessages.get(i);
 			try {
+				logger.debug("Start remove Sync Message from SYNC table for MSISDN: {} ",syncModel.getMsisdn());
 				SyncDAO.removeSYNC(conn, syncModel);
+				logger.debug("removing Sync Message from SYNC table for MSISDN: {} has been done successfully",syncModel.getMsisdn());
 			} catch (SQLException ex) {
 				logger.error("Error in Delete statement", ex.getMessage());
 				throw new NPCException(ex, NPCException.DATABASE_SQL_DELETE_ERROR_CODE, "Error in Delete Statement");
@@ -977,7 +1032,13 @@ public class NPCService {
 		for (int i = 0; i < insertIntoSyncMessageCodes.length; i++)
 			if (messageCode.equals(insertIntoSyncMessageCodes[i])) {
 				ArrayList<SyncModel> syncList = getSyncList(portMessageModel, portDataModel);
+				
+				
 				saveSyncMessages(syncList);
+
+				logger.debug(
+						"The process of Save Sync Messages with NPC Message ID: {}  and Internal Port ID: {}  has been done successfully...",
+					npcMessageModel.getNPCMessageID(), portDataModel.getInternalPortID());
 				return;
 			}
 
@@ -986,9 +1047,14 @@ public class NPCService {
 		for (int i = 0; i < removeSyncMessageCodes.length; i++)
 			if (messageCode.equals(removeSyncMessageCodes[i])) {
 				ArrayList<SyncModel> syncList = getSyncList(portMessageModel, portDataModel);
+				
 				removeSyncMessages(syncList);
+				logger.debug(
+						"The process of remove Sync Messages from SYNC table with NPC Message ID: {}  and Internal Port ID: {}  has been done successfully...",
+						npcMessageModel.getNPCMessageID(), portDataModel.getInternalPortID());
 				return;
 			}
+
 	}
 
 	/**
@@ -1009,7 +1075,11 @@ public class NPCService {
 		for (int i = 0; i < insertIntoSyncMessageCodes.length; i++)
 			if (messageCode.equals(insertIntoSyncMessageCodes[i])) {
 				ArrayList<SyncModel> syncList = getSyncList(portMessageModel, portDataModel);
+				
 				saveSyncHistoryMessages(syncList);
+				logger.debug(
+						"The process of Save Sync History Messages with NPC Message ID: {} and Internal Port ID: {}   has been done successfully...",
+						npcMessageModel.getNPCMessageID(), portDataModel.getInternalPortID());
 				return;
 			}
 
@@ -1019,7 +1089,11 @@ public class NPCService {
 			if (messageCode.equals(removeSyncMessageCodes[i])) {
 				portDataModel.setRecipientID(portDataModel.getDonorID());
 				ArrayList<SyncModel> syncList = getSyncList(portMessageModel, portDataModel);
+				
 				saveSyncHistoryMessages(syncList);
+				logger.debug(
+						"The process of remove Sync History Messages for with NPC Message ID: {} and Internal Port ID: {}   has been done successfully...",
+						npcMessageModel.getNPCMessageID(), portDataModel.getInternalPortID());
 				return;
 			}
 
@@ -1048,7 +1122,7 @@ public class NPCService {
 			throw new NPCException(ex, NPCException.DATABASE_SQL_SELECT_ERROR_CODE, "Error in Select statement");
 		}
 		for (int i = 0; i < numbersToPortList.size(); i++) {
-			numberDataType = ( numbersToPortList.get(i)).getNumberDataType();
+			numberDataType = (numbersToPortList.get(i)).getNumberDataType();
 			syncModel = new SyncHistoryModel();
 			syncModel.setMsisdn(numberDataType.getNumberFrom());
 			syncModel.setBulkSyncIDNumber(null);
@@ -1077,10 +1151,6 @@ public class NPCService {
 		}
 		return syncMessages;
 	}
-
-	
-
-	
 
 	static final Logger logger = LoggerFactory.getLogger(NPCService.class.getName());
 

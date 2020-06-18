@@ -34,7 +34,9 @@ public class PortMessageDAO {
 		Statement stmt = null;
 		String insertStmt = "";
 		try {
-			logger.debug("Start inserting port message data into Port message table with NPC Message ID {} and Internal Port ID {}",portMessageModel.getNPCMessageID(),portMessageModel.getInternalPortID());
+			logger.debug(
+					"Start inserting port message data into Port message table with NPC Message ID {} and Internal Port ID {}",
+					portMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
 			PortMessageType portMessageType = portMessageModel.getPortMessageType();
 			stmt = conn.createStatement();
 			insertStmt = "INSERT INTO PORT_MESSAGE(NPC_MESSAGE_ID,MESSAGEID,MESSAGECODE,SERVICETYPE,PORTID,PORTINGREQUESTFORMID,DONORID,RECIPIENTID,ORIGINATORID,RESPONSEDUEDATE,NEWROUTE,NPDUEDATE,REJECTCODE,REJECTEDMESSAGECODE,TRANSFERFEE,AVERAGEINVOICEFEE,INVOICEDATE,PAYMENTDUE,INTERNAL_PORT_ID,COMMENTS1,COMMENTS2)VALUES ("
@@ -227,18 +229,18 @@ public class PortMessageDAO {
 					PortMessageModel.set(portMessageModel, "PAYMENTDUE", rs.getObject("PAYMENTDUE"));
 					PortMessageModel.set(portMessageModel, "INTERNAL_PORT_ID", rs.getObject("INTERNAL_PORT_ID"));
 				} else {
-					
-					if(requiredMessageCodes!=null) {
-					fields =  requiredMessageCodes.get(rs.getString("MESSAGECODE"));
-					for (int i = 1; i < fields.length; i++)
-						PortMessageModel.set(portMessageModel, fields[i], rs.getObject(fields[i]));
-					
-					fields =  optionalMessageCodes.get(rs.getString("MESSAGECODE"));
-					for (int i = 1; i < fields.length; i++)
-						PortMessageModel.set(portMessageModel, fields[i], String.valueOf(rs.getObject(fields[i])));
-						}	
-					
+
+					if (requiredMessageCodes != null) {
+						fields = requiredMessageCodes.get(rs.getString("MESSAGECODE"));
+						for (int i = 1; i < fields.length; i++)
+							PortMessageModel.set(portMessageModel, fields[i], rs.getObject(fields[i]));
+
+						fields = optionalMessageCodes.get(rs.getString("MESSAGECODE"));
+						for (int i = 1; i < fields.length; i++)
+							PortMessageModel.set(portMessageModel, fields[i], String.valueOf(rs.getObject(fields[i])));
 					}
+
+				}
 				SubscriberDataModel subscriberDataModel = SubscriberDataModel.createSubscriberData();
 				subscriberDataModel.setNPCMessageID(portMessageModel.getNPCMessageID());
 				portMessageModel.setSubscriberDataModel(SubscriberDataDAO.getSubscriberData(conn, subscriberDataModel));
@@ -247,7 +249,7 @@ public class PortMessageDAO {
 			}
 
 			return portMessageModel;
-			
+
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
 			logger.error(message, ex);
@@ -262,14 +264,13 @@ public class PortMessageDAO {
 		}
 	}
 
-	public static List<PortMessageModel> getUnsentMessages(Connection conn,
-			Map<String, String[]> requiredMessageCodes, Map<String, String[]> optionalMessageCodes)
-			throws SQLException, JAXBException, NPCException {
+	public static List<PortMessageModel> getUnsentMessages(Connection conn, Map<String, String[]> requiredMessageCodes,
+			Map<String, String[]> optionalMessageCodes) throws SQLException, JAXBException, NPCException {
 		ArrayList<PortMessageModel> unsentMessages = new ArrayList<>();
 		Statement stmt = null;
 		ResultSet rs = null;
 		String selectStmt = "";
-		String runnerFetchedRowNumber="";
+		String runnerFetchedRowNumber = "";
 		try {
 			conn.setAutoCommit(false);
 			stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
@@ -293,6 +294,7 @@ public class PortMessageDAO {
 			for (int i = 0; rs.next() && i < rowNumber; i++) {
 				rs.updateString("PICKED_BY", jobId);
 				rs.updateRow();
+
 			}
 
 			conn.commit();
@@ -302,6 +304,7 @@ public class PortMessageDAO {
 					+ "' AND NPC_Message.NPC_MESSAGE_ID = PORT_MESSAGE.NPC_MESSAGE_ID ORDER BY NPC_Message.NPC_MESSAGE_ID ASC ";
 
 			rs = stmt.executeQuery(selectStmt);
+
 			PortMessageModel portMessageModel = null;
 			String[] fields = null;
 			while (rs.next()) {
@@ -320,7 +323,7 @@ public class PortMessageDAO {
 				NPCMessageModel.set(portMessageModel, "Next_Message_Max_Date", rs.getString("Next_Message_Max_Date"));
 				NPCMessageModel.set(portMessageModel, "Next_Message_Min_Date", rs.getString("Next_Message_Min_Date"));
 				NPCMessageModel.set(portMessageModel, "User_Comment", rs.getString("User_Comment"));
-				NPCMessageModel.set(portMessageModel, "Picked_By", rs.getString("Picked_By"));
+				NPCMessageModel.set(portMessageModel, "Picked_By", rs.getString("PICKED_BY"));
 				if (requiredMessageCodes == null && optionalMessageCodes == null) {
 					PortMessageModel.set(portMessageModel, "NPC_MESSAGE_ID", rs.getObject("NPC_MESSAGE_ID"));
 					PortMessageModel.set(portMessageModel, "MESSAGEID", rs.getObject("MESSAGEID"));
@@ -346,47 +349,47 @@ public class PortMessageDAO {
 					PortMessageModel.set(portMessageModel, "INTERNAL_PORT_ID", rs.getObject("INTERNAL_PORT_ID"));
 				} else {
 					try {
-						if(requiredMessageCodes != null) {
-						fields =  requiredMessageCodes.get(rs.getString("MESSAGECODE"));
-						for (int i = 1; i < fields.length; i++)
-							try {
-								Object fieldValue = rs.getObject(fields[i]);
-								if (fieldValue == null)
-									fieldValue = "";
-								PortMessageModel.set(portMessageModel, fields[i], fieldValue);
-							} catch (SQLException ex) {
-								throw new NPCException(NPCException.PROCESSING_FIELD_NOT_FOUND_ERROR_CODE,
-										MessageFormat.format(
-												"The field \"{0}\" is not found in Port Message Table please check the name of this field in the properties file",
-												  fields[i] ));
-							}
+						if (requiredMessageCodes != null) {
+							fields = requiredMessageCodes.get(rs.getString("MESSAGECODE"));
+							for (int i = 1; i < fields.length; i++)
+								try {
+									Object fieldValue = rs.getObject(fields[i]);
+									if (fieldValue == null)
+										fieldValue = "";
+									PortMessageModel.set(portMessageModel, fields[i], fieldValue);
+								} catch (SQLException ex) {
+									throw new NPCException(NPCException.PROCESSING_FIELD_NOT_FOUND_ERROR_CODE,
+											MessageFormat.format(
+													"The field \"{0}\" is not found in Port Message Table please check the name of this field in the properties file",
+													fields[i]));
+								}
 
-						fields = optionalMessageCodes.get(rs.getString("MESSAGECODE"));
-						for (int i = 1; i < fields.length; i++)
-							try {
-								PortMessageModel.set(portMessageModel, fields[i], rs.getObject(fields[i]));
-							} catch (SQLException ex) {
-								throw new NPCException(NPCException.PROCESSING_FIELD_NOT_FOUND_ERROR_CODE,
-										MessageFormat.format(
-												"The field \"{0}\" is not found in Port Message Table please check the name of this field in the properties file",
-												 fields[i] ));
-							}
+							fields = optionalMessageCodes.get(rs.getString("MESSAGECODE"));
+							for (int i = 1; i < fields.length; i++)
+								try {
+									PortMessageModel.set(portMessageModel, fields[i], rs.getObject(fields[i]));
+								} catch (SQLException ex) {
+									throw new NPCException(NPCException.PROCESSING_FIELD_NOT_FOUND_ERROR_CODE,
+											MessageFormat.format(
+													"The field \"{0}\" is not found in Port Message Table please check the name of this field in the properties file",
+													fields[i]));
+								}
 
-						PortMessageModel.set(portMessageModel, "INTERNAL_PORT_ID", rs.getObject("INTERNAL_PORT_ID"));
+							PortMessageModel.set(portMessageModel, "INTERNAL_PORT_ID",
+									rs.getObject("INTERNAL_PORT_ID"));
 						}
-						} catch (Exception ex) {
+					} catch (Exception ex) {
 						conn.setAutoCommit(false);
 						NPCException npcexception = new NPCException(
 								NPCException.PROCESSING_MESSAGE_CODE_NOT_FOUND_ERROR_CODE,
 								MessageFormat.format(
 										"Message Code \"{0}\" not found in current Participant message codes",
-										 rs.getString("MESSAGECODE") ));
+										rs.getString("MESSAGECODE")));
 						logger.error(npcexception.getMessage(), npcexception);
 
 						NPCService.insertFailedMessage(npcexception, portMessageModel.getNPCMessageID());
 
-						logger.info(
-								"Corrupted Message ID = " + portMessageModel.getNPCMessageID() + "\n Reason",
+						logger.info("Corrupted Message ID = " + portMessageModel.getNPCMessageID() + "\n Reason",
 								npcexception);
 
 						NPCService.updateSentFieldForCorruptedMessages(portMessageModel);
@@ -442,7 +445,5 @@ public class PortMessageDAO {
 			}
 		}
 	}
-
-
 
 }

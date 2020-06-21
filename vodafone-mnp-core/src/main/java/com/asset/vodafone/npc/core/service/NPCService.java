@@ -1,5 +1,6 @@
 package com.asset.vodafone.npc.core.service;
 
+
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -28,8 +29,8 @@ import com.asset.vodafone.npc.core.dao.PortMessageDAO;
 import com.asset.vodafone.npc.core.dao.SubscriberDataDAO;
 import com.asset.vodafone.npc.core.dao.SyncDAO;
 import com.asset.vodafone.npc.core.dao.SyncHistoryDAO;
-import com.asset.vodafone.npc.core.dao.TimeSlotDAO;
 import com.asset.vodafone.npc.core.exception.NPCException;
+import com.asset.vodafone.npc.core.dao.*;
 import com.asset.vodafone.npc.core.models.BulkSyncMessageModel;
 import com.asset.vodafone.npc.core.models.FailedMessagesModel;
 import com.asset.vodafone.npc.core.models.NPCMessageModel;
@@ -232,8 +233,9 @@ public class NPCService {
 			FailedMessagesModel failedMessagesModel = new FailedMessagesModel();
 			failedMessagesModel.setNPCMessageID(npcMessageID);
 			failedMessagesModel.setReason(exception.getErrorStackTrace());
+			logger.debug("Start Inserting Failed Message into FAILED_MESSAGES_QUEUE table");
 			FailedMessagesDAO.insertFailedMessage(conn, failedMessagesModel);
-
+			logger.debug("Inserting Failed Message into FAILED_MESSAGES_QUEUE table has been done successfully with NPC Message ID {}",failedMessagesModel.getNPCMessageID());
 		} catch (SQLException ex) {
 			logger.error("Error in Insert statement ", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_INSERT_ERROR_CODE, "Error in Insert statement ");
@@ -267,12 +269,14 @@ public class NPCService {
 	public void updateFieldsAfterSending(NPCMessageModel npcMessageModel) throws NPCException {
 		try {
 			npcMessageModel.setTransactionDate(GenericDAO.getCurrentDateTime(conn, "DD/MM/YYYY HH24:MI:SS"));
+			logger.debug("Start updating Fields after sending message...");
 			NPCMessageDAO.updateFieldsAfterSending(conn, npcMessageModel);
 			logger.debug(
-					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Returned Message = \" {} \" | Message Xml = \" {} \" | Machine IP address = \" {} \" ",
+					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Returned Message = \" {} \" | Message Xml = \" {} \" | Machine IP address(Picked_By) = \" {} \" ",
 					npcMessageModel.isSent() ? 1 : 0, npcMessageModel.getTransactionDate(),
 					npcMessageModel.getReturnedMessage(), npcMessageModel.getMessageXML(),
 					npcMessageModel.getPickedBy());
+			logger.debug("Updating Fields after sending message has been done successfully...");
 		} catch (SQLException ex) {
 			logger.error("Error in Update statement ", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE, "Error in Update statement ");
@@ -527,7 +531,7 @@ public class NPCService {
 						currentMaxDateDependencyMessage);
 				if (currentMaxDate != null) {
 					portMessageModel.setCurrentMessageMaxDate(currentMaxDate);
-					logger.debug("Start updating message current max date");
+					logger.debug("Start updating message current max date with date {} ",currentMaxDate);
 					NPCMessageDAO.updateCurrentMessageMaxDateField(conn, portMessageModel);
 					logger.debug("Updating message current max date has been done successfully");
 				}
@@ -538,7 +542,7 @@ public class NPCService {
 						currentMinDateDependencyMessage);
 				if (currentMinDate != null) {
 					portMessageModel.setCurrentMessageMinDate(currentMinDate);
-					logger.debug("Start updating message current min date");
+					logger.debug("Start updating message current min date with date {} ",currentMinDate);
 					NPCMessageDAO.updateCurrentMessageMinDateField(conn, portMessageModel);
 					logger.debug("Updating message current min date has been done successfully");
 
@@ -636,7 +640,7 @@ public class NPCService {
 				String nextMaxDate = getNPCMessageDate(portMessageModel, timeFrames[2], nextMaxDateDependencyMessage);
 				if (nextMaxDate != null) {
 					portMessageModel.setNextMessageMaxDate(nextMaxDate);
-					logger.debug("Start Updating message Next max date ");
+					logger.debug("Start Updating message Next max date with date {} ",nextMaxDate);
 					NPCMessageDAO.updateNextMessageMaxDateField(conn, portMessageModel);
 					logger.debug("Updating message  Next max date has been done successfully ");
 				}
@@ -645,7 +649,7 @@ public class NPCService {
 				String nextMinDate = getNPCMessageDate(portMessageModel, timeFrames[3], nextMinDateDependencyMessage);
 				if (nextMinDate != null) {
 					portMessageModel.setNextMessageMinDate(nextMinDate);
-					logger.debug("Start Updating message Next max date ");
+					logger.debug("Start Updating message Next max date with date {} ",nextMinDate);
 					NPCMessageDAO.updateNextMessageMinDateField(conn, portMessageModel);
 					logger.debug("Updating message Next max date has been done successfully ");
 

@@ -1,7 +1,6 @@
 package com.asset.vodafone.npc.core.models;
 
 public class NPCMessageModel {
-
 	public NPCMessageModel() {
 		messageSuccess = true;
 		transactionDate = "";

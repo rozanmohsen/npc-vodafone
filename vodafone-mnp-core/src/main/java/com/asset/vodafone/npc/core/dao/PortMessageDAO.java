@@ -389,8 +389,7 @@ public class PortMessageDAO {
 
 						NPCService.insertFailedMessage(npcexception, portMessageModel.getNPCMessageID());
 
-						logger.info("Corrupted Message ID = " + portMessageModel.getNPCMessageID() + "\n Reason",
-								npcexception);
+						logger.debug("Corrupted NPC Message ID : {0} and reason is: {1} " , portMessageModel.getNPCMessageID(),npcexception);
 
 						NPCService.updateSentFieldForCorruptedMessages(portMessageModel);
 						conn.commit();

@@ -1,0 +1,8 @@
+17-06-2020 14:06:30.347 ERROR [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - [NPC_PROCESSING_ERROR_01]: Message Code "NP Deact Broadcast" not found in current Participant message codes
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_PROCESSING_ERROR_01]: Message Code "NP Deact Broadcast" not found in current Participant message codes
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:385)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:400)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:312)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:362)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:626)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:676)

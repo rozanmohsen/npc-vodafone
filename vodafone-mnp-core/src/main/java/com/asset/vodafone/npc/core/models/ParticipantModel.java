@@ -2,6 +2,7 @@ package com.asset.vodafone.npc.core.models;
 
 public class ParticipantModel {
 
+	
 	public void setParticipantID(String participantID) {
 		this.participantID = participantID;
 	}

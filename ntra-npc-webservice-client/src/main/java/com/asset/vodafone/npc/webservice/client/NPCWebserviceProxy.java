@@ -83,10 +83,10 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 					.getValue();
 			
 	}catch(WebServiceIOException e) {
-			//throw new WebServiceIOException(e.getMessage());
 			
 			
-			throw new WebServiceIOException("Error In Sending npc Message",e);
+			loggerObj.error(e.getMessage());
+			throw new WebServiceIOException(e.getMessage());
 			
 		}
 

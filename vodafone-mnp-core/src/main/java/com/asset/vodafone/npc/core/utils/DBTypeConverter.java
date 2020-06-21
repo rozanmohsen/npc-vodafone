@@ -1,5 +1,6 @@
 package com.asset.vodafone.npc.core.utils;
 
+
 import java.math.BigDecimal;
 
 public class DBTypeConverter {

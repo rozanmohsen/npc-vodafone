@@ -1,0 +1,369 @@
+18-06-2020 12:07:11.056 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:07:13.889 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:07:15.044 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 12:07:15.106 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 12:07:15.109 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 12:07:15.110 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 12:08:51.965 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:08:54.845 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:08:56.039 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 12:08:56.112 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 12:08:56.116 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 12:08:56.116 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 12:10:06.259 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:10:08.840 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:10:09.765 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 12:10:09.829 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 12:10:09.831 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 12:10:09.832 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 12:18:24.420 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:18:27.015 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:18:27.976 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 12:18:28.032 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 12:18:28.035 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 12:18:28.036 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 12:26:36.213 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:26:38.774 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:26:39.731 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 12:26:39.801 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 12:26:39.805 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 12:26:39.805 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 12:56:36.978 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:36.980 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:36.981 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:36.984 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:36.988 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:58.140 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:58.155 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:58.162 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:58.162 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:56:58.163 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:57:19.152 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:57:19.170 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:57:19.171 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:57:19.175 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:57:19.179 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 12:57:20.672 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:57:20.685 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 12:57:20.760 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:57:20.779 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 12:57:20.800 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:57:20.822 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 12:57:20.820 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:57:20.852 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 12:57:20.856 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 12:57:20.871 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 13:02:06.478 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 13:02:09.042 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 13:02:09.977 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 13:02:10.028 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 13:02:10.031 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 13:02:10.032 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 13:04:32.109 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 13:04:35.110 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 13:04:55.135 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 13:04:55.219 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 13:04:55.223 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 13:04:55.223 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 13:07:37.556 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 13:07:40.197 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 13:07:40.205 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 13:38:13.727 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 13:38:16.232 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 13:38:16.244 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 14:00:58.743 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 14:01:19.848 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 14:01:21.827 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 14:01:21.843 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 15:00:23.874 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:00:27.589 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:00:28.653 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:00:28.720 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:00:28.723 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:00:28.723 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:00:42.788 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 15:14:34.526 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:14:38.832 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:14:39.874 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:14:39.937 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:14:39.940 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:14:39.941 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:14:45.210 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 15:17:01.851 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:17:04.638 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:17:05.758 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:17:05.821 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:17:05.823 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:17:05.824 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:17:09.213 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 15:33:23.005 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:33:25.562 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:33:26.525 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:33:26.582 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:33:26.584 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:33:26.584 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:33:30.799 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 15:39:22.434 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:39:25.132 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:39:26.116 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:39:26.183 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:39:26.186 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:39:26.187 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:39:29.309 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 15:40:51.427 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:40:54.050 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:40:54.059 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:40:57.861 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:40:57.862 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 3 
+18-06-2020 15:40:57.865 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:40:58.552 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:40:58.600 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+18-06-2020 15:40:59.547 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:40:59.608 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:40:59.609 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:40:59.616 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:40:59.799 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message with ID: 4498575  and Internal Port ID: 4498339 has done successfully...
+18-06-2020 15:40:59.799 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start updating Fields after sending message...
+18-06-2020 15:41:00.109 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 18/06/2020 15:40:51 " | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>AD1208</MessageID>
+            <MessageCode>NPR Accept</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P201704230921270130</PortID>
+            <NumbersToPort>
+                <NumberFrom>01011234575</NumberFrom>
+                <NumberTo>01011234575</NumberTo>
+                <DataNumber>0552280126</DataNumber>
+                <FaxNumber>0704123456</FaxNumber>
+            </NumbersToPort>
+            <SubscriberData>
+                <CompanyFlag>false</CompanyFlag>
+                <CorporationName>Giza Systems</CorporationName>
+                <Name>Ali Sami</Name>
+                <AccountNum>33345</AccountNum>
+                <SIMCardNum>89310410106543789301</SIMCardNum>
+                <NIC>52404193527</NIC>
+                <CNIC>6110123456789</CNIC>
+                <PassportNum>C12345678</PassportNum>
+                <OtherId>Senator</OtherId>
+                <DateOfBirth>19930515</DateOfBirth>
+                <ContactPhone>0552280126</ContactPhone>
+                <Fax>0704123456</Fax>
+                <City>Cairo</City>
+                <Street>Farouk St</Street>
+                <Locality>Al Tahrir</Locality>
+                <PostCode>123123</PostCode>
+                <GroupID>My GroupID</GroupID>
+                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+                <CorporationAddress>Giza Systems</CorporationAddress>
+                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                <TaxRegistrationNum>132544</TaxRegistrationNum>
+            </SubscriberData>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+ " | Machine IP address = " 5.5.5.2 " 
+18-06-2020 15:41:00.110 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Fields after sending message has done successfully...
+18-06-2020 15:41:00.986 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Start updating message current max date
+18-06-2020 15:41:01.129 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Updating message current max date has been done successfully
+18-06-2020 15:41:01.129 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Updating Port Data... 
+18-06-2020 15:41:01.287 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+18-06-2020 15:41:02.049 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498575  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Accept-S "
+18-06-2020 15:41:02.049 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1208 | MessageCode: NPR Accept | PortID: P201704230921270130  | Message TimeStamp: Thu Jun 18 15:41:02 EET 2020 | Message Type: Sent | DonerID: null | RecipientID: null |
+18-06-2020 15:41:02.360 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:41:02.553 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+18-06-2020 15:41:02.604 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 15:41:02.617 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 15:41:02.618 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 15:41:02.618 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 15:41:02.643 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message with ID: 4498653  and Internal Port ID: 4498339 has done successfully...
+18-06-2020 15:41:02.643 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start updating Fields after sending message...
+18-06-2020 15:41:02.953 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 18/06/2020 15:40:54 " | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>AD1277</MessageID>
+            <MessageCode>NPR</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <NumbersToPort>
+                <NumberFrom>01011234575</NumberFrom>
+                <NumberTo>01011234575</NumberTo>
+                <DataNumber>0552280126</DataNumber>
+                <FaxNumber>0704123456</FaxNumber>
+            </NumbersToPort>
+            <PortReqFormID>P993F0S2641AF</PortReqFormID>
+            <DonorID>Voda</DonorID>
+            <RecipientID>Mobi</RecipientID>
+            <TransferFee>52</TransferFee>
+            <AverageInvoiceFee>57</AverageInvoiceFee>
+            <SubscriberData>
+                <CompanyFlag>false</CompanyFlag>
+                <CorporationName>Giza Systems</CorporationName>
+                <Name>Ali Sami</Name>
+                <AccountNum>3334335</AccountNum>
+                <SIMCardNum>89310410106543789301</SIMCardNum>
+                <NIC>55522333666541</NIC>
+                <CNIC>2261101234789</CNIC>
+                <PassportNum>C12345678</PassportNum>
+                <OtherId>Senator</OtherId>
+                <DateOfBirth>19930515</DateOfBirth>
+                <ContactPhone>0552280126</ContactPhone>
+                <Fax>0704123456</Fax>
+                <City>Cairo</City>
+                <Street>Farouk St</Street>
+                <Locality>Al Tahrir</Locality>
+                <PostCode>123123</PostCode>
+                <GroupID>My GroupID</GroupID>
+                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
+                <CorporationAddress>Giza Systems</CorporationAddress>
+                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                <TaxRegistrationNum>132544</TaxRegistrationNum>
+            </SubscriberData>
+            <Comments1>Comment1 Test</Comments1>
+            <Comments2>Comment2 Test</Comments2>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+ " | Machine IP address = " 5.5.5.2 " 
+18-06-2020 15:41:02.954 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Updating Fields after sending message has done successfully...
+18-06-2020 15:41:02.954 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start Updating Port Data... 
+18-06-2020 15:41:03.162 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+18-06-2020 15:41:03.475 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498653  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
+18-06-2020 15:41:03.476 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1277 | MessageCode: NPR | PortID: null  | Message TimeStamp: Thu Jun 18 15:41:03 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi |
+18-06-2020 15:42:03.776 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:42:05.549 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:42:05.550 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 15:42:05.550 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:43:06.103 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:43:07.821 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:43:07.822 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 15:43:07.822 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:44:08.368 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:44:10.126 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:44:10.127 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 15:44:10.127 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:45:10.682 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:45:12.408 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:45:12.408 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 15:45:12.409 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 15:55:57.389 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 15:55:59.900 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 15:55:59.908 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:56:02.700 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:56:02.701 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+18-06-2020 15:57:02.711 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:57:04.144 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:57:04.145 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+18-06-2020 15:58:04.147 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 15:58:05.990 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 15:58:05.991 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+18-06-2020 16:06:12.118 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 16:06:15.721 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 16:06:22.907 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 16:10:41.279 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 16:10:44.329 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 16:10:46.790 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 16:13:17.151 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 16:13:17.152 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+18-06-2020 16:15:45.794 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 16:16:23.394 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 16:16:23.395 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+18-06-2020 16:21:35.900 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 16:30:32.737 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 16:30:32.746 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 16:30:32.754 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 16:57:37.148 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 16:57:40.189 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 16:57:43.630 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 16:59:58.777 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 16:59:58.778 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 2 
+18-06-2020 16:59:58.781 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 17:07:48.198 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 17:07:51.247 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 17:07:56.268 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 17:09:04.117 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 17:09:04.118 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 2 
+18-06-2020 17:09:04.122 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 17:21:56.367 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 17:21:57.993 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 17:22:03.729 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 17:22:37.368 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 17:22:37.369 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 17:22:37.371 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start sending NPC message...
+18-06-2020 19:52:25.629 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:52:46.856 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:53:07.874 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:53:30.047 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 19:53:30.091 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 19:53:30.092 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 19:53:30.092 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 19:53:30.772 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:53:51.780 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:54:12.786 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:54:33.802 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:54:47.954 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:54:54.813 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:55:09.159 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:55:15.820 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:55:30.177 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:55:36.838 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:55:51.890 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 19:55:51.915 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 19:55:51.915 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 19:55:51.916 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 19:55:52.068 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:55:57.866 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 19:56:13.085 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:56:34.094 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:56:55.113 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:57:16.123 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:57:37.144 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:58:37.329 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 19:58:38.990 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 19:58:39.003 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 20:15:55.856 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 20:16:17.043 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 20:16:38.059 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 20:16:39.801 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 20:16:40.210 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 20:16:40.237 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Start Sending Request to NTRA for UserName : vodau1 
+18-06-2020 20:16:40.237 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 20:16:40.237 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 20:16:42.483 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.encryptMode - voda
+18-06-2020 22:53:00.023 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+18-06-2020 22:53:06.546 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+18-06-2020 22:53:06.551 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 22:53:14.176 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 22:53:14.176 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+18-06-2020 22:53:14.726 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+18-06-2020 22:53:14.732 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+18-06-2020 22:53:15.233 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+18-06-2020 22:53:15.257 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+18-06-2020 22:53:15.258 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+18-06-2020 22:53:15.258 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+18-06-2020 22:53:15.766 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Bulk Sync Message with NPC Message ID: 4488898  has been done successfully...
+18-06-2020 22:53:15.767 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: 10913 | MessageCode: NP Bulk Sync | StartDate: 20070601000000 | EndDate: 20070721000000 | Comments1: NPC Example | Comments2: NP Bulk Sync 
+18-06-2020 22:53:16.278 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
+18-06-2020 22:53:16.881 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 18/06/2020 22:53:07 " | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>10913</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <StartDate>20070601000000</StartDate>
+            <EndDate>20070721000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>NP Bulk Sync</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+ " | Machine IP address(Picked_By) = " 5.5.5.2 " 
+18-06-2020 22:53:16.882 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
+18-06-2020 22:54:16.889 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 22:54:19.309 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 22:54:19.310 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+18-06-2020 22:55:19.313 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+18-06-2020 22:55:23.718 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+18-06-2020 22:55:23.718 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 

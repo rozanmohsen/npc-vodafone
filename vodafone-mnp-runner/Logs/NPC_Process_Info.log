@@ -1,4 +1,4 @@
-17-06-2020 12:34:02.662 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+19-06-2020 00:02:46.470 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <NPCData>
     <NPCMessages>
         <PortMessage>
@@ -22,7 +22,7 @@
                 <Name>Ali Sami</Name>
                 <AccountNum>3334335</AccountNum>
                 <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
+                <NIC>55522333666541</NIC>
                 <CNIC>2261101234789</CNIC>
                 <PassportNum>C12345678</PassportNum>
                 <OtherId>Senator</OtherId>
@@ -45,12 +45,31 @@
     </NPCMessages>
 </NPCData>
 
-17-06-2020 12:34:02.974 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@46fa7c39: startup date [Wed Jun 17 12:34:02 EET 2020]; root of context hierarchy
-17-06-2020 12:34:03.426 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:34:03.569 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:34:04.370 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@46fa7c39: startup date [Wed Jun 17 12:34:02 EET 2020]; root of context hierarchy
-17-06-2020 12:34:04.372 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 12:40:29.342 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+19-06-2020 00:02:46.761 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@55740540: startup date [Fri Jun 19 00:02:46 EET 2020]; root of context hierarchy
+19-06-2020 00:02:47.061 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+19-06-2020 00:02:47.162 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+19-06-2020 00:02:47.395 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@55740540: startup date [Fri Jun 19 00:02:46 EET 2020]; root of context hierarchy
+19-06-2020 00:02:47.397 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+19-06-2020 00:02:50.562 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>10913</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <StartDate>20070601000000</StartDate>
+            <EndDate>20070721000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>NP Bulk Sync</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+19-06-2020 00:02:50.565 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3a0baae5: startup date [Fri Jun 19 00:02:50 EET 2020]; root of context hierarchy
+19-06-2020 00:02:50.583 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+19-06-2020 00:02:50.599 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+19-06-2020 00:02:50.642 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3a0baae5: startup date [Fri Jun 19 00:02:50 EET 2020]; root of context hierarchy
+19-06-2020 00:02:50.643 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+19-06-2020 00:09:33.786 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <NPCData>
     <NPCMessages>
         <PortMessage>
@@ -74,7 +93,7 @@
                 <Name>Ali Sami</Name>
                 <AccountNum>3334335</AccountNum>
                 <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
+                <NIC>55522333666541</NIC>
                 <CNIC>2261101234789</CNIC>
                 <PassportNum>C12345678</PassportNum>
                 <OtherId>Senator</OtherId>
@@ -97,479 +116,12 @@
     </NPCMessages>
 </NPCData>
 
-17-06-2020 12:40:29.649 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:40:29 EET 2020]; root of context hierarchy
-17-06-2020 12:40:30.104 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:40:30.237 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:40:30.502 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:40:29 EET 2020]; root of context hierarchy
-17-06-2020 12:40:30.503 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 12:42:39.183 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 12:42:39.484 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:42:39 EET 2020]; root of context hierarchy
-17-06-2020 12:42:39.957 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:42:40.130 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:42:40.430 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:42:39 EET 2020]; root of context hierarchy
-17-06-2020 12:42:40.432 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 12:48:46.718 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 12:48:47.267 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c67e137: startup date [Wed Jun 17 12:48:47 EET 2020]; root of context hierarchy
-17-06-2020 12:48:47.991 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:48:48.129 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:48:48.525 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c67e137: startup date [Wed Jun 17 12:48:47 EET 2020]; root of context hierarchy
-17-06-2020 12:48:48.527 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 12:51:18.957 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 12:51:19.277 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:51:19 EET 2020]; root of context hierarchy
-17-06-2020 12:51:19.755 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:51:19.885 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:51:20.152 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:51:19 EET 2020]; root of context hierarchy
-17-06-2020 12:51:20.154 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 12:54:58.728 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 12:54:59.027 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:54:59 EET 2020]; root of context hierarchy
-17-06-2020 12:54:59.497 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:54:59.647 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:54:59.913 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:54:59 EET 2020]; root of context hierarchy
-17-06-2020 12:54:59.915 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 12:57:43.275 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 12:57:43.598 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:57:43 EET 2020]; root of context hierarchy
-17-06-2020 12:57:44.085 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 12:57:44.219 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 12:57:44.474 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 12:57:43 EET 2020]; root of context hierarchy
-17-06-2020 12:57:44.475 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 13:56:55.900 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 13:56:56.204 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 13:56:56 EET 2020]; root of context hierarchy
-17-06-2020 13:56:56.685 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 13:56:56.822 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 13:56:57.105 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 13:56:56 EET 2020]; root of context hierarchy
-17-06-2020 13:56:57.107 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 13:59:47.874 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 13:59:48.165 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 13:59:48 EET 2020]; root of context hierarchy
-17-06-2020 13:59:48.626 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 13:59:48.761 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 13:59:49.006 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fa36558: startup date [Wed Jun 17 13:59:48 EET 2020]; root of context hierarchy
-17-06-2020 13:59:49.007 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 14:03:22.926 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1277</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>3334335</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>4455</NIC>
-                <CNIC>2261101234789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 14:03:23.217 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@11fc564b: startup date [Wed Jun 17 14:03:23 EET 2020]; root of context hierarchy
-17-06-2020 14:03:23.680 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 14:03:23.839 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 14:03:24.107 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@11fc564b: startup date [Wed Jun 17 14:03:23 EET 2020]; root of context hierarchy
-17-06-2020 14:03:24.109 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
-17-06-2020 14:06:30.641 INFO  [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Corrupted Message ID = 4498567
- Reason
-com.asset.vodafone.npc.core.exception.NPCException: [NPC_PROCESSING_ERROR_01]: Message Code "NP Deact Broadcast" not found in current Participant message codes
-	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:385)
-	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:400)
-	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:312)
-	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:362)
-	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:626)
-	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:676)
-17-06-2020 14:10:36.273 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1208</MessageID>
-            <MessageCode>NPR Accept</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <PortID>P201704230921270130</PortID>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>52404193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
-
-17-06-2020 14:10:36.544 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@60015ef5: startup date [Wed Jun 17 14:10:36 EET 2020]; root of context hierarchy
-17-06-2020 14:10:36.989 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
-17-06-2020 14:10:37.127 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-17-06-2020 14:10:37.442 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@60015ef5: startup date [Wed Jun 17 14:10:36 EET 2020]; root of context hierarchy
-17-06-2020 14:10:37.443 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+19-06-2020 00:09:34.040 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fd07cbb: startup date [Fri Jun 19 00:09:34 EET 2020]; root of context hierarchy
+19-06-2020 00:09:34.341 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+19-06-2020 00:09:34.450 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+19-06-2020 00:09:34.648 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fd07cbb: startup date [Fri Jun 19 00:09:34 EET 2020]; root of context hierarchy
+19-06-2020 00:09:34.649 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+19-06-2020 13:45:03.580 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@353d0772: startup date [Fri Jun 19 13:45:03 EET 2020]; root of context hierarchy
+19-06-2020 13:45:04.067 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+19-06-2020 13:45:04.486 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+19-06-2020 13:45:04.925 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@353d0772: startup date [Fri Jun 19 13:45:03 EET 2020]; root of context hierarchy

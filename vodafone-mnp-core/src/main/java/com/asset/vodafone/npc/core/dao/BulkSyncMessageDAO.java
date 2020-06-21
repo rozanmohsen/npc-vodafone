@@ -1,5 +1,6 @@
 package com.asset.vodafone.npc.core.dao;
 
+import java.net.InetAddress;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,13 +15,13 @@ import org.slf4j.LoggerFactory;
 
 import com.asset.vodafone.npc.core.models.BulkSyncMessageModel;
 import com.asset.vodafone.npc.core.models.NPCMessageModel;
+import com.asset.vodafone.npc.core.service.NPCService;
 import com.asset.vodafone.npc.webservice.xsd.portmessage.BulkSyncMessageType;
 
 public class BulkSyncMessageDAO {
 	private BulkSyncMessageDAO() {
-		
+
 	}
-	
 
 	/**
 	 * This is insertBulkSyncMessage method that insert message of type
@@ -37,9 +38,9 @@ public class BulkSyncMessageDAO {
 		try {
 			stmt = conn.createStatement();
 			BulkSyncMessageType bulkSyncMessageType = bulkSyncMessageModel.getBulkSyncMessageType();
-			insertStmt = "INSERT INTO " + bulkSyncMessage + "(" + npcMessageID + "," + messageCode + ","
-					+ messageID + "," + syncID + "," + startDate + "," + endDate + "," + comments1 + ","
-					+ comments2 + ") " + "VALUES (" + bulkSyncMessageModel.getNPCMessageID() + ","
+			insertStmt = "INSERT INTO " + bulkSyncMessage + "(" + npcMessageID + "," + messageCode + "," + messageID
+					+ "," + syncID + "," + startDate + "," + endDate + "," + comments1 + "," + comments2 + ") "
+					+ "VALUES (" + bulkSyncMessageModel.getNPCMessageID() + ","
 					+ (!"null".equals(bulkSyncMessageType.getMessageCode())
 							&& bulkSyncMessageType.getMessageCode() != null
 									? "'" + bulkSyncMessageType.getMessageCode() + "'"
@@ -92,22 +93,49 @@ public class BulkSyncMessageDAO {
 	 * @throws SQLException
 	 * @throws JAXBException
 	 */
-	public static List<BulkSyncMessageModel> getUnsentMessages(Connection conn)
-			throws SQLException, JAXBException {
+	public static List<BulkSyncMessageModel> getUnsentMessages(Connection conn) throws SQLException, JAXBException {
 		ArrayList<BulkSyncMessageModel> unsentMessages = new ArrayList<>();
 		Statement stmt = null;
 		ResultSet rs = null;
 		String selectStmt = "";
+		String runnerFetchedRowNumber = "";
 		try {
-			stmt = conn.createStatement();
-			selectStmt = "SELECT *  FROM NPC_Message," + bulkSyncMessage + " WHERE " + "NPC_Message" + "." + "Sent"
-					+ " = " + 0 + " AND " + "NPC_Message" + "." + "NPC_MESSAGE_ID" + " = " + bulkSyncMessage + "."
-					+ npcMessageID + " ORDER BY " + "NPC_Message" + "." + "NPC_MESSAGE_ID" + " ASC ";
+
+			conn.setAutoCommit(false);
+			stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+			runnerFetchedRowNumber = System.getenv("RUNNER_FETCHED_ROW_NUMBER");
+			if (runnerFetchedRowNumber == null) {
+				runnerFetchedRowNumber = NPCService.getRunnerFetchedRowNumber();
+
+			}
+			int rowNumber = Integer.parseInt(runnerFetchedRowNumber);
+
+			rs = stmt.executeQuery(
+					"SELECT PICKED_BY FROM NPC_Message WHERE NPC_Message.Sent = 0 AND PICKED_BY IS NULL FOR UPDATE OF PICKED_BY");
+
+			String jobId = "";
+			try {
+				jobId = InetAddress.getLocalHost().getHostAddress();
+			} catch (Exception e) {
+				logger.error(e.getMessage(), e);
+
+			}
+			for (int i = 0; rs.next() && i < rowNumber; i++) {
+				rs.updateString("PICKED_BY", jobId);
+				rs.updateRow();
+
+			}
+
+			conn.commit();
+			conn.setAutoCommit(true);
+			
+			selectStmt = "SELECT *  FROM NPC_Message,BULK_SYNC_MESSAGE WHERE NPC_Message.Sent = 0 AND PICKED_BY = '" + jobId
+					+ "' AND NPC_Message.NPC_MESSAGE_ID = BULK_SYNC_MESSAGE.NPC_MESSAGE_ID ORDER BY NPC_Message.NPC_MESSAGE_ID ASC ";
 			rs = stmt.executeQuery(selectStmt);
 			BulkSyncMessageModel bulkSyncMessageModel = null;
 			for (; rs.next(); unsentMessages.add(bulkSyncMessageModel)) {
 				bulkSyncMessageModel = BulkSyncMessageModel.createBulkSyncMessage();
-				NPCMessageModel.set(bulkSyncMessageModel, "NPC_MESSAGE_ID",rs.getLong("NPC_MESSAGE_ID"));
+				NPCMessageModel.set(bulkSyncMessageModel, "NPC_MESSAGE_ID", rs.getLong("NPC_MESSAGE_ID"));
 				NPCMessageModel.set(bulkSyncMessageModel, "IsPort", rs.getBoolean("IsPort"));
 				NPCMessageModel.set(bulkSyncMessageModel, "Sent", rs.getBoolean("Sent"));
 				NPCMessageModel.set(bulkSyncMessageModel, "Transaction_Date", rs.getDate("Transaction_Date"));
@@ -123,6 +151,7 @@ public class BulkSyncMessageDAO {
 				NPCMessageModel.set(bulkSyncMessageModel, "Next_Message_Min_Date",
 						rs.getString("Next_Message_Min_Date"));
 				NPCMessageModel.set(bulkSyncMessageModel, "User_Comment", rs.getString("User_Comment"));
+				NPCMessageModel.set(bulkSyncMessageModel, "Picked_By", rs.getString("PICKED_BY"));
 				BulkSyncMessageModel.set(bulkSyncMessageModel, npcMessageID, rs.getObject(npcMessageID));
 				BulkSyncMessageModel.set(bulkSyncMessageModel, messageID, rs.getObject(messageID));
 				BulkSyncMessageModel.set(bulkSyncMessageModel, messageCode, rs.getObject(messageCode));
@@ -132,9 +161,9 @@ public class BulkSyncMessageDAO {
 				BulkSyncMessageModel.set(bulkSyncMessageModel, comments1, rs.getObject(comments1));
 				BulkSyncMessageModel.set(bulkSyncMessageModel, comments2, rs.getObject(comments2));
 			}
-			
-				rs.close();
-			
+
+			rs.close();
+
 			return unsentMessages;
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
@@ -182,7 +211,7 @@ public class BulkSyncMessageDAO {
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
 			logger.error(message, ex);
-			
+
 			throw new SQLException(message + "[" + selectStmt + "]");
 		} finally {
 			if (rs != null) {

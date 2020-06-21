@@ -2,8 +2,9 @@ package com.asset.vodafone.npc.core.models;
 
 import javax.xml.bind.JAXBException;
 
-import com.asset.vodafone.npc.webservice.xsd.portmessage.ObjectFactory;
 import com.asset.vodafone.npc.webservice.xsd.portmessage.BulkSyncMessageType;
+import com.asset.vodafone.npc.webservice.xsd.portmessage.ObjectFactory;
+
 
 public class BulkSyncMessageModel extends NPCMessageModel {
 

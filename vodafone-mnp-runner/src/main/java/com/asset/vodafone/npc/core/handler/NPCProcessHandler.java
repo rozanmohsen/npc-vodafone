@@ -167,7 +167,7 @@ public class NPCProcessHandler {
 		try {
 
 			ntraWebserviceProxy.setDefaultUri(endpoint);
-			logger.debug("Start Sending Request to NTRA for UserName : {} ", username);
+			logger.debug("Sending NPC Message to NTRA for UserName : {} ", username);
 			logger.debug("Calling NTRA Web Service  EndPoint : {} ", endpoint);
 
 			return ntraWebserviceProxy.processNPCMsg(req).getResult();
@@ -217,7 +217,7 @@ public class NPCProcessHandler {
 					.newSchema(new Source[] { new StreamSource(portmessage), new StreamSource(bulkSyncMessage) });
 			marshaller.setSchema(xsdSchema);
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-			
+
 			marshaller.marshal(npcData, outputSream);
 
 			try {
@@ -290,8 +290,8 @@ public class NPCProcessHandler {
 		npcData = objectFactory.createNPCData();
 		npcMessageType = objectFactory.createNPCMessageType();
 		bulkSyncMessageType = bulkSyncMessageModel.getBulkSyncMessageType();
-		List<Object> bulkSuncMessages = npcMessageType.getPortMessageOrBulkSyncMessage();
-		bulkSuncMessages.add(bulkSyncMessageType);
+		List<Object> bulkSyncMessages = npcMessageType.getPortMessageOrBulkSyncMessage();
+		bulkSyncMessages.add(bulkSyncMessageType);
 		npcData.setNPCMessages(npcMessageType);
 		return npcData;
 	}
@@ -326,7 +326,8 @@ public class NPCProcessHandler {
 
 		String returnedMessage = "";
 		try {
-			logger.info("Sending Message to NTRA : {}", messageXML);
+			logger.debug("Start sending NPC message...");
+			logger.info("Sending NPC Message to NTRA : {}", messageXML);
 			returnedMessage = sendMessage(username, password, messageXML, true);
 
 			logger.info("Returned message from NTRA Web service = \" {} \" ", returnedMessage);
@@ -397,27 +398,40 @@ public class NPCProcessHandler {
 			try {
 				npcMessageModel = unsentMessages.get(i);
 
-				PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
-
-				logger.debug("Start sending NPC message...");
 				sendPendingMessage(npcMessageModel);
-				logger.debug("Sending NPC message with ID: {}  and Internal Port ID: {} has done successfully...",
-						npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
-				logger.debug("Start updating Fields after sending message...");
+				if (npcMessageModel instanceof PortMessageModel) {
+
+					PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
+					logger.debug(
+							"Sending NPC message of type Port Message  with ID: {}  and Internal Port ID: {} has been done successfully...",
+							npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
+					logger.debug(
+							"MessageID: {} | MessageCode: {} | PortID: {}  | Message TimeStamp: {} | Message Type: Sent | DonerID: {} | RecipientID: {} ",
+							portMessageModel.getPortMessageType().getMessageID(),
+							portMessageModel.getPortMessageType().getMessageCode(),
+							portMessageModel.getPortMessageType().getPortID(), new Date(),
+							portMessageModel.getPortMessageType().getDonorID(),
+							portMessageModel.getPortMessageType().getRecipientID());
+				} else {
+					BulkSyncMessageModel bulkSyncMessageModel = (BulkSyncMessageModel) npcMessageModel;
+					logger.debug(
+							"Sending NPC message of type Bulk Sync Message with NPC Message ID: {}  has been done successfully...",
+							npcMessageModel.getNPCMessageID());
+					logger.debug(
+							"MessageID: {} | MessageCode: {} | StartDate: {} | EndDate: {} | Comments1: {} | Comments2: {} ",
+							bulkSyncMessageModel.getBulkSyncMessageType().getMessageID(),
+							bulkSyncMessageModel.getBulkSyncMessageType().getMessageCode(),
+							bulkSyncMessageModel.getBulkSyncMessageType().getStartDate(),
+							bulkSyncMessageModel.getBulkSyncMessageType().getEndDate(),
+							bulkSyncMessageModel.getBulkSyncMessageType().getComments1(),
+							bulkSyncMessageModel.getBulkSyncMessageType().getComments2());
+				}
+				
 				npcService.updateFieldsAfterSending(npcMessageModel);
-				logger.debug("Updating Fields after sending message has done successfully...");
+				
 				npcService.updateNPCMessageCurrentAndNextDate(npcMessageModel);
 
-				logger.debug("Start Updating Port Data... ");
 				npcService.updatePortData(npcMessageModel, "SUB_ACTION_SENT");
-
-				logger.debug(
-						"MessageID: {} | MessageCode: {} | PortID: {}  | Message TimeStamp: {} | Message Type: Sent | DonerID: {} | RecipientID: {} |",
-						portMessageModel.getPortMessageType().getMessageID(),
-						portMessageModel.getPortMessageType().getMessageCode(),
-						portMessageModel.getPortMessageType().getPortID(), new Date(),
-						portMessageModel.getPortMessageType().getDonorID(),
-						portMessageModel.getPortMessageType().getRecipientID());
 
 				npcService.processActivationStatus(npcMessageModel);
 				npcService.processDeactivationDone(npcMessageModel);

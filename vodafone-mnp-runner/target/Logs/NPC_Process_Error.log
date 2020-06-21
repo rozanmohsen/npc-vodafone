@@ -1,0 +1,384 @@
+18-06-2020 21:22:26.549 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:22:26.552 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 17 common frames omitted
+18-06-2020 21:22:30.278 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:22:30.278 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: Software caused connection abort: recv failed
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: Software caused connection abort: recv failed
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: Software caused connection abort: recv failed
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:682)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at oracle.net.ns.Packet.receive(Packet.java:311)
+	at oracle.net.ns.DataPacket.receive(DataPacket.java:105)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:305)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:426)
+	at oracle.jdbc.driver.T4C8TTIdty.receive(T4C8TTIdty.java:688)
+	at oracle.jdbc.driver.T4C8TTIdty.doRPC(T4C8TTIdty.java:595)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1439)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+18-06-2020 21:22:51.301 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:22:51.302 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 17 common frames omitted
+18-06-2020 21:25:06.287 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:25:06.295 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 17 common frames omitted
+18-06-2020 21:38:34.341 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:38:34.349 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 17 common frames omitted
+18-06-2020 21:38:55.421 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:38:55.422 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 17 common frames omitted
+18-06-2020 21:38:57.803 ERROR [main]  c.a.v.npc.core.service.NPCService.initiateDBConnection - Cannot Establish Database Connection
+18-06-2020 21:38:57.810 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.initializeNPCService - [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_01]: IO Error: The Network Adapter could not establish the connection
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:104)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.initializeNPCService(NPCProcessHandler.java:471)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:381)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:711)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:558)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.asset.vodafone.npc.core.service.NPCService.getDBConnection(NPCService.java:134)
+	at com.asset.vodafone.npc.core.service.NPCService.initiateDBConnection(NPCService.java:96)
+	... 4 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 12 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:162)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 17 common frames omitted
+18-06-2020 21:39:36.665 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_GENERAL_ERROR]: Unknown Error
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:441)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.lang.ClassCastException: com.asset.vodafone.npc.core.models.BulkSyncMessageModel cannot be cast to com.asset.vodafone.npc.core.models.PortMessageModel
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:400)
+	... 2 more
+
+java.lang.ClassCastException: com.asset.vodafone.npc.core.models.BulkSyncMessageModel cannot be cast to com.asset.vodafone.npc.core.models.PortMessageModel
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:400)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+18-06-2020 21:39:37.071 ERROR [main]  c.a.v.npc.core.dao.FailedMessagesDAO.insertFailedMessage - ORA-02291: integrity constraint (SYSADM.REFPORT_MESSAGE24) violated - parent key not found
+
+java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SYSADM.REFPORT_MESSAGE24) violated - parent key not found
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:202)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:45)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:933)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1718)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1678)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:332)
+	at com.asset.vodafone.npc.core.dao.FailedMessagesDAO.insertFailedMessage(FailedMessagesDAO.java:36)
+	at com.asset.vodafone.npc.core.service.NPCService.insertFailedMessage(NPCService.java:236)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:445)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+18-06-2020 21:39:37.072 ERROR [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Error in Insert statement 
+18-06-2020 21:39:37.075 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_DATABASE_ERROR_05]: Error in Insert statement 
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_05]: Error in Insert statement 
+	at com.asset.vodafone.npc.core.service.NPCService.insertFailedMessage(NPCService.java:240)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:445)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLException: ORA-02291: integrity constraint (SYSADM.REFPORT_MESSAGE24) violated - parent key not found
+[INSERT INTO FAILED_MESSAGES_QUEUE(NPC_MESSAGE_ID,REASON) VALUES(4488898,'[NPC_GENERAL_ERROR]: Unknown Error
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:441)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.lang.ClassCastException: com.asset.vodafone.npc.core.models.BulkSyncMessageModel cannot be cast to com.asset.vodafone.npc.core.models.PortMessageModel
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:400)
+	... 2 more
+')]
+	at com.asset.vodafone.npc.core.dao.FailedMessagesDAO.insertFailedMessage(FailedMessagesDAO.java:40)
+	at com.asset.vodafone.npc.core.service.NPCService.insertFailedMessage(NPCService.java:236)
+	... 3 common frames omitted
+18-06-2020 21:40:39.038 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_GENERAL_ERROR]: Unknown Error
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:441)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.lang.ClassCastException: com.asset.vodafone.npc.core.models.BulkSyncMessageModel cannot be cast to com.asset.vodafone.npc.core.models.PortMessageModel
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:400)
+	... 2 more
+
+java.lang.ClassCastException: com.asset.vodafone.npc.core.models.BulkSyncMessageModel cannot be cast to com.asset.vodafone.npc.core.models.PortMessageModel
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:400)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+18-06-2020 21:40:39.401 ERROR [main]  c.a.v.npc.core.dao.FailedMessagesDAO.insertFailedMessage - ORA-02291: integrity constraint (SYSADM.REFPORT_MESSAGE24) violated - parent key not found
+
+java.sql.SQLIntegrityConstraintViolationException: ORA-02291: integrity constraint (SYSADM.REFPORT_MESSAGE24) violated - parent key not found
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:202)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:45)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:933)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:1718)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:1678)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:332)
+	at com.asset.vodafone.npc.core.dao.FailedMessagesDAO.insertFailedMessage(FailedMessagesDAO.java:36)
+	at com.asset.vodafone.npc.core.service.NPCService.insertFailedMessage(NPCService.java:236)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:445)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+18-06-2020 21:40:39.406 ERROR [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Error in Insert statement 
+18-06-2020 21:40:39.406 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_DATABASE_ERROR_05]: Error in Insert statement 
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_05]: Error in Insert statement 
+	at com.asset.vodafone.npc.core.service.NPCService.insertFailedMessage(NPCService.java:240)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:445)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.sql.SQLException: ORA-02291: integrity constraint (SYSADM.REFPORT_MESSAGE24) violated - parent key not found
+[INSERT INTO FAILED_MESSAGES_QUEUE(NPC_MESSAGE_ID,REASON) VALUES(4488898,'[NPC_GENERAL_ERROR]: Unknown Error
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:441)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:653)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:703)
+Caused by: java.lang.ClassCastException: com.asset.vodafone.npc.core.models.BulkSyncMessageModel cannot be cast to com.asset.vodafone.npc.core.models.PortMessageModel
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:400)
+	... 2 more
+')]
+	at com.asset.vodafone.npc.core.dao.FailedMessagesDAO.insertFailedMessage(FailedMessagesDAO.java:40)
+	at com.asset.vodafone.npc.core.service.NPCService.insertFailedMessage(NPCService.java:236)
+	... 3 common frames omitted

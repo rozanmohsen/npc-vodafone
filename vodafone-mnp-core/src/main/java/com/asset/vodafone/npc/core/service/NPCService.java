@@ -272,10 +272,10 @@ public class NPCService {
 			logger.debug("Start updating Fields after sending message...");
 			NPCMessageDAO.updateFieldsAfterSending(conn, npcMessageModel);
 			logger.debug(
-					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Returned Message = \" {} \" | Message Xml = \" {} \" | Machine IP address(Picked_By) = \" {} \" ",
+					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Machine IP address(Picked_By) = \" {} \"  | Returned Message = \" {} \" | Message Xml = \" {} \" ",
 					npcMessageModel.isSent() ? 1 : 0, npcMessageModel.getTransactionDate(),
-					npcMessageModel.getReturnedMessage(), npcMessageModel.getMessageXML(),
-					npcMessageModel.getPickedBy());
+							npcMessageModel.getPickedBy(),npcMessageModel.getReturnedMessage(), npcMessageModel.getMessageXML()
+					);
 			logger.debug("Updating Fields after sending message has been done successfully...");
 		} catch (SQLException ex) {
 			logger.error("Error in Update statement ", ex.getMessage());

@@ -1,12 +1,11 @@
 package com.asset.vodafone.npc.core.handler;
 
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringReader;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -384,7 +383,7 @@ public class NPCWSHandler {
 			logger.error(ex1.getMessage(), ex1);
 			if (ex1.getCode().startsWith(NPCJAXB)) {
 
-				return databaseFailureMessage;
+				return npcProperties.getString("RETURNED_MESSAGE_MARSHALLING_FAILURE").trim();
 
 			}
 			if (ex1.getCode().startsWith(NPCDATABASE)) {
@@ -455,29 +454,28 @@ public class NPCWSHandler {
 					"com.asset.vodafone.npc.webservice.xsd.portmessage:com.asset.vodafone.npc.webservice.xsd.bulksyncmessage");
 
 			Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-
-			ClassLoader classLoader = getClass().getClassLoader();
-
-			URL portmessageresource = classLoader.getResource("xsd/portmessage.xsd");
-			URL bulksyncmessageresource = classLoader.getResource("xsd/bulksyncmessage.xsd");
-			if (portmessageresource == null || bulksyncmessageresource == null) {
+			logger.debug("Loading XSD schema files to validate NPC message");
+			InputStream portMessage=this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
+			
+			InputStream bulkSyncMessage =this.getClass().getClassLoader().getResourceAsStream("xsd/bulksyncmessage.xsd");
+			
+			if (portMessage == null || bulkSyncMessage == null) {
 				throw new FileNotFoundException("XSD Schema file not found!");
 			}
-
-			File portmessage = new File(portmessageresource.getFile());
-			File bulkSyncMessage = new File(bulksyncmessageresource.getFile());
-
+		
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
 
 			Schema xsdSchema = schemaFactory
-					.newSchema(new Source[] { new StreamSource(portmessage), new StreamSource(bulkSyncMessage) });
+					.newSchema(new Source[] { new StreamSource(portMessage), new StreamSource(bulkSyncMessage) });
+			logger.debug("Start validating NPC message against xsd schema");
 			unmarshaller.setSchema(xsdSchema);
+			
 			inputStream = new ByteArrayInputStream(message.getBytes(StandardCharsets.UTF_8));
 
 			NPCData npcData = (NPCData) unmarshaller.unmarshal(inputStream);
-
+			logger.debug("validating NPC message against XSD schema has been done successfully");
 			return createNPCMessage(npcService, npcData);
 
 		} catch (JAXBException ex) {
@@ -492,6 +490,7 @@ public class NPCWSHandler {
 		}
 
 	}
+	
 
 	/**
 	 * Method createNPCMEssage user to return NPCMessageModel for inserting that

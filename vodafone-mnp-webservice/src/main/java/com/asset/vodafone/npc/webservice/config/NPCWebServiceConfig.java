@@ -26,7 +26,8 @@ public class NPCWebServiceConfig extends WsConfigurerAdapter {
 	public Wsdl11Definition defaultWsdl11Definition() {
 		SimpleWsdl11Definition wsdl11Definition = new SimpleWsdl11Definition();
 		wsdl11Definition.setWsdl(new ClassPathResource("/wsdl/npc-web-service.wsdl"));
-
+		
+	
 		return wsdl11Definition;
 	}
 }

@@ -397,8 +397,12 @@ public class NPCMessageDAO {
 	public static List<NPCMessageModel> getUnsentMessages(Connection conn, Map<String, String[]> requiredMessageCodes,
 			Map<String, String[]> optionalMessageCodes) throws SQLException, JAXBException, NPCException {
 		ArrayList<NPCMessageModel> unsentMessages = new ArrayList<>();
+		logger.debug("Start retrieving unsent messages of type port message");
 		unsentMessages.addAll(PortMessageDAO.getUnsentMessages(conn, requiredMessageCodes, optionalMessageCodes));
+		
+		logger.debug("Start retrieving unsent messages of type bulk sync message");
 		unsentMessages.addAll(BulkSyncMessageDAO.getUnsentMessages(conn));
+		
 		return unsentMessages;
 	}
 

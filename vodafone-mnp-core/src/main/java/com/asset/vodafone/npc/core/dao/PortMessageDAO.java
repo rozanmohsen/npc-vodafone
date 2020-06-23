@@ -34,10 +34,7 @@ public class PortMessageDAO {
 		Statement stmt = null;
 		String insertStmt = "";
 		try {
-			logger.debug(
-					"Start inserting port message data into Port message table with NPC Message ID {} and Internal Port ID {}",
-					portMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
-			PortMessageType portMessageType = portMessageModel.getPortMessageType();
+						PortMessageType portMessageType = portMessageModel.getPortMessageType();
 			stmt = conn.createStatement();
 			insertStmt = "INSERT INTO PORT_MESSAGE(NPC_MESSAGE_ID,MESSAGEID,MESSAGECODE,SERVICETYPE,PORTID,PORTINGREQUESTFORMID,DONORID,RECIPIENTID,ORIGINATORID,RESPONSEDUEDATE,NEWROUTE,NPDUEDATE,REJECTCODE,REJECTEDMESSAGECODE,TRANSFERFEE,AVERAGEINVOICEFEE,INVOICEDATE,PAYMENTDUE,INTERNAL_PORT_ID,COMMENTS1,COMMENTS2)VALUES ("
 					+ DBTypeConverter.toSQLNumber(portMessageModel.getNPCMessageID()) + ","
@@ -62,7 +59,7 @@ public class PortMessageDAO {
 					+ DBTypeConverter.toSQLVARCHAR2(portMessageType.getComments1()) + ","
 					+ DBTypeConverter.toSQLVARCHAR2(portMessageType.getComments2()) + ")";
 			stmt.execute(insertStmt);
-			logger.debug("Inserting port message data into Port message table has done successfully with");
+			
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();
 			logger.error(message, ex);
@@ -280,6 +277,7 @@ public class PortMessageDAO {
 
 			}
 			int rowNumber = Integer.parseInt(runnerFetchedRowNumber);
+			
 
 			rs = stmt.executeQuery(
 					"SELECT PICKED_BY FROM NPC_Message WHERE NPC_Message.Sent = 0 AND PICKED_BY IS NULL FOR UPDATE OF PICKED_BY");
@@ -299,7 +297,10 @@ public class PortMessageDAO {
 
 			conn.commit();
 			conn.setAutoCommit(true);
-
+			
+			
+			logger.debug("Start select unsent messages from NPC_Message and PORT_MESSAGE ");
+			
 			selectStmt = "SELECT *  FROM NPC_Message,PORT_MESSAGE WHERE NPC_Message.Sent = 0 AND PICKED_BY = '" + jobId
 					+ "' AND NPC_Message.NPC_MESSAGE_ID = PORT_MESSAGE.NPC_MESSAGE_ID ORDER BY NPC_Message.NPC_MESSAGE_ID ASC ";
 
@@ -410,6 +411,7 @@ public class PortMessageDAO {
 			if (rs != null) {
 				rs.close();
 			}
+			logger.debug("Retrieving unsent messages of type port message has been done successfully and number of unsent messages ={}",unsentMessages.size());
 			return unsentMessages;
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();

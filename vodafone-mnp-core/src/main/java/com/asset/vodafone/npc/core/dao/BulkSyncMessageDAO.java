@@ -109,7 +109,7 @@ public class BulkSyncMessageDAO {
 
 			}
 			int rowNumber = Integer.parseInt(runnerFetchedRowNumber);
-
+			
 			rs = stmt.executeQuery(
 					"SELECT PICKED_BY FROM NPC_Message WHERE NPC_Message.Sent = 0 AND PICKED_BY IS NULL FOR UPDATE OF PICKED_BY");
 
@@ -128,6 +128,7 @@ public class BulkSyncMessageDAO {
 
 			conn.commit();
 			conn.setAutoCommit(true);
+			logger.debug("Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE ");
 			
 			selectStmt = "SELECT *  FROM NPC_Message,BULK_SYNC_MESSAGE WHERE NPC_Message.Sent = 0 AND PICKED_BY = '" + jobId
 					+ "' AND NPC_Message.NPC_MESSAGE_ID = BULK_SYNC_MESSAGE.NPC_MESSAGE_ID ORDER BY NPC_Message.NPC_MESSAGE_ID ASC ";
@@ -163,7 +164,7 @@ public class BulkSyncMessageDAO {
 			}
 
 			rs.close();
-
+			logger.debug("Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages ={}",unsentMessages.size());
 			return unsentMessages;
 		} catch (SQLException ex) {
 			final String message = ex.getMessage();

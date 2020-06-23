@@ -1,14 +1,13 @@
 package com.asset.vodafone.npc.core.handler;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.net.ServerSocket;
-import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -168,7 +167,7 @@ public class NPCProcessHandler {
 
 			ntraWebserviceProxy.setDefaultUri(endpoint);
 			logger.debug("Sending NPC Message to NTRA for UserName : {} ", username);
-			logger.debug("Calling NTRA Web Service  EndPoint : {} ", endpoint);
+			logger.debug("Calling NTRA Web Service EndPoint : {} ", endpoint);
 
 			return ntraWebserviceProxy.processNPCMsg(req).getResult();
 
@@ -198,28 +197,30 @@ public class NPCProcessHandler {
 			JAXBContext jaxbContext = JAXBContext.newInstance(
 					"com.asset.vodafone.npc.webservice.xsd.portmessage:com.asset.vodafone.npc.webservice.xsd.bulksyncmessage");
 			Marshaller marshaller = jaxbContext.createMarshaller();
-			ClassLoader classLoader = getClass().getClassLoader();
-
-			URL portmessageresource = classLoader.getResource("xsd/portmessage.xsd");
-			URL bulksyncmessageresource = classLoader.getResource("xsd/bulksyncmessage.xsd");
-			if (portmessageresource == null || bulksyncmessageresource == null) {
+			logger.debug("Loading XSD schema files to validate NPC message");
+			InputStream portMessage=this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
+			
+			InputStream bulkSyncMessage =this.getClass().getClassLoader().getResourceAsStream("xsd/bulksyncmessage.xsd");;
+			
+			if (portMessage == null || bulkSyncMessage == null) {
 				throw new FileNotFoundException("XSD Schema file not found!");
 			}
 
-			File portmessage = new File(portmessageresource.getFile());
-			File bulkSyncMessage = new File(bulksyncmessageresource.getFile());
+			
 
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
-
+			
 			Schema xsdSchema = schemaFactory
-					.newSchema(new Source[] { new StreamSource(portmessage), new StreamSource(bulkSyncMessage) });
+					.newSchema(new Source[] { new StreamSource(portMessage), new StreamSource(bulkSyncMessage) });
+			logger.debug("Start validating NPC message against xsd schema");
 			marshaller.setSchema(xsdSchema);
+			
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
 			marshaller.marshal(npcData, outputSream);
-
+			logger.debug("validating NPC message against XSD schema has been done successfully");
 			try {
 				return outputSream.toString("utf-8");
 
@@ -386,10 +387,10 @@ public class NPCProcessHandler {
 
 		List<NPCMessageModel> unsentMessages = new ArrayList<>();
 		try {
-			logger.debug("Start retrieving unsent messages");
+			logger.debug("Start retrieving unsent NPC messages");
 			unsentMessages = npcService.getUnsentMessages();
-			logger.debug("Retrieving unsent messges has been done Successfully...");
-			logger.debug("Number of unsent messsages = {} ", unsentMessages.size());
+			logger.debug("Retrieving unsent NPC messges has been done Successfully...");
+			logger.debug("Total number of unsent NPC messsages = {} ", unsentMessages.size());
 		} catch (NPCException e1) {
 			logger.error(e1.getErrorStackTrace(), (Throwable) e1);
 		}

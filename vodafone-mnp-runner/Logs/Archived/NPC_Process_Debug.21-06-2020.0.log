@@ -1,0 +1,93 @@
+21-06-2020 10:51:09.492 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+21-06-2020 10:51:12.012 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+21-06-2020 10:51:12.021 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:51:18.676 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:51:18.676 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 1 
+21-06-2020 10:51:18.970 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+21-06-2020 10:51:18.974 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+21-06-2020 10:51:19.462 DEBUG [main]  c.a.v.n.w.c.NPCWebserviceProxyConfiguration.npcWebserviceInterfaceProxy - Start Marshalling Xml Message
+21-06-2020 10:51:19.485 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+21-06-2020 10:51:19.486 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service  EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+21-06-2020 10:51:19.486 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+21-06-2020 10:51:19.878 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Bulk Sync Message with NPC Message ID: 4498682  has been done successfully...
+21-06-2020 10:51:19.878 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: 10914 | MessageCode: NP Bulk Sync | StartDate: 20070601000000 | EndDate: 20070721000000 | Comments1: NPC Example | Comments2: file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready. 
+21-06-2020 10:51:20.027 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
+21-06-2020 10:51:20.206 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 21/06/2020 10:51:11 " | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>10914</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S201704180207010011</SyncID>
+            <StartDate>20070601000000</StartDate>
+            <EndDate>20070721000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+ " | Machine IP address(Picked_By) = " 5.5.5.4 " 
+21-06-2020 10:51:20.206 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
+21-06-2020 10:52:20.208 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:52:21.670 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:52:21.671 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:53:21.675 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:53:23.100 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:53:23.101 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:54:23.102 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:54:24.775 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:54:24.776 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:55:24.777 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:55:26.220 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:55:26.220 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:56:26.222 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:56:28.022 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:56:28.022 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:57:28.024 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:57:29.779 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:57:29.780 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:58:29.782 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:58:31.268 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:58:31.268 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 10:59:31.271 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 10:59:32.684 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 10:59:32.684 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:00:32.688 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:00:34.124 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:00:34.125 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:01:34.128 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:01:35.563 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:01:35.564 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:02:35.568 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:02:37.157 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:02:37.158 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:03:37.159 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:03:38.574 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:03:38.575 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:04:38.577 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:04:39.998 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:04:39.999 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:05:40.075 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:05:41.586 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:05:41.586 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:06:41.685 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:06:43.204 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:06:43.205 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:07:43.304 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:07:44.727 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:07:44.728 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:08:44.825 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:08:46.233 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:08:46.234 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:09:46.332 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:09:47.764 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:09:47.765 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:10:47.778 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:10:49.525 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:10:49.526 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:11:49.529 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:11:50.937 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:11:50.939 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 
+21-06-2020 11:12:50.941 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent messages
+21-06-2020 11:12:52.358 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent messges has been done Successfully...
+21-06-2020 11:12:52.358 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Number of unsent messsages = 0 

@@ -1,0 +1,88 @@
+25-06-2020 18:51:29.836 ERROR [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Closed Connection
+java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.OracleStatement.ensureOpen(OracleStatement.java:4296)
+	at oracle.jdbc.driver.OracleStatement.clearWarnings(OracleStatement.java:3305)
+	at oracle.jdbc.driver.OracleStatement.prepareForNewResults(OracleStatement.java:3781)
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:5064)
+	at oracle.jdbc.driver.OracleStatement.doScrollStmtExecuteQuery(OracleStatement.java:5124)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1260)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:420)
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:282)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:401)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:322)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:391)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:668)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:718)
+25-06-2020 18:51:29.848 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_DATABASE_ERROR_04]: Error in Select statement Closed Connection
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:324)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:391)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:668)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:718)
+Caused by: java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.PhysicalConnection.needLine(PhysicalConnection.java:6291)
+	at oracle.jdbc.driver.OracleStatement.closeOrCache(OracleStatement.java:1364)
+	at oracle.jdbc.driver.OracleStatement.close(OracleStatement.java:1343)
+	at oracle.jdbc.driver.OracleStatementWrapper.close(OracleStatementWrapper.java:100)
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:425)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:401)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:322)
+	... 3 more
+
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_04]: Error in Select statement Closed Connection
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:324)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:391)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:668)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:718)
+Caused by: java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.PhysicalConnection.needLine(PhysicalConnection.java:6291)
+	at oracle.jdbc.driver.OracleStatement.closeOrCache(OracleStatement.java:1364)
+	at oracle.jdbc.driver.OracleStatement.close(OracleStatement.java:1343)
+	at oracle.jdbc.driver.OracleStatementWrapper.close(OracleStatementWrapper.java:100)
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:425)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:401)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:322)
+	... 3 common frames omitted
+25-06-2020 18:53:41.784 ERROR [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Closed Connection
+java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.OracleStatement.ensureOpen(OracleStatement.java:4296)
+	at oracle.jdbc.driver.OracleStatement.clearWarnings(OracleStatement.java:3305)
+	at oracle.jdbc.driver.OracleStatement.prepareForNewResults(OracleStatement.java:3781)
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:5064)
+	at oracle.jdbc.driver.OracleStatement.doScrollStmtExecuteQuery(OracleStatement.java:5124)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1260)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:420)
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:282)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:401)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:322)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:391)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:668)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:718)
+25-06-2020 18:53:41.789 ERROR [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - [NPC_DATABASE_ERROR_04]: Error in Select statement Closed Connection
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:324)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:391)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:668)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:718)
+Caused by: java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.PhysicalConnection.needLine(PhysicalConnection.java:6291)
+	at oracle.jdbc.driver.OracleStatement.closeOrCache(OracleStatement.java:1364)
+	at oracle.jdbc.driver.OracleStatement.close(OracleStatement.java:1343)
+	at oracle.jdbc.driver.OracleStatementWrapper.close(OracleStatementWrapper.java:100)
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:425)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:401)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:322)
+	... 3 more
+
+com.asset.vodafone.npc.core.exception.NPCException: [NPC_DATABASE_ERROR_04]: Error in Select statement Closed Connection
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:324)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.sendPendingMessages(NPCProcessHandler.java:391)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.mainMode(NPCProcessHandler.java:668)
+	at com.asset.vodafone.npc.core.handler.NPCProcessHandler.main(NPCProcessHandler.java:718)
+Caused by: java.sql.SQLRecoverableException: Closed Connection
+	at oracle.jdbc.driver.PhysicalConnection.needLine(PhysicalConnection.java:6291)
+	at oracle.jdbc.driver.OracleStatement.closeOrCache(OracleStatement.java:1364)
+	at oracle.jdbc.driver.OracleStatement.close(OracleStatement.java:1343)
+	at oracle.jdbc.driver.OracleStatementWrapper.close(OracleStatementWrapper.java:100)
+	at com.asset.vodafone.npc.core.dao.PortMessageDAO.getUnsentMessages(PortMessageDAO.java:425)
+	at com.asset.vodafone.npc.core.dao.NPCMessageDAO.getUnsentMessages(NPCMessageDAO.java:401)
+	at com.asset.vodafone.npc.core.service.NPCService.getUnsentMessages(NPCService.java:322)
+	... 3 common frames omitted

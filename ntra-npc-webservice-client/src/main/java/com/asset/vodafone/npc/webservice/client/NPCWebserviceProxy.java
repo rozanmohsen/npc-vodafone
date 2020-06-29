@@ -79,9 +79,12 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 		try {
 			
 			loggerObj.debug("Start Connecting to NTRA Web Service ");
+			
+			
+			
 			return (ProcessNPCMsgResponse) ((JAXBElement<?>) getWebServiceTemplate().marshalSendAndReceive(processNPCMsg))
 					.getValue();
-			
+	
 	}catch(WebServiceIOException e) {
 			
 			

@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -19,8 +18,6 @@ import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
@@ -28,10 +25,6 @@ import javax.xml.validation.SchemaFactory;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import com.asset.vodafone.npc.core.exception.NPCException;
@@ -190,14 +183,9 @@ public class NPCWSHandler {
 				return returnedMessage;
 
 			String successMessage = npcProperties.getString("RETURNED_MESSAGE_SUCCESS").trim();
-			if (npcMessageModel instanceof PortMessageModel) {
-				logger.debug(
-						"Returned Message for the request with NPC Message ID {} and Internal Port ID {} = \" {} \" ",
-						npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID(), successMessage);
-			} else {
-				logger.debug("Returned Message for the Bulk Sync Message  with NPC Message ID {}  = \" {} \" ",
-						npcMessageModel.getNPCMessageID(), successMessage);
-			}
+
+			logRequestData(npcMessageModel, successMessage);
+
 			return successMessage;
 		} catch (Exception ex) {
 			NPCException npcException = new NPCException(ex, NPCException.GENERAL_ERROR_CODE, "Unknown Error");
@@ -212,6 +200,86 @@ public class NPCWSHandler {
 			return unexpectedFailureMessage;
 		}
 
+	}
+
+	public void logRequestData(NPCMessageModel npcMessageModel, String response) throws NPCException, JAXBException {
+
+		if (npcMessageModel instanceof PortMessageModel) {
+
+			String mSISDN = " \" - \" ";
+			String companyFlag = " \" - \" ";
+			String responseDueDate = "";
+			String portID = "";
+			String donorID = "";
+			String recipientID = "";
+
+			PortDataModel portDataModel = npcService.getPortDataModel(portMessageModel);
+
+			if (portMessageModel.getNumbersToPortList() != null) {
+				ArrayList<NumbersToPortModel> numbersToPortList = new ArrayList<>();
+				numbersToPortList = (ArrayList<NumbersToPortModel>) portMessageModel.getNumbersToPortList();
+				NumbersToPortModel numbersToPortModel = NumbersToPortModel.createNumbersToPort();
+
+				for (int j = 0; j < numbersToPortList.size(); j++) {
+
+					numbersToPortModel = numbersToPortList.get(j);
+				}
+				mSISDN = numbersToPortModel.getNumberDataType().getNumberFrom();
+				if (mSISDN == null)
+					mSISDN = " \" - \" ";
+			}
+
+			responseDueDate = portMessageModel.getPortMessageType().getResponseDueDate();
+			if (responseDueDate == null)
+				responseDueDate = " \" - \" ";
+
+			if (portMessageModel.getSubscriberDataModel() != null) {
+				companyFlag = portMessageModel.getSubscriberDataModel().getSubscriberDataType().getCompanyFlag();
+				if (companyFlag == null)
+					companyFlag = " \" - \" ";
+			}
+
+			portID = portMessageModel.getPortMessageType().getPortID();
+			if (portID == null)
+				portID = " \" - \" ";
+
+			donorID = portMessageModel.getPortMessageType().getDonorID();
+			if (donorID == null)
+				donorID = " \" - \" ";
+
+			recipientID = portMessageModel.getPortMessageType().getRecipientID();
+			if (recipientID == null)
+				recipientID = " \" - \" ";
+
+			logger.info(
+					" NPC Message ID: {} | MessageID: {} | MessageCode: {} | PortID: {} | MSISDN: {} | Message TimeStamp: {} | Message Type: Received | DonerID: {} | RecipientID: {} | Due Date: {} | Company Flag: {} ",
+					npcMessageModel.getNPCMessageID(), portMessageModel.getPortMessageType().getMessageID(),
+					portMessageModel.getPortMessageType().getMessageCode(), portID, mSISDN, new Date(), donorID,
+					recipientID, responseDueDate, companyFlag);
+
+			logger.info("Return: \" {} \" NPC Message ID: \" {} \" Internal Port ID: \" {} \" Port Status: \" {} \" ",
+					response, npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID(),
+					portDataModel.getPortStatus());
+		} else {
+
+			BulkSyncMessageModel bulkSyncMessageModel = (BulkSyncMessageModel) npcMessageModel;
+
+			String syncID = bulkSyncMessageModel.getBulkSyncMessageType().getSyncID();
+			if (syncID == null)
+				syncID = " \" - \" ";
+
+			logger.info(
+					"NPC Message ID: {} | MessageID: {} | MessageCode: {} | SyncID: {} | StartDate: {} | EndDate: {} | Message TimeStamp: {} | Message Type: Received | Comments1: {} | Comments2: {} ",
+					npcMessageModel.getNPCMessageID(), bulkSyncMessageModel.getBulkSyncMessageType().getMessageID(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getMessageCode(), syncID,
+					bulkSyncMessageModel.getBulkSyncMessageType().getStartDate(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getEndDate(), new Date(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getComments1(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getComments2());
+
+			logger.info("Returned Message for the Bulk Sync Message  with NPC Message ID {}  = \" {} \" ",
+					npcMessageModel.getNPCMessageID(), response);
+		}
 	}
 
 	public String checkWSCredentials(String username, byte[] password) {
@@ -260,102 +328,10 @@ public class NPCWSHandler {
 
 	}
 
-	public void logRequest(String message) {
-		final String xmlStr = message;
-
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
-		factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
-
-		DocumentBuilder builder = null;
-		try {
-
-			builder = factory.newDocumentBuilder();
-
-			Document doc = builder.parse(new InputSource(new StringReader(xmlStr)));
-
-			String messageID = "";
-			String messageCode = "";
-			String portID = "";
-			String mSISDN = "";
-			String donorID = "";
-			String recipientID = "";
-			String syncID = "";
-			String startDate = "";
-			String endDate = "";
-			String comments1 = "";
-			String comments2 = "";
-
-			NodeList portMessageNodes = doc.getElementsByTagName("PortMessage");
-			NodeList bulkSyncMessageNodes = doc.getElementsByTagName("BulkSyncMessage");
-			NodeList numbersToPort = doc.getElementsByTagName("NumbersToPort");
-
-			Element elementNumbersToport = (Element) numbersToPort.item(0);
-			Element portMEssageElement = (Element) portMessageNodes.item(0);
-			Element bulkSyncMessageElement = (Element) bulkSyncMessageNodes.item(0);
-
-			if (portMessageNodes.getLength() > 0) {
-				if (portMEssageElement.getElementsByTagName("MessageID").getLength() > 0)
-					messageID = portMEssageElement.getElementsByTagName("MessageID").item(0).getTextContent();
-
-				if (portMEssageElement.getElementsByTagName("MessageCode").getLength() > 0)
-					messageCode = portMEssageElement.getElementsByTagName("MessageCode").item(0).getTextContent();
-
-				if (portMEssageElement.getElementsByTagName("PortID").getLength() > 0)
-					portID = portMEssageElement.getElementsByTagName("PortID").item(0).getTextContent();
-
-				if (portMEssageElement.getElementsByTagName("DonorID").getLength() > 0)
-					donorID = portMEssageElement.getElementsByTagName("DonorID").item(0).getTextContent();
-
-				if (portMEssageElement.getElementsByTagName("RecipientID").getLength() > 0)
-					recipientID = portMEssageElement.getElementsByTagName("RecipientID").item(0).getTextContent();
-
-				if (numbersToPort.getLength() > 0
-						&& elementNumbersToport.getElementsByTagName("NumberFrom").getLength() > 0) {
-
-					mSISDN = elementNumbersToport.getElementsByTagName("NumberFrom").item(0).getTextContent();
-				}
-				logger.debug(
-						"MessageID: {} | MessageCode: {} | PortID: {} | MSISDN: {} | Message TimeStamp: {} | Message Type: Received | DonerID: {} | RecipientID: {} ",
-						messageID, messageCode, portID, mSISDN, new Date(), donorID, recipientID);
-			}
-
-			if (bulkSyncMessageNodes.getLength() > 0) {
-				if (bulkSyncMessageElement.getElementsByTagName("MessageID").getLength() > 0)
-					messageID = bulkSyncMessageElement.getElementsByTagName("MessageID").item(0).getTextContent();
-
-				if (bulkSyncMessageElement.getElementsByTagName("MessageCode").getLength() > 0)
-					messageCode = bulkSyncMessageElement.getElementsByTagName("MessageCode").item(0).getTextContent();
-
-				if (bulkSyncMessageElement.getElementsByTagName("SyncID").getLength() > 0)
-					syncID = bulkSyncMessageElement.getElementsByTagName("SyncID").item(0).getTextContent();
-
-				if (bulkSyncMessageElement.getElementsByTagName("StartDate").getLength() > 0)
-					startDate = bulkSyncMessageElement.getElementsByTagName("StartDate").item(0).getTextContent();
-
-				if (bulkSyncMessageElement.getElementsByTagName("EndDate").getLength() > 0)
-					endDate = bulkSyncMessageElement.getElementsByTagName("EndDate").item(0).getTextContent();
-
-				if (bulkSyncMessageElement.getElementsByTagName("Comments1").getLength() > 0)
-					comments1 = bulkSyncMessageElement.getElementsByTagName("Comments1").item(0).getTextContent();
-
-				if (bulkSyncMessageElement.getElementsByTagName("Comments2").getLength() > 0)
-					comments2 = bulkSyncMessageElement.getElementsByTagName("Comments2").item(0).getTextContent();
-
-				logger.debug(
-						"MessageID: {} | MessageCode: {} | SyncID: {} | StartDate: {} | EndDate: {} | Message TimeStamp: {} | Message Type: Received | Comments1: {} | Comments2: {} ",
-						messageID, messageCode, syncID, startDate, endDate, new Date(), comments1, comments2);
-			}
-		} catch (Exception e) {
-			logger.error(e.getMessage());
-		}
-
-	}
-
 	public String parsingAndUpdatingMessageTimeFrame(String message) throws NPCException, SAXException, Exception {
 
 		try {
-			logRequest(message);
+
 			npcMessageModel = parseMessage(npcService, message);
 
 			if (npcMessageModel != null) {
@@ -455,14 +431,15 @@ public class NPCWSHandler {
 
 			Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 			logger.debug("Loading XSD schema files to validate NPC message");
-			InputStream portMessage=this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
-			
-			InputStream bulkSyncMessage =this.getClass().getClassLoader().getResourceAsStream("xsd/bulksyncmessage.xsd");
-			
+			InputStream portMessage = this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
+
+			InputStream bulkSyncMessage = this.getClass().getClassLoader()
+					.getResourceAsStream("xsd/bulksyncmessage.xsd");
+
 			if (portMessage == null || bulkSyncMessage == null) {
 				throw new FileNotFoundException("XSD Schema file not found!");
 			}
-		
+
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
@@ -471,7 +448,7 @@ public class NPCWSHandler {
 					.newSchema(new Source[] { new StreamSource(portMessage), new StreamSource(bulkSyncMessage) });
 			logger.debug("Start validating NPC message against xsd schema");
 			unmarshaller.setSchema(xsdSchema);
-			
+
 			inputStream = new ByteArrayInputStream(message.getBytes(StandardCharsets.UTF_8));
 
 			NPCData npcData = (NPCData) unmarshaller.unmarshal(inputStream);
@@ -490,7 +467,6 @@ public class NPCWSHandler {
 		}
 
 	}
-	
 
 	/**
 	 * Method createNPCMEssage user to return NPCMessageModel for inserting that

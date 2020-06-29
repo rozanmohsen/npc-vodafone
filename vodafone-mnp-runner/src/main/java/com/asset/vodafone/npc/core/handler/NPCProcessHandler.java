@@ -162,13 +162,14 @@ public class NPCProcessHandler {
 		req.setString1(username);
 		req.setArrayOfbyte2(password);
 		req.setString3(xmlMsg);
+		
 
 		try {
-
+		
 			ntraWebserviceProxy.setDefaultUri(endpoint);
 			logger.debug("Sending NPC Message to NTRA for UserName : {} ", username);
 			logger.debug("Calling NTRA Web Service EndPoint : {} ", endpoint);
-
+			
 			return ntraWebserviceProxy.processNPCMsg(req).getResult();
 
 		} catch (WebServiceIOException e) {
@@ -200,7 +201,7 @@ public class NPCProcessHandler {
 			logger.debug("Loading XSD schema files to validate NPC message");
 			InputStream portMessage=this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
 			
-			InputStream bulkSyncMessage =this.getClass().getClassLoader().getResourceAsStream("xsd/bulksyncmessage.xsd");;
+			InputStream bulkSyncMessage =this.getClass().getClassLoader().getResourceAsStream("xsd/bulksyncmessage.xsd");
 			
 			if (portMessage == null || bulkSyncMessage == null) {
 				throw new FileNotFoundException("XSD Schema file not found!");
@@ -222,6 +223,7 @@ public class NPCProcessHandler {
 			marshaller.marshal(npcData, outputSream);
 			logger.debug("validating NPC message against XSD schema has been done successfully");
 			try {
+			
 				return outputSream.toString("utf-8");
 
 			} catch (UnsupportedEncodingException ex) {
@@ -406,11 +408,16 @@ public class NPCProcessHandler {
 					logger.debug(
 							"Sending NPC message of type Port Message  with ID: {}  and Internal Port ID: {} has been done successfully...",
 							npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
+					
+					String portID=portMessageModel.getPortMessageType().getPortID();
+					if (portID==null)
+						portID=" \" - \" ";
+					
 					logger.debug(
 							"MessageID: {} | MessageCode: {} | PortID: {}  | Message TimeStamp: {} | Message Type: Sent | DonerID: {} | RecipientID: {} ",
 							portMessageModel.getPortMessageType().getMessageID(),
 							portMessageModel.getPortMessageType().getMessageCode(),
-							portMessageModel.getPortMessageType().getPortID(), new Date(),
+							portID, new Date(),
 							portMessageModel.getPortMessageType().getDonorID(),
 							portMessageModel.getPortMessageType().getRecipientID());
 				} else {

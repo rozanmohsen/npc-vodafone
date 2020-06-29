@@ -73,6 +73,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://npc.gizasystems.com/", name = "processNPCMsgResponse")
     public JAXBElement<ProcessNPCMsgResponse> createProcessNPCMsgResponse(ProcessNPCMsgResponse value) {
+   
         return new JAXBElement<ProcessNPCMsgResponse>(_ProcessNPCMsgResponse_QNAME, ProcessNPCMsgResponse.class, null, value);
     }
 
@@ -82,6 +83,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "", name = "arrayOfbyte_2", scope = ProcessNPCMsg.class)
     public JAXBElement<byte[]> createProcessNPCMsgArrayOfbyte2(byte[] value) {
+    	
         return new JAXBElement<byte[]>(_ProcessNPCMsgArrayOfbyte2_QNAME, byte[].class, ProcessNPCMsg.class, ((byte[]) value));
     }
 

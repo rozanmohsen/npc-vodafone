@@ -18,7 +18,7 @@ public class NPCWebServiceConfig extends WsConfigurerAdapter {
 	public ServletRegistrationBean messageDispatcherServlet(ApplicationContext applicationContext) {
 		MessageDispatcherServlet servlet = new MessageDispatcherServlet();
 		servlet.setApplicationContext(applicationContext);
-
+		
 		return new ServletRegistrationBean(servlet, "/NPC-SOAP/NPCWebService");
 	}
 

@@ -278,7 +278,7 @@ public class PortMessageDAO {
 			}
 			int rowNumber = Integer.parseInt(runnerFetchedRowNumber);
 			
-
+			
 			rs = stmt.executeQuery(
 					"SELECT PICKED_BY FROM NPC_Message WHERE NPC_Message.Sent = 0 AND PICKED_BY IS NULL FOR UPDATE OF PICKED_BY");
 

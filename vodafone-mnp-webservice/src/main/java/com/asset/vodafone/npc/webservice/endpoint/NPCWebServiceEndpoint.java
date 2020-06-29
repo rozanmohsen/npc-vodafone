@@ -20,7 +20,7 @@ public class NPCWebServiceEndpoint {
 	private static final Logger logger = LoggerFactory.getLogger(NPCWebServiceEndpoint.class.getName());
 
 	/**
-	 * Method return Process NPC MEssage Response from NTRA Web service
+	 * Method return Process NPC Message Response from  Web service
 	 * 
 	 * @param request
 	 * @return
@@ -31,7 +31,8 @@ public class NPCWebServiceEndpoint {
 		String returnedMessage = "";
 		ObjectFactory factory = new ObjectFactory();
 		ProcessNPCMsgResponse response = factory.createProcessNPCMsgResponse();
-
+	
+		
 		NPCWSHandler handler;
 		try {
 			handler = NPCWSHandler.getInstance();
@@ -44,7 +45,7 @@ public class NPCWebServiceEndpoint {
 		}
 
 		response.setResult(returnedMessage);
-
+	
 		return response;
 	}
 }

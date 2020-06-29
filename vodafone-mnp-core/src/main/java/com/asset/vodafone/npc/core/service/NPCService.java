@@ -193,15 +193,8 @@ public class NPCService {
 						npcMessageModel.getNPCMessageID());
 				BulkSyncMessageDAO.insertBulkSyncMessage(conn, bulkSyncMessageModel);
 				logger.debug(
-						"Bulk Sync Message has been inserted into BULK_SYNC_MESSAGE table successfully with NPC Message ID: {} | MEssage Code: {} | MEssage ID: {} | SyncID: {} | Start Date: {} | End Date: {} | Comments1: {} | Comments2: {}  ",
-						bulkSyncMessageModel.getNPCMessageID(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getMessageCode(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getMessageID(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getSyncID(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getStartDate(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getEndDate(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getComments1(),
-						bulkSyncMessageModel.getBulkSyncMessageType().getComments2());
+						"Bulk Sync Message has been inserted into BULK_SYNC_MESSAGE table successfully with NPC Message ID: {}",
+						bulkSyncMessageModel.getNPCMessageID());
 			}
 				
 				

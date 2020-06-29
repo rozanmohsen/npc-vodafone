@@ -1,0 +1,142 @@
+24-06-2020 15:56:49.323 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+24-06-2020 15:57:36.503 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+24-06-2020 15:58:23.664 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+24-06-2020 15:58:31.595 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+24-06-2020 15:58:31.666 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+24-06-2020 15:58:31.786 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+24-06-2020 15:58:33.705 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+24-06-2020 15:58:33.706 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+24-06-2020 15:58:33.711 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: 111111122 | MessageCode: NPR Accept | PortID: P202006240921271111 | MSISDN: 01011234575 | Message TimeStamp: Wed Jun 24 15:58:33 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi 
+24-06-2020 15:58:45.186 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+24-06-2020 15:58:50.157 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+24-06-2020 15:58:50.168 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - validating NPC message against XSD schema has been done successfully
+24-06-2020 15:58:50.527 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID: 4498709 
+24-06-2020 15:58:50.695 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into NPC_MESSAGE table with NPC Message ID 4498709
+24-06-2020 15:58:50.911 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into NPC_MESSAGE table successfully
+24-06-2020 15:58:52.892 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into PORT_MESSAGE table with NPC Message ID 4498709
+24-06-2020 15:58:53.101 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into PORT_MESSAGE table successfully
+24-06-2020 15:58:53.101 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into SUBSCRIBER_DATA table with NPC Message ID 4498709
+24-06-2020 15:58:53.295 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Subscriber data has been inserted into SUBSCRIBER_DATA table successfully  
+24-06-2020 15:58:53.296 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting number data into NUMBERSTOPORT table with NPC Message ID 4498709
+24-06-2020 15:58:53.463 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Number data has been inserted into NUMBERSTOPORT table  successfully
+24-06-2020 15:58:53.463 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID: 4498709  and Internal Port ID: 4498339
+24-06-2020 16:06:31.415 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Start updating message current max date with date 25/06/2020 14:47:49 
+24-06-2020 16:06:34.287 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Updating message current max date has been done successfully
+24-06-2020 16:06:59.363 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+24-06-2020 16:10:51.175 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498709  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Accept-R "
+24-06-2020 16:10:51.684 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498709 and Internal Port ID 4498339 = " success " 
+24-06-2020 16:17:17.450 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+24-06-2020 16:17:17.450 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+24-06-2020 16:17:17.452 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+24-06-2020 16:17:17.454 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: 111111122 | MessageCode: NPR Accept | PortID: P202006240921272222 | MSISDN: 01011234575 | Message TimeStamp: Wed Jun 24 16:17:17 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi 
+24-06-2020 16:17:17.540 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+24-06-2020 16:17:17.551 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+24-06-2020 16:17:17.555 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - validating NPC message against XSD schema has been done successfully
+24-06-2020 16:17:17.710 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID: 4498710 
+24-06-2020 16:17:17.872 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into NPC_MESSAGE table with NPC Message ID 4498710
+24-06-2020 16:17:18.057 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into NPC_MESSAGE table successfully
+24-06-2020 16:17:18.397 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into PORT_MESSAGE table with NPC Message ID 4498710
+24-06-2020 16:17:18.566 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into PORT_MESSAGE table successfully
+24-06-2020 16:17:18.567 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into SUBSCRIBER_DATA table with NPC Message ID 4498710
+24-06-2020 16:17:18.740 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Subscriber data has been inserted into SUBSCRIBER_DATA table successfully  
+24-06-2020 16:17:18.741 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting number data into NUMBERSTOPORT table with NPC Message ID 4498710
+24-06-2020 16:17:18.907 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Number data has been inserted into NUMBERSTOPORT table  successfully
+24-06-2020 16:17:18.907 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID: 4498710  and Internal Port ID: 4498339
+24-06-2020 16:21:34.707 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Start updating message current max date with date 25/06/2020 14:47:49 
+24-06-2020 16:21:36.597 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Updating message current max date has been done successfully
+24-06-2020 16:21:39.966 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+24-06-2020 16:23:13.892 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498710  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Accept-R "
+24-06-2020 16:23:14.071 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498710 and Internal Port ID 4498339 = " success " 
+24-06-2020 16:38:25.209 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+24-06-2020 16:38:25.211 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+24-06-2020 16:38:25.212 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+24-06-2020 16:38:25.215 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequest - MessageID: 222222222 | MessageCode: NPR Accept | PortID: P202006240921273333 | MSISDN: 01011234575 | Message TimeStamp: Wed Jun 24 16:38:25 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi 
+24-06-2020 16:38:25.293 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+24-06-2020 16:38:25.302 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+24-06-2020 16:38:25.305 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - validating NPC message against XSD schema has been done successfully
+24-06-2020 16:38:25.535 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID: 4498711 
+24-06-2020 16:38:25.693 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into NPC_MESSAGE table with NPC Message ID 4498711
+24-06-2020 16:38:25.909 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into NPC_MESSAGE table successfully
+24-06-2020 16:38:26.241 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into PORT_MESSAGE table with NPC Message ID 4498711
+24-06-2020 16:38:26.414 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into PORT_MESSAGE table successfully
+24-06-2020 16:38:26.415 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into SUBSCRIBER_DATA table with NPC Message ID 4498711
+24-06-2020 16:38:26.589 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Subscriber data has been inserted into SUBSCRIBER_DATA table successfully  
+24-06-2020 16:38:26.590 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting number data into NUMBERSTOPORT table with NPC Message ID 4498711
+24-06-2020 16:38:26.787 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Number data has been inserted into NUMBERSTOPORT table  successfully
+24-06-2020 16:38:26.788 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID: 4498711  and Internal Port ID: 4498339
+24-06-2020 16:48:34.596 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Start updating message current max date with date 25/06/2020 14:47:49 
+24-06-2020 16:48:36.691 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Updating message current max date has been done successfully
+24-06-2020 16:51:16.534 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+24-06-2020 16:52:11.869 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498711  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Accept-R "
+24-06-2020 16:52:12.250 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Returned Message for the request with NPC Message ID 4498711 and Internal Port ID 4498339 = " success " 

@@ -1,0 +1,1431 @@
+06-07-2020 13:25:16.936 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication on Mohamed-Hamdy with PID 89008 (C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice\target\classes started by mohammed.hamdy in C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice)
+06-07-2020 13:25:16.956 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-07-2020 13:25:16.999 INFO  [main]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ae50ce6: startup date [Mon Jul 06 13:25:16 EET 2020]; root of context hierarchy
+06-07-2020 13:25:17.140 INFO  [background-preinit]
+				o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+06-07-2020 13:25:17.800 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$94968b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 13:25:17.806 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$75341aa7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 13:25:17.849 INFO  [main]
+				o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+06-07-2020 13:25:18.214 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+06-07-2020 13:25:18.224 INFO  [main]
+				o.a.catalina.core.StandardService.log - Starting service Tomcat
+06-07-2020 13:25:18.225 INFO  [main]
+				o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+06-07-2020 13:25:18.281 INFO  [localhost-startStop-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-07-2020 13:25:18.281 INFO  [localhost-startStop-1]
+				o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1282 ms
+06-07-2020 13:25:18.416 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+06-07-2020 13:25:18.418 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+06-07-2020 13:25:18.421 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+06-07-2020 13:25:18.421 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+06-07-2020 13:25:18.421 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+06-07-2020 13:25:18.422 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+06-07-2020 13:25:18.738 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ae50ce6: startup date [Mon Jul 06 13:25:16 EET 2020]; root of context hierarchy
+06-07-2020 13:25:18.894 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+06-07-2020 13:25:18.895 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+06-07-2020 13:25:18.913 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:25:18.913 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:25:18.937 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:25:19.024 INFO  [main]
+				o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+06-07-2020 13:25:19.032 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+06-07-2020 13:25:19.037 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+06-07-2020 13:25:19.060 INFO  [main]
+				o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+06-07-2020 13:25:19.068 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+06-07-2020 13:25:19.071 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 2.508 seconds (JVM running for 3.829)
+06-07-2020 13:26:20.004 INFO  [http-nio-9090-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+06-07-2020 13:26:20.004 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+06-07-2020 13:26:20.007 INFO  [http-nio-9090-exec-1]
+				o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+06-07-2020 13:26:20.023 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 18 ms
+06-07-2020 13:26:20.220 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:37:21.745 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:44:21.368 INFO  [RMI TCP Connection(6)-127.0.0.1]
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+06-07-2020 13:44:21.369 INFO  [RMI TCP Connection(6)-127.0.0.1]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ae50ce6: startup date [Mon Jul 06 13:25:16 EET 2020]; root of context hierarchy
+06-07-2020 13:44:21.370 INFO  [RMI TCP Connection(6)-127.0.0.1]
+				o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+06-07-2020 13:44:33.706 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication on Mohamed-Hamdy with PID 94036 (C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice\target\classes started by mohammed.hamdy in C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice)
+06-07-2020 13:44:33.710 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-07-2020 13:44:33.736 INFO  [main]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba9ad43: startup date [Mon Jul 06 13:44:33 EET 2020]; root of context hierarchy
+06-07-2020 13:44:33.829 INFO  [background-preinit]
+				o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+06-07-2020 13:44:34.310 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$1a544d19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 13:44:34.315 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$863eff08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 13:44:34.391 INFO  [main]
+				o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+06-07-2020 13:44:34.662 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+06-07-2020 13:44:34.699 INFO  [main]
+				o.a.catalina.core.StandardService.log - Starting service Tomcat
+06-07-2020 13:44:34.700 INFO  [main]
+				o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+06-07-2020 13:44:34.763 INFO  [localhost-startStop-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-07-2020 13:44:34.763 INFO  [localhost-startStop-1]
+				o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1028 ms
+06-07-2020 13:44:34.897 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+06-07-2020 13:44:34.899 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+06-07-2020 13:44:34.907 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+06-07-2020 13:44:34.908 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+06-07-2020 13:44:34.909 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+06-07-2020 13:44:34.909 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+06-07-2020 13:44:35.164 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba9ad43: startup date [Mon Jul 06 13:44:33 EET 2020]; root of context hierarchy
+06-07-2020 13:44:35.208 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+06-07-2020 13:44:35.209 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+06-07-2020 13:44:35.230 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:44:35.231 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:44:35.256 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:44:35.356 INFO  [main]
+				o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+06-07-2020 13:44:35.364 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+06-07-2020 13:44:35.372 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+06-07-2020 13:44:35.385 INFO  [main]
+				o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+06-07-2020 13:44:35.395 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+06-07-2020 13:44:35.399 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 1.92 seconds (JVM running for 2.773)
+06-07-2020 13:44:39.878 INFO  [http-nio-9090-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+06-07-2020 13:44:39.878 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+06-07-2020 13:44:39.880 INFO  [http-nio-9090-exec-1]
+				o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+06-07-2020 13:44:39.891 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 13 ms
+06-07-2020 13:44:39.996 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:44:41.625 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 13:46:16.348 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:46:16.446 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 13:46:32.569 INFO  [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:46:32.656 INFO  [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 13:46:46.615 INFO  [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:46:46.697 INFO  [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 13:49:43.156 INFO  [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:49:43.237 INFO  [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 13:50:06.423 INFO  [RMI TCP Connection(4)-127.0.0.1]
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+06-07-2020 13:50:06.423 INFO  [RMI TCP Connection(4)-127.0.0.1]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba9ad43: startup date [Mon Jul 06 13:44:33 EET 2020]; root of context hierarchy
+06-07-2020 13:50:06.425 INFO  [RMI TCP Connection(4)-127.0.0.1]
+				o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+06-07-2020 13:50:17.060 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication on Mohamed-Hamdy with PID 94864 (C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice\target\classes started by mohammed.hamdy in C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice)
+06-07-2020 13:50:17.063 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-07-2020 13:50:17.096 INFO  [main]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba9ad43: startup date [Mon Jul 06 13:50:17 EET 2020]; root of context hierarchy
+06-07-2020 13:50:17.183 INFO  [background-preinit]
+				o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+06-07-2020 13:50:17.657 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$1a544d19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 13:50:17.662 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$863eff08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 13:50:17.742 INFO  [main]
+				o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+06-07-2020 13:50:18.041 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+06-07-2020 13:50:18.050 INFO  [main]
+				o.a.catalina.core.StandardService.log - Starting service Tomcat
+06-07-2020 13:50:18.051 INFO  [main]
+				o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+06-07-2020 13:50:18.117 INFO  [localhost-startStop-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-07-2020 13:50:18.117 INFO  [localhost-startStop-1]
+				o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1021 ms
+06-07-2020 13:50:18.244 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+06-07-2020 13:50:18.245 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+06-07-2020 13:50:18.248 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+06-07-2020 13:50:18.248 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+06-07-2020 13:50:18.249 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+06-07-2020 13:50:18.249 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+06-07-2020 13:50:18.528 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba9ad43: startup date [Mon Jul 06 13:50:17 EET 2020]; root of context hierarchy
+06-07-2020 13:50:18.563 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+06-07-2020 13:50:18.563 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+06-07-2020 13:50:18.588 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:50:18.588 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:50:18.612 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 13:50:18.710 INFO  [main]
+				o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+06-07-2020 13:50:18.720 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+06-07-2020 13:50:18.725 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+06-07-2020 13:50:18.736 INFO  [main]
+				o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+06-07-2020 13:50:18.746 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+06-07-2020 13:50:18.749 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 1.912 seconds (JVM running for 2.825)
+06-07-2020 13:50:27.100 INFO  [http-nio-9090-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+06-07-2020 13:50:27.101 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+06-07-2020 13:50:27.103 INFO  [http-nio-9090-exec-1]
+				o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+06-07-2020 13:50:27.111 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 10 ms
+06-07-2020 13:50:27.206 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 13:50:48.271 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0001E: Internal error: Could not connect to database, Please contact system administrator " 
+06-07-2020 13:57:03.081 INFO  [RMI TCP Connection(4)-127.0.0.1]
+				o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+06-07-2020 13:57:03.082 INFO  [RMI TCP Connection(4)-127.0.0.1]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba9ad43: startup date [Mon Jul 06 13:50:17 EET 2020]; root of context hierarchy
+06-07-2020 13:57:03.084 INFO  [RMI TCP Connection(4)-127.0.0.1]
+				o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+06-07-2020 14:01:41.361 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication on Mohamed-Hamdy with PID 95288 (C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice\target\classes started by mohammed.hamdy in C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice)
+06-07-2020 14:01:41.366 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-07-2020 14:01:41.420 INFO  [main]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53251a66: startup date [Mon Jul 06 14:01:41 EET 2020]; root of context hierarchy
+06-07-2020 14:01:41.491 INFO  [background-preinit]
+				o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+06-07-2020 14:01:42.190 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$180adbe3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 14:01:42.196 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$83f58dd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 14:01:42.238 INFO  [main]
+				o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+06-07-2020 14:01:42.558 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+06-07-2020 14:01:42.568 INFO  [main]
+				o.a.catalina.core.StandardService.log - Starting service Tomcat
+06-07-2020 14:01:42.569 INFO  [main]
+				o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+06-07-2020 14:01:42.639 INFO  [localhost-startStop-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-07-2020 14:01:42.640 INFO  [localhost-startStop-1]
+				o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1220 ms
+06-07-2020 14:01:42.830 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+06-07-2020 14:01:42.831 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+06-07-2020 14:01:42.834 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+06-07-2020 14:01:42.835 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+06-07-2020 14:01:42.835 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+06-07-2020 14:01:42.835 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+06-07-2020 14:01:43.198 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53251a66: startup date [Mon Jul 06 14:01:41 EET 2020]; root of context hierarchy
+06-07-2020 14:01:43.252 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+06-07-2020 14:01:43.253 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+06-07-2020 14:01:43.294 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 14:01:43.295 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 14:01:43.340 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 14:01:43.582 INFO  [main]
+				o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+06-07-2020 14:01:43.595 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+06-07-2020 14:01:43.602 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+06-07-2020 14:01:43.614 INFO  [main]
+				o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+06-07-2020 14:01:43.636 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+06-07-2020 14:01:43.640 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 2.569 seconds (JVM running for 3.683)
+06-07-2020 14:01:59.799 INFO  [http-nio-9090-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+06-07-2020 14:01:59.800 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+06-07-2020 14:01:59.803 INFO  [http-nio-9090-exec-1]
+				o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+06-07-2020 14:01:59.816 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 16 ms
+06-07-2020 14:02:08.935 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 14:02:48.213 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 14:03:41.547 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 14:05:31.813 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 14:09:16.483 INFO  [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     <MessageID>OUT1600</MessageID>
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 14:09:28.110 INFO  [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0006E: Database Exception in processing message " 
+06-07-2020 14:10:40.016 INFO  [http-nio-9090-exec-6]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     <MessageID>OUT1600</MessageID>
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 14:11:43.491 INFO  [http-nio-9090-exec-6]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0001E: Internal error: Could not connect to database, Please contact system administrator " 
+06-07-2020 15:01:49.659 INFO  [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     <MessageID>OUT1600</MessageID>
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:02:10.679 INFO  [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0001E: Internal error: Could not connect to database, Please contact system administrator " 
+06-07-2020 15:03:21.154 INFO  [http-nio-9090-exec-9]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     <MessageID>OUT1600</MessageID>
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:03:42.162 INFO  [http-nio-9090-exec-9]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0001E: Internal error: Could not connect to database, Please contact system administrator " 
+06-07-2020 15:06:41.393 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication on Mohamed-Hamdy with PID 104724 (C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice\target\classes started by mohammed.hamdy in C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice)
+06-07-2020 15:06:41.398 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-07-2020 15:06:41.433 INFO  [main]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5717c37: startup date [Mon Jul 06 15:06:41 EET 2020]; root of context hierarchy
+06-07-2020 15:06:41.503 INFO  [background-preinit]
+				o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+06-07-2020 15:06:42.142 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$27bcb00c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 15:06:42.149 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$93a761fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 15:06:42.192 INFO  [main]
+				o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+06-07-2020 15:06:42.522 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+06-07-2020 15:06:42.531 INFO  [main]
+				o.a.catalina.core.StandardService.log - Starting service Tomcat
+06-07-2020 15:06:42.533 INFO  [main]
+				o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+06-07-2020 15:06:42.605 INFO  [localhost-startStop-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-07-2020 15:06:42.605 INFO  [localhost-startStop-1]
+				o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1172 ms
+06-07-2020 15:06:42.769 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+06-07-2020 15:06:42.770 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+06-07-2020 15:06:42.773 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+06-07-2020 15:06:42.774 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+06-07-2020 15:06:42.774 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+06-07-2020 15:06:42.774 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+06-07-2020 15:06:43.099 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5717c37: startup date [Mon Jul 06 15:06:41 EET 2020]; root of context hierarchy
+06-07-2020 15:06:43.151 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+06-07-2020 15:06:43.152 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+06-07-2020 15:06:43.192 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 15:06:43.192 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 15:06:43.234 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 15:06:43.468 INFO  [main]
+				o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+06-07-2020 15:06:43.477 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+06-07-2020 15:06:43.484 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+06-07-2020 15:06:43.495 INFO  [main]
+				o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+06-07-2020 15:06:43.506 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+06-07-2020 15:06:43.508 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 2.401 seconds (JVM running for 4.056)
+06-07-2020 15:07:12.680 INFO  [http-nio-9090-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+06-07-2020 15:07:12.681 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+06-07-2020 15:07:12.683 INFO  [http-nio-9090-exec-1]
+				o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+06-07-2020 15:07:12.693 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 12 ms
+06-07-2020 15:07:12.809 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     <MessageID>OUT1600</MessageID>
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:08:17.549 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData -  NPC Message ID: 4498765 | MessageID: OUT1600 | MessageCode: NPR | PortID: P202006250666666666 | MSISDN: 01066666666 | Message TimeStamp: Mon Jul 06 15:08:17 EET 2020 | Message Type: Received | DonerID: Voda | RecipientID: Mobi | Due Date:  " - "  | Company Flag: false 
+06-07-2020 15:08:17.549 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Return: " success " NPC Message ID: " 4498765 " Internal Port ID: " 4498344 " Port Status: " 20-Request-R " 
+06-07-2020 15:08:25.839 INFO  [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:09:39.958 INFO  [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 15:19:18.838 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:19:34.864 INFO  [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your input " 
+06-07-2020 15:19:41.513 INFO  [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:33:13.227 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Starting NPCWebServiceApplication on Mohamed-Hamdy with PID 25736 (C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice\target\classes started by mohammed.hamdy in C:\Users\mohammed.hamdy\git\npc-vodafone\vodafone-mnp-webservice)
+06-07-2020 15:33:13.232 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-07-2020 15:33:13.382 INFO  [main]
+				o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53251a66: startup date [Mon Jul 06 15:33:13 EET 2020]; root of context hierarchy
+06-07-2020 15:33:13.484 INFO  [background-preinit]
+				o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.2.4.Final
+06-07-2020 15:33:14.186 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'NPCWebServiceConfig' of type [class com.asset.vodafone.npc.webservice.config.NPCWebServiceConfig$$EnhancerBySpringCGLIB$$a1269a23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 15:33:14.196 INFO  [main]
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d114c12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06-07-2020 15:33:14.237 INFO  [main]
+				o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+06-07-2020 15:33:14.584 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 9090 (http)
+06-07-2020 15:33:14.604 INFO  [main]
+				o.a.catalina.core.StandardService.log - Starting service Tomcat
+06-07-2020 15:33:14.606 INFO  [main]
+				o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.6
+06-07-2020 15:33:14.685 INFO  [localhost-startStop-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-07-2020 15:33:14.686 INFO  [localhost-startStop-1]
+				o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 1304 ms
+06-07-2020 15:33:14.884 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/NPC-SOAP/NPCWebService]
+06-07-2020 15:33:14.885 INFO  [localhost-startStop-1]
+				o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+06-07-2020 15:33:14.888 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+06-07-2020 15:33:14.889 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+06-07-2020 15:33:14.889 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+06-07-2020 15:33:14.889 INFO  [localhost-startStop-1]
+				o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+06-07-2020 15:33:15.205 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53251a66: startup date [Mon Jul 06 15:33:13 EET 2020]; root of context hierarchy
+06-07-2020 15:33:15.263 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+06-07-2020 15:33:15.264 INFO  [main]
+				o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+06-07-2020 15:33:15.300 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 15:33:15.300 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 15:33:15.342 INFO  [main]
+				o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+06-07-2020 15:33:15.578 INFO  [main]
+				o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+06-07-2020 15:33:15.591 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-9090"]
+06-07-2020 15:33:15.601 INFO  [main]
+				o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler [http-nio-9090]
+06-07-2020 15:33:15.614 INFO  [main]
+				o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+06-07-2020 15:33:15.633 INFO  [main]
+				o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 9090 (http)
+06-07-2020 15:33:15.638 INFO  [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarted - Started NPCWebServiceApplication in 2.711 seconds (JVM running for 3.791)
+06-07-2020 15:33:21.180 INFO  [http-nio-9090-exec-1]
+				o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'messageDispatcherServlet'
+06-07-2020 15:33:21.181 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization started
+06-07-2020 15:33:21.184 INFO  [http-nio-9090-exec-1]
+				o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+06-07-2020 15:33:21.194 INFO  [http-nio-9090-exec-1]
+				o.s.w.t.h.MessageDispatcherServlet.initServletBean - FrameworkServlet 'messageDispatcherServlet': initialization completed in 13 ms
+06-07-2020 15:33:21.313 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Received NPC Message Request for user : voda  and the Message is : 
+
+            <NPCData>
+               <NPCMessages>
+                  <PortMessage>
+                     
+                     <MessageCode>NPR</MessageCode>
+                     <ServiceType>MOBILE</ServiceType>
+                     <PortID>P202006250666666666</PortID>
+                     <NumbersToPort>
+                        <NumberFrom>01066666666</NumberFrom>
+                        <NumberTo>01066666666</NumberTo>
+                        <DataNumber>0552280126</DataNumber>
+                        <FaxNumber>0704123456</FaxNumber>
+                     </NumbersToPort>
+                     <PortReqFormID>P993F0S2641AF</PortReqFormID>
+                     <DonorID>Voda</DonorID>
+                     <RecipientID>Mobi</RecipientID>
+                     <TransferFee>52.02</TransferFee>
+                     <AverageInvoiceFee>57.87</AverageInvoiceFee>
+                     <SubscriberData>
+                        <CompanyFlag>false</CompanyFlag>
+                        <CorporationName>Asset</CorporationName>
+                        <Name>Hossam Hamdy</Name>
+                        <AccountNum>666666</AccountNum>
+                        <SIMCardNum>22222333334444455555</SIMCardNum>
+                        <NIC>11229966887744</NIC>
+                        <CNIC>3217896541256</CNIC>
+                        <PassportNum>C12345678</PassportNum>
+                        <OtherId>Senator</OtherId>
+                        <DateOfBirth>19910721</DateOfBirth>
+                        <ContactPhone>01119164784</ContactPhone>
+                        <Fax>0704123456</Fax>
+                        <City>Cairo</City>
+                        <Street>Farouk St</Street>
+                        <Number>1</Number>
+                        <Locality>Al Tahrir</Locality>
+                        <PostCode>123123</PostCode>
+                        <GroupID>Asset Group</GroupID>
+                        <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                        <CorporationAddress>Asset</CorporationAddress>
+                        <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                        <TaxRegistrationNum>132544</TaxRegistrationNum>
+                     </SubscriberData>
+                     <Comments1>Comment1 Test</Comments1>
+                     <Comments2>Comment2 Test</Comments2>
+                  </PortMessage>
+               </NPCMessages>
+            </NPCData>
+         
+06-07-2020 15:33:23.035 INFO  [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.logRequestData - Response: " SOP0007E: Exception in marshalling message, Please check your inputjavax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 35; cvc-complex-type.2.4.a: Invalid content was found starting with element 'MessageCode'. One of '{MessageID}' is expected.] " 

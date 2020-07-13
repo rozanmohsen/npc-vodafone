@@ -19,10 +19,11 @@ public class NPCWebServiceConfig extends WsConfigurerAdapter {
 		MessageDispatcherServlet servlet = new MessageDispatcherServlet();
 		servlet.setApplicationContext(applicationContext);
 		
-		return new ServletRegistrationBean(servlet, "/NPC-SOAP/NPCWebService");
+		
+		return new ServletRegistrationBean(servlet,  "/NPC-SOAP/*");
 	}
 
-	@Bean(name = { "MNP" })
+	@Bean(name =  "NPCWebService" )
 	public Wsdl11Definition defaultWsdl11Definition() {
 		SimpleWsdl11Definition wsdl11Definition = new SimpleWsdl11Definition();
 		wsdl11Definition.setWsdl(new ClassPathResource("/wsdl/npc-web-service.wsdl"));
@@ -30,4 +31,6 @@ public class NPCWebServiceConfig extends WsConfigurerAdapter {
 	
 		return wsdl11Definition;
 	}
+	
+	
 }

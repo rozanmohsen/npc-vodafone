@@ -35,6 +35,7 @@ import com.asset.vodafone.npc.core.exception.NPCException;
 import com.asset.vodafone.npc.core.models.BulkSyncMessageModel;
 import com.asset.vodafone.npc.core.models.NPCMessageModel;
 import com.asset.vodafone.npc.core.models.NumbersToPortModel;
+import com.asset.vodafone.npc.core.models.PortDataModel;
 import com.asset.vodafone.npc.core.models.PortMessageModel;
 import com.asset.vodafone.npc.core.models.SubscriberDataModel;
 import com.asset.vodafone.npc.core.models.SyncHistoryModel;
@@ -59,6 +60,7 @@ public class NPCProcessHandler {
 	private static NPCProcessHandler npcprocesshandler = null;
 	private static final Logger logger = LoggerFactory.getLogger(NPCProcessHandler.class.getName());
 	private static ResourceBundle npcProperties = null;
+	private PortMessageModel portMessageModel = null;
 	NPCService npcService;
 
 	private NPCProcessHandler() throws Exception {
@@ -162,14 +164,13 @@ public class NPCProcessHandler {
 		req.setString1(username);
 		req.setArrayOfbyte2(password);
 		req.setString3(xmlMsg);
-		
 
 		try {
-		
+
 			ntraWebserviceProxy.setDefaultUri(endpoint);
 			logger.debug("Sending NPC Message to NTRA for UserName : {} ", username);
 			logger.debug("Calling NTRA Web Service EndPoint : {} ", endpoint);
-			
+
 			return ntraWebserviceProxy.processNPCMsg(req).getResult();
 
 		} catch (WebServiceIOException e) {
@@ -199,31 +200,30 @@ public class NPCProcessHandler {
 					"com.asset.vodafone.npc.webservice.xsd.portmessage:com.asset.vodafone.npc.webservice.xsd.bulksyncmessage");
 			Marshaller marshaller = jaxbContext.createMarshaller();
 			logger.debug("Loading XSD schema files to validate NPC message");
-			InputStream portMessage=this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
-			
-			InputStream bulkSyncMessage =this.getClass().getClassLoader().getResourceAsStream("xsd/bulksyncmessage.xsd");
-			
+			InputStream portMessage = this.getClass().getClassLoader().getResourceAsStream("xsd/portmessage.xsd");
+
+			InputStream bulkSyncMessage = this.getClass().getClassLoader()
+					.getResourceAsStream("xsd/bulksyncmessage.xsd");
+
 			if (portMessage == null || bulkSyncMessage == null) {
 				throw new FileNotFoundException("XSD Schema file not found!");
 			}
 
-			
-
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
 			schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
-			
+
 			Schema xsdSchema = schemaFactory
 					.newSchema(new Source[] { new StreamSource(portMessage), new StreamSource(bulkSyncMessage) });
 			logger.debug("Start validating NPC message against xsd schema");
 			marshaller.setSchema(xsdSchema);
-			
+
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
 			marshaller.marshal(npcData, outputSream);
 			logger.debug("validating NPC message against XSD schema has been done successfully");
 			try {
-			
+
 				return outputSream.toString("utf-8");
 
 			} catch (UnsupportedEncodingException ex) {
@@ -333,7 +333,6 @@ public class NPCProcessHandler {
 			logger.info("Sending NPC Message to NTRA : {}", messageXML);
 			returnedMessage = sendMessage(username, password, messageXML, true);
 
-			logger.info("Returned message from NTRA Web service = \" {} \" ", returnedMessage);
 		} catch (Exception e) {
 			throw new NPCException(NPCException.GENERAL_ERROR_CODE, e.getMessage());
 		}
@@ -402,44 +401,16 @@ public class NPCProcessHandler {
 				npcMessageModel = unsentMessages.get(i);
 
 				sendPendingMessage(npcMessageModel);
-				if (npcMessageModel instanceof PortMessageModel) {
 
-					PortMessageModel portMessageModel = (PortMessageModel) npcMessageModel;
-					logger.debug(
-							"Sending NPC message of type Port Message  with ID: {}  and Internal Port ID: {} has been done successfully...",
-							npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID());
-					
-					String portID=portMessageModel.getPortMessageType().getPortID();
-					if (portID==null)
-						portID=" \" - \" ";
-					
-					logger.debug(
-							"MessageID: {} | MessageCode: {} | PortID: {}  | Message TimeStamp: {} | Message Type: Sent | DonerID: {} | RecipientID: {} ",
-							portMessageModel.getPortMessageType().getMessageID(),
-							portMessageModel.getPortMessageType().getMessageCode(),
-							portID, new Date(),
-							portMessageModel.getPortMessageType().getDonorID(),
-							portMessageModel.getPortMessageType().getRecipientID());
-				} else {
-					BulkSyncMessageModel bulkSyncMessageModel = (BulkSyncMessageModel) npcMessageModel;
-					logger.debug(
-							"Sending NPC message of type Bulk Sync Message with NPC Message ID: {}  has been done successfully...",
-							npcMessageModel.getNPCMessageID());
-					logger.debug(
-							"MessageID: {} | MessageCode: {} | StartDate: {} | EndDate: {} | Comments1: {} | Comments2: {} ",
-							bulkSyncMessageModel.getBulkSyncMessageType().getMessageID(),
-							bulkSyncMessageModel.getBulkSyncMessageType().getMessageCode(),
-							bulkSyncMessageModel.getBulkSyncMessageType().getStartDate(),
-							bulkSyncMessageModel.getBulkSyncMessageType().getEndDate(),
-							bulkSyncMessageModel.getBulkSyncMessageType().getComments1(),
-							bulkSyncMessageModel.getBulkSyncMessageType().getComments2());
-				}
-				
+				logRequestData(npcMessageModel);
+
 				npcService.updateFieldsAfterSending(npcMessageModel);
-				
+
 				npcService.updateNPCMessageCurrentAndNextDate(npcMessageModel);
 
 				npcService.updatePortData(npcMessageModel, "SUB_ACTION_SENT");
+
+				logResponseData(npcMessageModel);
 
 				npcService.processActivationStatus(npcMessageModel);
 				npcService.processDeactivationDone(npcMessageModel);
@@ -470,6 +441,120 @@ public class NPCProcessHandler {
 					logger.error(e.getMessage(), (Throwable) e);
 				}
 			}
+		}
+	}
+
+	public void logRequestData(NPCMessageModel npcMessageModel) throws NPCException, JAXBException {
+		if (npcMessageModel == null)
+			return;
+
+		if (npcMessageModel instanceof PortMessageModel) {
+
+			portMessageModel = (PortMessageModel) npcMessageModel;
+
+			String mSISDN = " \" - \" ";
+			String companyFlag = " \" - \" ";
+			String responseDueDate = "";
+			String portID = "";
+			String donorID = "";
+			String recipientID = "";
+
+			if (portMessageModel.getNumbersToPortList() != null) {
+				ArrayList<NumbersToPortModel> numbersToPortList = new ArrayList<>();
+				numbersToPortList = (ArrayList<NumbersToPortModel>) portMessageModel.getNumbersToPortList();
+
+				for (int j = 0; j < numbersToPortList.size(); j++) {
+					NumbersToPortModel numbersToPortModel = NumbersToPortModel.createNumbersToPort();
+					numbersToPortModel = numbersToPortList.get(j);
+					mSISDN = numbersToPortModel.getNumberDataType().getNumberFrom();
+					if (mSISDN == null)
+						mSISDN = " \" - \" ";
+				}
+
+			}
+
+			responseDueDate = portMessageModel.getPortMessageType().getResponseDueDate();
+			if (responseDueDate == null)
+				responseDueDate = " \" - \" ";
+
+			if (portMessageModel.getSubscriberDataModel() != null) {
+				companyFlag = portMessageModel.getSubscriberDataModel().getSubscriberDataType().getCompanyFlag();
+				if (companyFlag == null)
+					companyFlag = " \" - \" ";
+			}
+
+			portID = portMessageModel.getPortMessageType().getPortID();
+			if (portID == null)
+				portID = " \" - \" ";
+
+			donorID = portMessageModel.getPortMessageType().getDonorID();
+			if (donorID == null)
+				donorID = " \" - \" ";
+
+			recipientID = portMessageModel.getPortMessageType().getRecipientID();
+			if (recipientID == null)
+				recipientID = " \" - \" ";
+
+			logger.info(
+					" NPC Message ID: {} | MessageID: {} | MessageCode: {} | PortID: {} | MSISDN: {} | Message TimeStamp: {} | Message Type: Sent | DonerID: {} | RecipientID: {} | Due Date: {} | Company Flag: {} ",
+					npcMessageModel.getNPCMessageID(), portMessageModel.getPortMessageType().getMessageID(),
+					portMessageModel.getPortMessageType().getMessageCode(), portID, mSISDN, new Date(), donorID,
+					recipientID, responseDueDate, companyFlag);
+
+		} else {
+
+			BulkSyncMessageModel bulkSyncMessageModel = (BulkSyncMessageModel) npcMessageModel;
+
+			String syncID = bulkSyncMessageModel.getBulkSyncMessageType().getSyncID();
+			if (syncID == null)
+				syncID = " \" - \" ";
+
+			logger.info(
+					" NPC Message ID: {} | MessageID: {} | MessageCode: {} | SyncID: {} | StartDate: {} | EndDate: {} | Message TimeStamp: {} | Message Type: Sent | Comments1: {} | Comments2: {} ",
+					npcMessageModel.getNPCMessageID(), bulkSyncMessageModel.getBulkSyncMessageType().getMessageID(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getMessageCode(), syncID,
+					bulkSyncMessageModel.getBulkSyncMessageType().getStartDate(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getEndDate(), new Date(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getComments1(),
+					bulkSyncMessageModel.getBulkSyncMessageType().getComments2());
+
+		}
+
+	}
+
+	public void logResponseData(NPCMessageModel npcMessageModel) throws NPCException, JAXBException {
+		if (npcMessageModel == null)
+			return;
+
+		if (npcMessageModel instanceof PortMessageModel) {
+
+			portMessageModel = (PortMessageModel) npcMessageModel;
+			PortDataModel portDataModel = npcService.getPortDataModel(portMessageModel);
+
+			String response = npcMessageModel.getReturnedMessage();
+			if (response == null)
+				response = " \" - \" ";
+
+			String internalPortID = portMessageModel.getInternalPortID();
+			if (internalPortID == null)
+				internalPortID = " \" - \" ";
+
+			String portStatus = portDataModel.getPortStatus();
+			if (portStatus == null)
+				portStatus = " \" - \" ";
+
+			logger.info(
+					"Response: \" {} \" | NPC Message ID: \" {} \" | Internal Port ID: \" {} \" | Port Status: \" {} \" ",
+					response, npcMessageModel.getNPCMessageID(), internalPortID, portStatus);
+
+		} else {
+
+			String responseBulkSyncMessage = npcMessageModel.getReturnedMessage();
+			if (responseBulkSyncMessage == null)
+				responseBulkSyncMessage = " \" - \" ";
+
+			logger.info("Response: \" {} \" | NPC Message ID: \" {} \" ", responseBulkSyncMessage,
+					npcMessageModel.getNPCMessageID());
 		}
 	}
 
@@ -548,8 +633,23 @@ public class NPCProcessHandler {
 				JAXBContext jaxbContext = JAXBContext
 						.newInstance("com.asset.vodafone.npc.webservice.xsd.bulksyncmessage");
 				Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+				logger.debug("Loading XSD schema file to validate bulk sync message");
+				InputStream bulkSyncMessage = this.getClass().getClassLoader()
+						.getResourceAsStream("xsd/bulksyncmessage.xsd");
+				if (bulkSyncMessage == null) {
+					throw new FileNotFoundException("XSD Schema file not found!");
+				}
+				SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+				schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+				schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+
+				Schema xsdSchema = schemaFactory.newSchema(new StreamSource(bulkSyncMessage));
+				logger.debug("Start validating bulk sync message against xsd schema");
+				unmarshaller.setSchema(xsdSchema);
+
 				inputStream = new FileInputStream(syncMessageXML);
 				NPCBulkSyncData npcBulkSyncData = (NPCBulkSyncData) unmarshaller.unmarshal(inputStream);
+				logger.debug("validating bulk sync message against XSD schema has been done successfully");
 				ArrayList<SyncModel> syncMessages = getSyncMessages(npcBulkSyncData);
 				npcService.saveSyncMessages(syncMessages);
 				npcService.saveSyncHistoryMessages(syncMessages);
@@ -639,7 +739,9 @@ public class NPCProcessHandler {
 		String encypted = "";
 		for (int i = 1; i >= 1 && i < plainText.length; i++) {
 			encypted = handler.encrypt(plainText[i]);
-			logger.debug(plainText[i], " : {} ", encypted);
+			
+			logger.debug("Encrypted Value of {} = \" {} \" " ,plainText[i], encypted);
+		
 		}
 	}
 

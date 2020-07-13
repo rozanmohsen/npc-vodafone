@@ -150,8 +150,9 @@ public class NPCWSHandler {
 			returnedMessage = checkWSCredentials(username, password);
 
 			if (!returnedMessage.equals(validCredentials)) {
-
+				logRequestData(npcMessageModel, returnedMessage);
 				logger.error(returnedMessage);
+				
 				return returnedMessage;
 
 			}
@@ -159,7 +160,9 @@ public class NPCWSHandler {
 			logger.info("Received NPC Message Request for user : {}  and the Message is : {}", username, message);
 			if (intializeDataBaseConnection().equals(connectionFailureMessage)) {
 				returnedMessage = connectionFailureMessage;
+				logRequestData(npcMessageModel, returnedMessage);
 				logger.error(returnedMessage);
+				
 				return returnedMessage;
 
 			}
@@ -169,19 +172,25 @@ public class NPCWSHandler {
 
 					|| returnedMessage.equals(unexpectedFailureMessage)) {
 				returnedMessage = (databaseFailureMessage == null) ? unexpectedFailureMessage : databaseFailureMessage;
+				logRequestData(npcMessageModel, returnedMessage);
 				logger.error(returnedMessage);
+				
 				return returnedMessage;
 			}
 
 			returnedMessage = callUpdatePortDataAndprocessActivationAndDeactivation();
 
-			if (!returnedMessage.equals(""))
+			if (!returnedMessage.equals("")) {
+				logRequestData(npcMessageModel, returnedMessage);
+				logger.error(returnedMessage);
 				return returnedMessage;
-
+			}
 			returnedMessage = saveSyncMessage();
-			if (!returnedMessage.equals(""))
+			if (!returnedMessage.equals("")) {
+				logRequestData(npcMessageModel, returnedMessage);
+				logger.error(returnedMessage);
 				return returnedMessage;
-
+			}
 			String successMessage = npcProperties.getString("RETURNED_MESSAGE_SUCCESS").trim();
 
 			logRequestData(npcMessageModel, successMessage);
@@ -204,6 +213,13 @@ public class NPCWSHandler {
 
 	public void logRequestData(NPCMessageModel npcMessageModel, String response) throws NPCException, JAXBException {
 
+		if(npcMessageModel ==null) {
+			
+			logger.info("Response: \" {} \" ",response);
+			
+		}
+		
+		else {
 		if (npcMessageModel instanceof PortMessageModel) {
 
 			String mSISDN = " \" - \" ";
@@ -218,15 +234,16 @@ public class NPCWSHandler {
 			if (portMessageModel.getNumbersToPortList() != null) {
 				ArrayList<NumbersToPortModel> numbersToPortList = new ArrayList<>();
 				numbersToPortList = (ArrayList<NumbersToPortModel>) portMessageModel.getNumbersToPortList();
-				NumbersToPortModel numbersToPortModel = NumbersToPortModel.createNumbersToPort();
+				
 
 				for (int j = 0; j < numbersToPortList.size(); j++) {
-
+					NumbersToPortModel numbersToPortModel = NumbersToPortModel.createNumbersToPort();
 					numbersToPortModel = numbersToPortList.get(j);
+					mSISDN = numbersToPortModel.getNumberDataType().getNumberFrom();
+					if (mSISDN == null)
+						mSISDN = " \" - \" ";
 				}
-				mSISDN = numbersToPortModel.getNumberDataType().getNumberFrom();
-				if (mSISDN == null)
-					mSISDN = " \" - \" ";
+				
 			}
 
 			responseDueDate = portMessageModel.getPortMessageType().getResponseDueDate();
@@ -257,7 +274,7 @@ public class NPCWSHandler {
 					portMessageModel.getPortMessageType().getMessageCode(), portID, mSISDN, new Date(), donorID,
 					recipientID, responseDueDate, companyFlag);
 
-			logger.info("Return: \" {} \" NPC Message ID: \" {} \" Internal Port ID: \" {} \" Port Status: \" {} \" ",
+			logger.info("Response: \" {} \" NPC Message ID: \" {} \" Internal Port ID: \" {} \" Port Status: \" {} \" ",
 					response, npcMessageModel.getNPCMessageID(), portMessageModel.getInternalPortID(),
 					portDataModel.getPortStatus());
 		} else {
@@ -279,6 +296,7 @@ public class NPCWSHandler {
 
 			logger.info("Returned Message for the Bulk Sync Message  with NPC Message ID {}  = \" {} \" ",
 					npcMessageModel.getNPCMessageID(), response);
+		}
 		}
 	}
 
@@ -331,7 +349,7 @@ public class NPCWSHandler {
 	public String parsingAndUpdatingMessageTimeFrame(String message) throws NPCException, SAXException, Exception {
 
 		try {
-
+			
 			npcMessageModel = parseMessage(npcService, message);
 
 			if (npcMessageModel != null) {

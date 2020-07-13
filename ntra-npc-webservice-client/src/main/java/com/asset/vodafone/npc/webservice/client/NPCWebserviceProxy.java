@@ -25,23 +25,29 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 	NPCWebserviceProxy() {
 		
 	}
-
+	
 	static {
 		TrustManager[] trustAllCerts = new TrustManager[] { new X509TrustManager() {
 			public java.security.cert.X509Certificate[] getAcceptedIssuers() {
 				return new java.security.cert.X509Certificate[0];
 			}
 
-			@Override
+			
 			public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
-				 throw new UnsupportedOperationException();
+				
 				
 			}
 
-			@Override
+		
 			public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+				 try {
+	                    chain[0].checkValidity();
+	                } catch (Exception e) {
+	                	e.printStackTrace();
+	        			loggerObj.error(e.getMessage());
+	                    throw new CertificateException("Certificate not valid or trusted.");
+	                }
 				
-				 throw new UnsupportedOperationException();
 			
 		}
 		}};
@@ -52,6 +58,7 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 			sc.init(null, trustAllCerts, new java.security.SecureRandom());
 		
 		} catch (Exception e) {
+			e.printStackTrace();
 			loggerObj.error(e.getMessage());
 		}
 		HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
@@ -82,14 +89,15 @@ public class NPCWebserviceProxy extends WebServiceGatewaySupport {
 			
 			
 			
+		
 			return (ProcessNPCMsgResponse) ((JAXBElement<?>) getWebServiceTemplate().marshalSendAndReceive(processNPCMsg))
 					.getValue();
 	
 	}catch(WebServiceIOException e) {
 			
-			
+			e.printStackTrace();
 			loggerObj.error(e.getMessage());
-			throw new WebServiceIOException(e.getMessage());
+			throw new WebServiceIOException(e.getMessage() );
 			
 		}
 

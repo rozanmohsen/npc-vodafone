@@ -1,0 +1,201 @@
+05-07-2020 13:58:16.194 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>B1401</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S202002500333333333</SyncID>
+            <StartDate>20200601000000</StartDate>
+            <EndDate>20200701000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 13:58:16.453 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37f1104d: startup date [Sun Jul 05 13:58:16 EET 2020]; root of context hierarchy
+05-07-2020 13:58:16.716 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 13:58:16.853 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 13:58:17.698 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@37f1104d: startup date [Sun Jul 05 13:58:16 EET 2020]; root of context hierarchy
+05-07-2020 13:58:17.699 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+05-07-2020 14:07:02.026 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>B1401</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S202002500333333333</SyncID>
+            <StartDate>20200601000000</StartDate>
+            <EndDate>20200701000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:07:02.226 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fd07cbb: startup date [Sun Jul 05 14:07:02 EET 2020]; root of context hierarchy
+05-07-2020 14:07:02.458 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:07:02.536 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:07:02.871 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fd07cbb: startup date [Sun Jul 05 14:07:02 EET 2020]; root of context hierarchy
+05-07-2020 14:08:04.847 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>B1401</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S202002500333333333</SyncID>
+            <StartDate>20200601000000</StartDate>
+            <EndDate>20200701000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:08:04.849 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@18c5069b: startup date [Sun Jul 05 14:08:04 EET 2020]; root of context hierarchy
+05-07-2020 14:08:04.864 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:08:04.876 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:08:04.951 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@18c5069b: startup date [Sun Jul 05 14:08:04 EET 2020]; root of context hierarchy
+05-07-2020 14:09:07.746 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>B1401</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S202002500333333333</SyncID>
+            <StartDate>20200601000000</StartDate>
+            <EndDate>20200701000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:09:07.748 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b20ca2b: startup date [Sun Jul 05 14:09:07 EET 2020]; root of context hierarchy
+05-07-2020 14:09:07.758 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:09:07.766 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:09:07.826 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b20ca2b: startup date [Sun Jul 05 14:09:07 EET 2020]; root of context hierarchy
+05-07-2020 14:11:28.619 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>B1401</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S202002500333333333</SyncID>
+            <StartDate>20200601000000</StartDate>
+            <EndDate>20200701000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:11:28.785 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@fd07cbb: startup date [Sun Jul 05 14:11:28 EET 2020]; root of context hierarchy
+05-07-2020 14:11:29.000 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:11:29.071 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:11:29.816 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@fd07cbb: startup date [Sun Jul 05 14:11:28 EET 2020]; root of context hierarchy
+05-07-2020 14:11:29.817 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+05-07-2020 14:21:38.453 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>OUT1301</MessageID>
+            <MessageCode>NPR Accept</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P202006250777777777</PortID>
+            <NumbersToPort>
+                <NumberFrom>01055555555</NumberFrom>
+            </NumbersToPort>
+            <SubscriberData>
+                <CompanyFlag>false</CompanyFlag>
+                <CorporationName>Asset</CorporationName>
+                <Name>Hossam Hamdy</Name>
+                <AccountNum>666666</AccountNum>
+                <SIMCardNum>22222333334444455555</SIMCardNum>
+                <NIC>11229966887744</NIC>
+                <CNIC>3217896541256</CNIC>
+                <PassportNum>C12345678</PassportNum>
+                <OtherId>Senator</OtherId>
+                <DateOfBirth>19910721</DateOfBirth>
+                <ContactPhone>01119164784</ContactPhone>
+                <Fax>0704123456</Fax>
+                <City>Cairo</City>
+                <Street>Farouk St</Street>
+                <Locality>Al Tahrir</Locality>
+                <PostCode>123123</PostCode>
+                <GroupID>Asset Group</GroupID>
+                <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                <CorporationAddress>Asset</CorporationAddress>
+                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                <TaxRegistrationNum>132544</TaxRegistrationNum>
+            </SubscriberData>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:21:38.664 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf: startup date [Sun Jul 05 14:21:38 EET 2020]; root of context hierarchy
+05-07-2020 14:21:38.926 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:21:39.015 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:21:39.344 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf: startup date [Sun Jul 05 14:21:38 EET 2020]; root of context hierarchy
+05-07-2020 14:21:39.345 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Returned message from NTRA Web service = " success " 
+05-07-2020 14:25:49.728 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>OUT1301</MessageID>
+            <MessageCode>NPR Accept</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P202006250777777777</PortID>
+            <NumbersToPort>
+                <NumberFrom>01055555555</NumberFrom>
+            </NumbersToPort>
+            <SubscriberData>
+                <CompanyFlag>false</CompanyFlag>
+                <CorporationName>Asset</CorporationName>
+                <Name>Hossam Hamdy</Name>
+                <AccountNum>666666</AccountNum>
+                <SIMCardNum>22222333334444455555</SIMCardNum>
+                <NIC>11229966887744</NIC>
+                <CNIC>3217896541256</CNIC>
+                <PassportNum>C12345678</PassportNum>
+                <OtherId>Senator</OtherId>
+                <DateOfBirth>19910721</DateOfBirth>
+                <ContactPhone>01119164784</ContactPhone>
+                <Fax>0704123456</Fax>
+                <City>Cairo</City>
+                <Street>Farouk St</Street>
+                <Locality>Al Tahrir</Locality>
+                <PostCode>123123</PostCode>
+                <GroupID>Asset Group</GroupID>
+                <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                <CorporationAddress>Asset</CorporationAddress>
+                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                <TaxRegistrationNum>132544</TaxRegistrationNum>
+            </SubscriberData>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:25:49.939 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf: startup date [Sun Jul 05 14:25:49 EET 2020]; root of context hierarchy
+05-07-2020 14:25:50.138 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:25:50.209 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:25:50.508 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf: startup date [Sun Jul 05 14:25:49 EET 2020]; root of context hierarchy
+05-07-2020 14:29:07.464 INFO  [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Sending NPC Message to NTRA : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <BulkSyncMessage>
+            <MessageID>B1401</MessageID>
+            <MessageCode>NP Bulk Sync</MessageCode>
+            <SyncID>S202002500333333333</SyncID>
+            <StartDate>20200601000000</StartDate>
+            <EndDate>20200701000000</EndDate>
+            <Comments1>NPC Example</Comments1>
+            <Comments2>file: /bulk/Mobi/BulkSyncS201704180207010010.xml is ready.</Comments2>
+        </BulkSyncMessage>
+    </NPCMessages>
+</NPCData>
+
+05-07-2020 14:29:07.777 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Sun Jul 05 14:29:07 EET 2020]; root of context hierarchy
+05-07-2020 14:29:08.163 INFO  [main]  o.s.oxm.jaxb.Jaxb2Marshaller.createJaxbContextFromContextPath - Creating JAXBContext with context path [com.asset.vodafone.npc.webservice.wsdl]
+05-07-2020 14:29:10.209 INFO  [main]  o.s.w.s.saaj.SaajSoapMessageFactory.afterPropertiesSet - Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+05-07-2020 14:30:48.320 INFO  [main]  o.s.c.a.AnnotationConfigApplicationContext.doClose - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Sun Jul 05 14:29:07 EET 2020]; root of context hierarchy

@@ -262,14 +262,13 @@ public class NPCService {
 	public void updateFieldsAfterSending(NPCMessageModel npcMessageModel) throws NPCException {
 		try {
 			npcMessageModel.setTransactionDate(GenericDAO.getCurrentDateTime(conn, "DD/MM/YYYY HH24:MI:SS"));
-			logger.debug("Start updating Fields after sending message...");
+			logger.info("Start updating Fields after sending message...");
 			NPCMessageDAO.updateFieldsAfterSending(conn, npcMessageModel);
-			logger.debug(
-					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Machine IP address(Picked_By) = \" {} \"  | Returned Message = \" {} \" | Message Xml = \" {} \" ",
+			logger.info(
+					"Updated Fields:  Sent = \" {} \"  | Transaction Date = \" {} \" | Machine IP address(Picked_By) = \" {} \"  | Response(Returned Message) = \" {} \" ",
 					npcMessageModel.isSent() ? 1 : 0, npcMessageModel.getTransactionDate(),
-							npcMessageModel.getPickedBy(),npcMessageModel.getReturnedMessage(), npcMessageModel.getMessageXML()
-					);
-			logger.debug("Updating Fields after sending message has been done successfully...");
+							npcMessageModel.getPickedBy(),npcMessageModel.getReturnedMessage());
+			logger.info("Updating Fields after sending message has been done successfully...");
 		} catch (SQLException ex) {
 			logger.error("Error in Update statement ", ex.getMessage());
 			throw new NPCException(ex, NPCException.DATABASE_SQL_UPDATE_ERROR_CODE, "Error in Update statement ");

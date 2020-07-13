@@ -1,4 +1,4 @@
-29-06-2020 11:22:20.007 ERROR [http-nio-9090-exec-1]
+08-07-2020 17:20:23.260 ERROR [http-nio-9090-exec-6]
 				c.a.v.npc.core.handler.NPCWSHandler.loadNPCPropertiesFile - npc_web_service.properties (The system cannot find the file specified)
 java.io.FileNotFoundException: npc_web_service.properties (The system cannot find the file specified)
 	at java.io.FileInputStream.open0(Native Method)
@@ -63,7 +63,7 @@ java.io.FileNotFoundException: npc_web_service.properties (The system cannot fin
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-29-06-2020 11:22:20.014 ERROR [http-nio-9090-exec-1]
+08-07-2020 17:20:23.266 ERROR [http-nio-9090-exec-6]
 				c.a.v.npc.core.handler.NPCWSHandler.<init> - [null]: Cannot load NPC properties file
 com.asset.vodafone.npc.core.exception.NPCException: [null]: Cannot load NPC properties file
 	at com.asset.vodafone.npc.core.handler.NPCWSHandler.loadNPCPropertiesFile(NPCWSHandler.java:117)
@@ -124,5 +124,5 @@ com.asset.vodafone.npc.core.exception.NPCException: [null]: Cannot load NPC prop
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-29-06-2020 11:22:20.016 ERROR [http-nio-9090-exec-1]
+08-07-2020 17:20:23.267 ERROR [http-nio-9090-exec-6]
 				c.a.v.n.w.e.NPCWebServiceEndpoint.processNPCMsg - Cannot load NPC properties file

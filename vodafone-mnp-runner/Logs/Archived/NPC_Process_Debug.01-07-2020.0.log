@@ -1,0 +1,356 @@
+01-07-2020 00:00:22.957 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:00:44.012 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:01:05.021 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:02:26.040 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:02:47.045 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:03:08.054 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:04:29.060 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:04:50.067 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:05:11.084 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:06:32.097 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:06:53.111 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:07:14.117 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:08:35.122 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:08:56.125 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:09:17.139 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:10:38.154 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:10:59.157 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:11:20.175 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:12:41.182 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:13:02.187 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:13:23.203 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:14:44.208 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:15:05.216 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:15:26.224 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:16:47.242 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:17:08.247 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:17:29.263 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:18:50.281 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:19:11.301 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:19:32.318 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:20:53.326 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:21:14.334 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:21:35.344 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:22:56.362 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:23:17.370 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:23:38.386 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:24:59.406 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:25:20.413 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:25:41.420 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:27:02.429 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:27:23.434 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:27:44.441 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:29:05.451 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:29:26.468 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:29:47.477 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:31:08.495 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:31:29.504 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:31:50.514 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:33:11.533 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:33:32.542 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:33:53.547 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:35:14.565 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:35:35.582 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:35:56.600 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:37:17.618 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:37:38.635 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:37:59.641 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:39:20.660 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:39:41.668 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:40:02.685 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:41:23.693 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:41:44.712 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:42:05.730 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:43:26.739 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:43:47.760 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:44:08.765 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:45:29.773 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:45:50.792 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:46:11.800 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:47:32.807 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:47:53.824 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:48:14.854 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:49:35.864 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:49:56.871 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:50:17.891 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:51:38.898 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:51:59.906 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:52:20.922 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:53:41.930 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:54:02.937 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:54:23.954 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:55:44.972 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:56:05.990 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:56:27.008 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:57:48.026 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:58:09.043 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:58:30.059 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 00:59:51.077 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:00:12.094 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:00:33.111 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:01:54.129 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:02:15.147 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:02:36.154 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:03:57.172 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:04:18.201 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:04:39.205 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:06:00.212 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:06:21.217 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:06:42.232 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:08:03.250 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:08:24.268 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:08:45.283 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:10:06.303 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:10:27.319 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:10:48.334 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:12:09.352 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:12:30.359 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:12:51.365 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:14:12.372 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:14:33.388 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:14:54.394 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:16:15.401 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:16:36.406 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:16:57.422 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:18:18.431 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:18:39.440 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:19:00.447 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:20:21.453 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:20:42.470 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:21:03.487 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:22:24.518 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:22:45.523 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:23:06.539 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:24:27.556 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:24:48.563 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:25:09.583 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:26:30.602 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:26:51.620 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:27:12.630 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:28:33.637 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:28:54.642 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:29:15.658 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:30:36.676 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:30:57.692 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:31:18.708 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:32:39.726 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:33:00.731 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:33:21.738 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:34:42.747 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:35:03.752 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:35:24.759 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:36:45.765 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:37:06.780 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:37:27.794 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:38:48.799 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:39:09.804 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:39:30.809 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:40:51.831 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:41:12.839 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:41:33.844 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:42:54.863 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:43:15.881 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:43:36.897 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:44:57.903 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:45:18.911 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:45:39.923 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:47:00.932 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:47:21.948 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:47:42.966 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:49:03.974 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:49:25.002 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:49:46.005 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:51:07.012 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:51:28.015 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:51:49.029 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:53:10.036 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:53:31.039 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:53:52.045 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:55:13.061 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:55:34.065 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:55:55.069 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:57:16.077 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:57:37.083 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:57:58.100 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:59:19.107 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 01:59:40.122 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:00:01.126 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:01:22.137 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:01:43.151 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:02:04.157 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:03:25.175 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:03:46.184 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:04:07.203 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:05:28.208 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:05:49.213 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:06:10.216 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:07:31.220 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:07:52.223 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:08:13.238 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:09:34.242 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:09:55.247 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:10:16.262 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:11:37.276 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:11:58.282 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:12:19.291 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:13:40.308 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:14:01.327 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:14:22.333 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:15:43.349 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:16:04.356 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:16:25.365 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:17:46.371 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:18:07.376 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:18:28.388 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:19:49.405 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:20:10.423 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:20:31.427 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:21:52.434 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:22:13.439 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:22:34.445 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:23:55.451 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:24:16.469 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:24:37.484 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:25:58.498 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:26:19.515 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:26:40.533 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:28:01.539 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:28:22.545 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:28:43.564 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:30:04.573 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:30:25.577 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:30:46.593 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:32:07.613 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:32:28.631 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:32:49.637 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:34:10.646 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:34:31.655 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:34:52.658 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:32:01.406 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:32:22.411 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:32:43.429 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:34:04.444 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:34:25.460 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:34:46.474 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:36:07.488 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:36:28.492 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:36:49.507 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:38:10.513 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:38:31.531 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:38:52.537 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:40:13.553 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:40:34.555 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:40:55.561 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:42:16.574 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:42:37.592 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:42:58.594 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:44:19.608 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:44:40.619 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:45:01.633 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:46:22.650 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:46:43.655 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:47:04.671 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:48:25.674 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:48:46.692 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:49:07.699 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:50:28.715 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:50:49.730 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 02:51:10.745 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 14:39:22.516 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 14:39:24.830 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+01-07-2020 14:39:24.836 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+01-07-2020 14:39:24.845 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+01-07-2020 14:39:25.312 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+01-07-2020 14:39:25.746 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+01-07-2020 14:39:25.748 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+01-07-2020 14:39:26.044 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+01-07-2020 14:39:26.509 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+01-07-2020 14:39:26.510 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+01-07-2020 14:39:26.510 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+01-07-2020 14:40:26.531 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+01-07-2020 14:40:26.532 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+01-07-2020 14:40:28.097 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+01-07-2020 14:40:28.989 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
+01-07-2020 14:40:28.989 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+01-07-2020 14:40:29.266 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+01-07-2020 14:40:29.762 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+01-07-2020 14:40:29.763 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+01-07-2020 14:40:29.763 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
+01-07-2020 14:40:29.875 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
+01-07-2020 14:40:29.992 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
+01-07-2020 14:40:30.007 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
+01-07-2020 14:40:30.008 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+01-07-2020 14:40:30.012 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+01-07-2020 14:40:30.550 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+01-07-2020 14:40:30.551 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : https://localhost:8443/NPC-SOAP/NPCWebService 
+01-07-2020 14:40:30.777 DEBUG [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Start Inserting Failed Message into FAILED_MESSAGES_QUEUE table
+01-07-2020 14:40:30.975 DEBUG [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Inserting Failed Message into FAILED_MESSAGES_QUEUE table has been done successfully with NPC Message ID 4498756
+01-07-2020 14:41:46.164 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 14:41:48.133 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+01-07-2020 14:41:48.138 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+01-07-2020 14:41:48.141 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+01-07-2020 14:41:49.544 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+01-07-2020 14:41:50.484 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
+01-07-2020 14:41:50.486 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+01-07-2020 14:41:50.763 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+01-07-2020 14:41:51.596 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+01-07-2020 14:41:51.596 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+01-07-2020 14:41:51.597 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
+01-07-2020 14:41:51.708 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
+01-07-2020 14:41:51.748 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
+01-07-2020 14:41:51.756 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
+01-07-2020 14:41:51.756 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+01-07-2020 14:41:51.760 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+01-07-2020 14:41:52.213 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+01-07-2020 14:41:52.213 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : https://localhost:8443/NPC-SOAP/NPCWebService 
+01-07-2020 14:41:52.418 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498756  and Internal Port ID: 4498342 has been done successfully...
+01-07-2020 14:41:52.418 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: OUT1301 | MessageCode: NPR Accept | PortID: P202006250777777777  | Message TimeStamp: Wed Jul 01 14:41:52 EET 2020 | Message Type: Sent | DonerID: null | RecipientID: null 
+01-07-2020 14:41:52.640 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
+01-07-2020 14:41:52.876 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 01/07/2020 14:41:43 " | Machine IP address(Picked_By) = " 5.5.5.12 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NPCData>
+    <NPCMessages>
+        <PortMessage>
+            <MessageID>OUT1301</MessageID>
+            <MessageCode>NPR Accept</MessageCode>
+            <ServiceType>MOBILE</ServiceType>
+            <PortID>P202006250777777777</PortID>
+            <NumbersToPort>
+                <NumberFrom>01055555555</NumberFrom>
+            </NumbersToPort>
+            <SubscriberData>
+                <CompanyFlag>false</CompanyFlag>
+                <CorporationName>Asset</CorporationName>
+                <Name>Hossam Hamdy</Name>
+                <AccountNum>666666</AccountNum>
+                <SIMCardNum>22222333334444455555</SIMCardNum>
+                <NIC>11229966887744</NIC>
+                <CNIC>3217896541256</CNIC>
+                <PassportNum>C12345678</PassportNum>
+                <OtherId>Senator</OtherId>
+                <DateOfBirth>19910721</DateOfBirth>
+                <ContactPhone>01119164784</ContactPhone>
+                <Fax>0704123456</Fax>
+                <City>Cairo</City>
+                <Street>Farouk St</Street>
+                <Locality>Al Tahrir</Locality>
+                <PostCode>123123</PostCode>
+                <GroupID>Asset Group</GroupID>
+                <AuthorizedPersonName>Hossam Hamdy</AuthorizedPersonName>
+                <CorporationAddress>Asset</CorporationAddress>
+                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
+                <TaxRegistrationNum>132544</TaxRegistrationNum>
+            </SubscriberData>
+        </PortMessage>
+    </NPCMessages>
+</NPCData>
+ " 
+01-07-2020 14:41:52.877 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
+01-07-2020 14:41:53.603 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Start updating message current max date with date 29/06/2020 16:37:28 
+01-07-2020 14:41:53.828 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateNPCMessageCurrentDate - Updating message current max date has been done successfully
+01-07-2020 14:41:53.989 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+01-07-2020 14:41:54.283 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498756  and Internal Port ID: 4498342 has been done successfully and the port Status updated with Status " 20-Accept-S "
+01-07-2020 14:42:54.592 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+01-07-2020 14:42:54.592 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+01-07-2020 14:44:13.848 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 14:44:34.864 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+01-07-2020 14:44:55.871 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..

@@ -1,520 +1,282 @@
-28-06-2020 10:51:05.595 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 10:51:07.673 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 10:51:07.678 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 10:51:07.682 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 10:51:11.406 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 10:51:13.623 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 10:51:13.626 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 10:51:13.955 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 10:51:14.497 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 10:51:14.499 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 10:51:14.500 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 10:51:14.735 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 10:51:14.894 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 10:51:14.912 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 10:51:14.912 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 10:51:14.920 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 10:51:15.417 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 10:51:15.418 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 10:51:15.418 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 10:51:15.418 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - request com.asset.vodafone.npc.webservice.wsdl.ProcessNPCMsg@63f259c3
-28-06-2020 10:51:17.559 DEBUG [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Start Inserting Failed Message into FAILED_MESSAGES_QUEUE table
-28-06-2020 10:51:17.919 DEBUG [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Inserting Failed Message into FAILED_MESSAGES_QUEUE table has been done successfully with NPC Message ID 4498687
-28-06-2020 10:52:21.221 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 10:52:23.365 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 10:52:23.370 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 10:52:23.372 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 10:52:24.840 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 10:52:25.677 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 10:52:25.684 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 10:52:26.023 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 10:52:26.509 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 10:52:26.510 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 10:52:26.511 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 10:52:26.610 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 10:52:26.650 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 10:52:26.657 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 10:52:26.658 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 10:52:26.661 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 10:52:27.069 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 10:52:27.069 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 10:52:27.070 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 10:52:27.070 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - request com.asset.vodafone.npc.webservice.wsdl.ProcessNPCMsg@67d18ed7
-28-06-2020 10:52:27.462 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498687  and Internal Port ID: 4498339 has been done successfully...
-28-06-2020 10:52:27.462 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1288 | MessageCode: NPR | PortID: null  | Message TimeStamp: Sun Jun 28 10:52:27 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi 
-28-06-2020 10:52:27.629 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
-28-06-2020 10:52:27.801 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 28/06/2020 10:30:05 " | Machine IP address(Picked_By) = " 5.5.5.5 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1288</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>63840664193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
- " 
-28-06-2020 10:52:27.801 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
-28-06-2020 10:52:28.121 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
-28-06-2020 10:52:29.865 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
-28-06-2020 11:22:47.999 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 11:22:50.858 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 11:22:50.865 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 11:23:56.805 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 11:24:09.159 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 11:24:18.575 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 11:24:19.416 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 11:24:23.359 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 11:24:25.183 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 11:24:26.032 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 11:24:26.034 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 11:24:26.160 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 11:24:26.204 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 11:24:26.212 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 11:24:26.213 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 11:24:26.217 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 11:24:38.314 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 11:24:38.314 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 11:24:38.314 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 11:24:57.963 DEBUG [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Start Inserting Failed Message into FAILED_MESSAGES_QUEUE table
-28-06-2020 11:24:58.134 DEBUG [main]  c.a.v.npc.core.service.NPCService.insertFailedMessage - Inserting Failed Message into FAILED_MESSAGES_QUEUE table has been done successfully with NPC Message ID 4498687
-28-06-2020 11:25:58.540 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 11:27:17.484 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 11:27:19.883 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 11:27:19.895 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 11:27:24.078 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 11:27:31.051 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 11:27:36.021 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 11:27:36.463 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 11:27:39.072 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 11:27:40.576 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 11:27:40.911 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 11:27:40.912 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 11:27:41.015 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 11:27:41.056 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 11:27:41.065 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 11:27:41.065 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 11:27:41.068 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 11:27:46.285 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 11:27:46.285 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 11:27:46.286 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 11:29:01.482 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498687  and Internal Port ID: 4498339 has been done successfully...
-28-06-2020 11:29:01.482 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1288 | MessageCode: NPR | PortID: null  | Message TimeStamp: Sun Jun 28 11:29:01 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi 
-28-06-2020 11:29:01.722 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
-28-06-2020 11:29:02.182 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 28/06/2020 11:28:52 " | Machine IP address(Picked_By) = " 5.5.5.5 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1288</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>63840664193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
- " 
-28-06-2020 11:29:02.183 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
-28-06-2020 11:29:02.343 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
-28-06-2020 11:29:02.641 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
-28-06-2020 11:49:06.474 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 11:49:08.692 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 11:49:08.697 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 11:49:14.420 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 11:49:16.701 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 11:49:19.063 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 11:49:20.899 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 11:49:25.354 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 11:49:27.943 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 11:49:28.871 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 11:49:28.873 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 11:49:29.001 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 11:49:29.049 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 11:49:29.058 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 11:49:29.058 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 11:49:29.062 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 11:49:32.247 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 11:49:32.247 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 11:49:32.247 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 11:50:36.805 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498687  and Internal Port ID: 4498339 has been done successfully...
-28-06-2020 11:50:36.806 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1288 | MessageCode: NPR | PortID: null  | Message TimeStamp: Sun Jun 28 11:50:36 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi 
-28-06-2020 11:50:36.950 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
-28-06-2020 11:50:37.124 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 28/06/2020 11:50:27 " | Machine IP address(Picked_By) = " 5.5.5.5 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1288</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>63840664193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
- " 
-28-06-2020 11:50:37.125 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
-28-06-2020 11:50:37.282 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
-28-06-2020 11:50:37.588 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
-28-06-2020 11:51:37.893 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 12:05:36.239 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 12:05:38.528 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 12:05:38.532 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 12:06:09.911 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 12:06:11.961 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 12:06:14.282 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 12:06:14.711 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 12:06:17.579 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 12:06:19.026 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 12:06:19.776 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 12:06:19.777 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 12:06:19.903 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 12:06:19.958 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 12:06:19.969 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 12:06:19.970 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 12:06:19.975 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 12:06:21.996 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 12:06:21.996 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 12:06:21.996 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 13:57:34.839 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 13:57:36.681 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 13:57:36.686 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 13:58:11.194 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 13:59:29.094 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 14:03:24.456 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 14:03:27.496 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 14:03:27.500 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 14:03:33.369 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 14:03:34.906 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 14:03:37.216 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 14:03:37.218 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 14:03:37.522 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 14:03:37.994 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 14:03:37.999 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 14:03:37.999 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 14:03:38.113 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 14:03:38.160 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 14:03:38.169 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 14:04:18.074 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 14:04:18.082 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 14:04:20.818 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 14:04:20.819 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 14:04:20.819 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 14:04:21.292 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498687  and Internal Port ID: 4498339 has been done successfully...
-28-06-2020 14:04:21.293 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1288 | MessageCode: NPR | PortID: null  | Message TimeStamp: Sun Jun 28 14:04:21 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi 
-28-06-2020 14:04:21.661 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
-28-06-2020 14:04:22.055 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 28/06/2020 14:04:12 " | Machine IP address(Picked_By) = " 5.5.5.16 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1288</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>63840664193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
- " 
-28-06-2020 14:04:22.055 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
-28-06-2020 14:04:22.275 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
-28-06-2020 14:04:22.771 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
-28-06-2020 14:27:53.845 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 14:27:56.503 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 14:27:56.514 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 14:29:46.471 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 14:29:49.299 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 14:29:52.462 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 14:29:52.467 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 14:29:52.765 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 14:29:53.540 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 14:29:53.541 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 14:29:53.542 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 14:29:53.689 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 14:29:53.737 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 14:29:53.745 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 14:29:53.745 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 14:29:53.750 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 14:29:58.349 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 14:29:58.350 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 14:33:23.327 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 14:33:25.608 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 14:33:31.069 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 14:33:31.074 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 14:33:31.573 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 14:33:34.877 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 14:33:34.881 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 14:33:35.196 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 14:33:35.647 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 14:33:35.648 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 14:33:35.653 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 14:33:35.770 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 14:33:35.814 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 14:33:35.821 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 14:33:35.822 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 14:33:35.826 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 14:33:38.412 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 14:33:38.413 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 14:33:38.413 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 14:33:38.548 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498687  and Internal Port ID: 4498339 has been done successfully...
-28-06-2020 14:33:38.548 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1288 | MessageCode: NPR | PortID: null  | Message TimeStamp: Sun Jun 28 14:33:38 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi 
-28-06-2020 14:33:38.696 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
-28-06-2020 14:33:39.075 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 28/06/2020 14:33:29 " | Machine IP address(Picked_By) = " 5.5.5.3 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1288</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>63840664193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
- " 
-28-06-2020 14:33:39.075 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
-28-06-2020 14:33:39.231 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
-28-06-2020 14:33:39.518 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
-28-06-2020 14:35:39.006 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
-28-06-2020 14:35:41.335 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
-28-06-2020 14:35:44.112 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
-28-06-2020 14:35:44.128 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
-28-06-2020 14:35:45.693 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
-28-06-2020 14:35:57.509 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
-28-06-2020 14:35:57.513 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
-28-06-2020 14:35:57.812 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
-28-06-2020 14:35:58.245 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
-28-06-2020 14:35:58.258 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
-28-06-2020 14:35:58.259 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
-28-06-2020 14:35:58.409 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
-28-06-2020 14:35:58.460 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
-28-06-2020 14:35:58.470 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
-28-06-2020 14:35:58.471 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
-28-06-2020 14:35:58.475 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
-28-06-2020 14:36:02.632 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
-28-06-2020 14:36:02.632 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
-28-06-2020 14:36:02.632 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
-28-06-2020 14:36:02.767 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Sending NPC message of type Port Message  with ID: 4498687  and Internal Port ID: 4498339 has been done successfully...
-28-06-2020 14:36:02.767 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - MessageID: AD1288 | MessageCode: NPR | PortID: null  | Message TimeStamp: Sun Jun 28 14:36:02 EET 2020 | Message Type: Sent | DonerID: Voda | RecipientID: Mobi 
-28-06-2020 14:36:02.916 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Start updating Fields after sending message...
-28-06-2020 14:36:03.104 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updated Fields:  Sent = " 1 "  | Transaction Date = " 28/06/2020 14:35:53 " | Machine IP address(Picked_By) = " 5.5.5.3 "  | Returned Message = " success " | Message Xml = " <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NPCData>
-    <NPCMessages>
-        <PortMessage>
-            <MessageID>AD1288</MessageID>
-            <MessageCode>NPR</MessageCode>
-            <ServiceType>MOBILE</ServiceType>
-            <NumbersToPort>
-                <NumberFrom>01011234575</NumberFrom>
-                <NumberTo>01011234575</NumberTo>
-                <DataNumber>0552280126</DataNumber>
-                <FaxNumber>0704123456</FaxNumber>
-            </NumbersToPort>
-            <PortReqFormID>P993F0S2641AF</PortReqFormID>
-            <DonorID>Voda</DonorID>
-            <RecipientID>Mobi</RecipientID>
-            <TransferFee>52</TransferFee>
-            <AverageInvoiceFee>57</AverageInvoiceFee>
-            <SubscriberData>
-                <CompanyFlag>false</CompanyFlag>
-                <CorporationName>Giza Systems</CorporationName>
-                <Name>Ali Sami</Name>
-                <AccountNum>33345</AccountNum>
-                <SIMCardNum>89310410106543789301</SIMCardNum>
-                <NIC>63840664193527</NIC>
-                <CNIC>6110123456789</CNIC>
-                <PassportNum>C12345678</PassportNum>
-                <OtherId>Senator</OtherId>
-                <DateOfBirth>19930515</DateOfBirth>
-                <ContactPhone>0552280126</ContactPhone>
-                <Fax>0704123456</Fax>
-                <City>Cairo</City>
-                <Street>Farouk St</Street>
-                <Locality>Al Tahrir</Locality>
-                <PostCode>123123</PostCode>
-                <GroupID>My GroupID</GroupID>
-                <AuthorizedPersonName>Rami Sad</AuthorizedPersonName>
-                <CorporationAddress>Giza Systems</CorporationAddress>
-                <CommercialRegistrationNum>002345</CommercialRegistrationNum>
-                <TaxRegistrationNum>132544</TaxRegistrationNum>
-            </SubscriberData>
-            <Comments1>Comment1 Test</Comments1>
-            <Comments2>Comment2 Test</Comments2>
-        </PortMessage>
-    </NPCMessages>
-</NPCData>
- " 
-28-06-2020 14:36:03.105 DEBUG [main]  c.a.v.npc.core.service.NPCService.updateFieldsAfterSending - Updating Fields after sending message has been done successfully...
-28-06-2020 14:36:03.264 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
-28-06-2020 14:36:03.566 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
+08-07-2020 12:53:57.488 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+08-07-2020 12:54:01.079 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+08-07-2020 12:54:01.086 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 12:54:01.089 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 12:54:02.101 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 12:54:02.638 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 12:54:02.639 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 12:54:03.667 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 12:54:04.172 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 12:54:04.173 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 12:54:04.173 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 12:55:04.177 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 12:55:04.178 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 12:55:06.390 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 12:55:07.602 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
+08-07-2020 12:55:07.606 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 12:55:07.954 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 12:55:08.839 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 12:55:08.840 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 12:55:08.841 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
+08-07-2020 12:55:08.952 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
+08-07-2020 12:55:09.024 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
+08-07-2020 12:55:09.033 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
+08-07-2020 12:55:09.033 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+08-07-2020 12:55:09.037 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+08-07-2020 12:55:09.528 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+08-07-2020 12:55:09.529 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+08-07-2020 12:55:09.529 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+08-07-2020 12:55:10.765 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+08-07-2020 12:55:11.227 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
+08-07-2020 12:56:12.142 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 12:56:12.143 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 12:56:13.236 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 12:56:13.742 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 12:56:13.743 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 12:56:14.756 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 12:56:15.477 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 12:56:15.477 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 12:56:15.477 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 12:57:15.478 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 12:57:15.478 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 12:57:16.748 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 12:57:17.929 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 12:57:17.930 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 12:57:18.274 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 12:57:19.177 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =1
+08-07-2020 12:57:19.178 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 12:57:19.178 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
+08-07-2020 12:57:19.254 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
+08-07-2020 12:57:19.266 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
+08-07-2020 12:57:19.267 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
+08-07-2020 12:57:19.268 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+08-07-2020 12:57:19.268 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+08-07-2020 12:57:19.297 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+08-07-2020 12:57:19.297 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+08-07-2020 12:57:19.297 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+08-07-2020 12:58:19.802 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 12:58:19.803 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 12:59:19.813 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+08-07-2020 12:59:22.248 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+08-07-2020 12:59:22.249 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 12:59:22.249 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 12:59:22.576 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 12:59:23.997 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 12:59:23.999 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 12:59:24.339 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 12:59:26.041 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 12:59:26.041 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 12:59:26.041 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:00:26.045 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:00:26.046 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:00:26.390 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:00:26.903 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:00:26.903 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:00:27.924 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:00:28.441 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:00:28.441 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:00:28.441 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:01:28.444 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:01:28.445 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:01:28.782 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:01:29.627 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:01:29.627 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:01:29.975 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:01:30.531 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:01:30.531 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:01:30.531 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:02:30.535 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:02:30.536 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:02:31.014 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:02:31.538 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:02:31.538 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:02:32.109 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:02:32.629 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:02:32.630 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:02:32.631 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:03:32.635 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:03:32.636 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:03:32.973 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:03:33.866 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:03:33.867 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:03:34.200 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:03:35.200 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:03:35.201 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:03:35.202 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:04:35.204 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:04:35.204 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:05:35.206 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+08-07-2020 13:05:36.698 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+08-07-2020 13:05:36.699 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:05:36.700 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:05:37.010 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:05:37.692 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:05:37.693 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:05:37.987 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:05:38.561 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:05:38.562 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:05:38.562 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:06:38.563 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:06:38.564 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:06:38.872 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:06:39.911 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:06:39.911 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:06:40.211 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:06:40.799 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:06:40.799 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:06:40.800 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:07:40.800 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:07:40.801 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:07:41.203 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:07:41.652 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:07:41.653 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:07:41.956 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:07:42.926 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:07:42.927 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:07:42.928 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:08:42.928 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:08:42.928 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:08:43.220 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:08:44.088 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:08:44.089 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:08:44.381 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:08:45.304 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:08:45.305 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:08:45.305 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:09:45.305 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:09:45.305 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:09:45.760 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:09:46.518 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:09:46.518 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:09:46.828 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:09:47.338 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:09:47.338 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:09:47.339 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:10:47.339 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:10:47.339 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:10:47.955 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:10:48.432 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:10:48.433 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:10:49.060 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:10:49.518 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:10:49.518 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:10:49.519 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:11:49.519 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:11:49.520 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:11:49.815 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:11:50.673 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:11:50.673 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:11:50.997 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:11:51.465 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:11:51.465 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:11:51.465 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:36:42.245 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+08-07-2020 13:36:45.461 DEBUG [main]  c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+08-07-2020 13:36:45.464 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:36:45.467 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:36:46.351 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:36:47.369 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:36:47.370 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:36:47.812 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:36:48.288 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:36:48.288 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:36:48.289 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:37:48.291 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:37:48.292 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:37:51.622 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:37:52.235 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:37:52.236 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:37:53.130 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:37:54.243 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =1
+08-07-2020 13:37:54.243 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:37:54.244 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
+08-07-2020 13:37:54.417 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
+08-07-2020 13:37:54.469 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
+08-07-2020 13:37:54.479 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
+08-07-2020 13:37:54.479 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+08-07-2020 13:37:54.485 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+08-07-2020 13:37:55.110 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+08-07-2020 13:37:55.110 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+08-07-2020 13:37:55.111 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+08-07-2020 13:38:56.314 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:38:56.315 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:38:56.621 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:38:57.064 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:38:57.065 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:38:57.400 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:38:57.866 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:38:57.866 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:38:57.867 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:39:57.871 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:39:57.872 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:39:58.629 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:39:59.442 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =1
+08-07-2020 13:39:59.442 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:39:59.853 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:40:00.302 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:40:00.302 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:40:00.302 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 1 
+08-07-2020 13:40:00.382 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Loading XSD schema files to validate NPC message
+08-07-2020 13:40:00.392 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - Start validating NPC message against xsd schema
+08-07-2020 13:40:00.396 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.getNPCMessageXML - validating NPC message against XSD schema has been done successfully
+08-07-2020 13:40:00.397 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Creating Message XML has done successfully..
+08-07-2020 13:40:00.397 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessage - Start sending NPC message...
+08-07-2020 13:40:00.435 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Sending NPC Message to NTRA for UserName : vodau1 
+08-07-2020 13:40:00.435 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendMessage - Calling NTRA Web Service EndPoint : http://localhost:8080/NPC-SOAP/NPCWebService 
+08-07-2020 13:40:00.435 DEBUG [main]  c.a.v.n.w.client.NPCWebserviceProxy.processNPCMsg - Start Connecting to NTRA Web Service 
+08-07-2020 13:40:01.078 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+08-07-2020 13:40:01.791 DEBUG [main]  c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498687  and Internal Port ID: 4498339 has been done successfully and the port Status updated with Status " 20-Request-S "
+08-07-2020 13:41:02.664 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:41:02.665 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:41:07.781 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:41:08.768 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:41:08.769 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:41:11.655 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:41:15.815 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:41:15.816 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:41:15.816 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:42:15.819 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:42:15.819 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:42:16.219 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:42:17.051 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:42:17.098 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:42:17.557 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:42:18.854 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:42:18.854 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:42:18.855 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:43:18.857 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:43:18.858 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:43:19.322 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:43:19.837 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:43:19.838 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:43:20.732 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:43:21.863 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:43:21.864 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:43:21.864 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:44:21.865 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:44:21.865 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:44:22.741 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:44:23.212 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:44:23.212 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:44:24.150 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:44:24.933 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:44:24.933 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:44:24.933 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:45:24.933 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:45:24.934 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:45:25.841 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:45:26.271 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:45:26.271 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:45:26.997 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:45:27.516 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:45:27.517 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:45:27.610 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 
+08-07-2020 13:46:27.614 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Start retrieving unsent NPC messages
+08-07-2020 13:46:27.615 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type port message
+08-07-2020 13:46:28.008 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and PORT_MESSAGE 
+08-07-2020 13:46:28.532 DEBUG [main]  c.a.v.npc.core.dao.PortMessageDAO.getUnsentMessages - Retrieving unsent messages of type port message has been done successfully and number of unsent messages =0
+08-07-2020 13:46:28.532 DEBUG [main]  c.a.v.npc.core.dao.NPCMessageDAO.getUnsentMessages - Start retrieving unsent messages of type bulk sync message
+08-07-2020 13:46:28.845 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Start select unsent messages from NPC_Message and BULK_SYNC_MESSAGE 
+08-07-2020 13:46:30.089 DEBUG [main]  c.a.v.n.core.dao.BulkSyncMessageDAO.getUnsentMessages - Retrieving unsent messages of type bulk sync message has been done successfully and number of unsent messages =0
+08-07-2020 13:46:30.090 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Retrieving unsent NPC messges has been done Successfully...
+08-07-2020 13:46:30.090 DEBUG [main]  c.a.v.n.c.handler.NPCProcessHandler.sendPendingMessages - Total number of unsent NPC messsages = 0 

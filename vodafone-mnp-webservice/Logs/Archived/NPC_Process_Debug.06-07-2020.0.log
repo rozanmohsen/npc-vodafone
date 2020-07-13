@@ -1,0 +1,198 @@
+06-07-2020 13:25:16.944 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+06-07-2020 13:26:20.217 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:26:20.220 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:26:20.223 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 13:37:21.744 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:37:21.745 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:37:21.745 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 13:37:23.580 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+06-07-2020 13:37:23.581 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 13:37:23.653 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 13:37:23.819 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 13:37:23.841 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.service.NPCService.releaseConnection - Log oracle.jdbc.driver.T4CConnection@452b1966 
+06-07-2020 13:37:23.997 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Releasing the Database Connection..
+06-07-2020 13:44:33.710 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+06-07-2020 13:44:39.992 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:44:39.995 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:44:39.999 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 13:44:41.509 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+06-07-2020 13:44:41.511 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 13:44:41.573 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 13:44:41.612 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 13:46:16.347 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:46:16.347 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:46:16.349 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 13:46:16.431 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 13:46:16.443 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 13:46:32.568 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:46:32.569 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:46:32.570 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 13:46:32.646 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 13:46:32.653 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 13:46:46.614 DEBUG [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:46:46.615 DEBUG [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:46:46.616 DEBUG [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 13:46:46.687 DEBUG [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 13:46:46.694 DEBUG [http-nio-9090-exec-5]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 13:49:43.156 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:49:43.156 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:49:43.157 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 13:49:43.227 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 13:49:43.234 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 13:50:17.063 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+06-07-2020 13:50:27.202 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 13:50:27.205 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 13:50:27.209 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 14:01:41.366 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+06-07-2020 14:02:08.930 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 14:02:08.935 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 14:02:36.740 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 14:02:47.108 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+06-07-2020 14:02:47.998 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 14:02:48.076 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 14:02:48.199 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 14:03:41.546 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 14:03:41.547 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 14:05:31.686 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 14:05:31.792 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 14:05:31.806 DEBUG [http-nio-9090-exec-3]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 14:09:16.481 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 14:09:16.483 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 14:09:27.906 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 14:09:27.995 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 14:09:28.011 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 14:09:28.017 DEBUG [http-nio-9090-exec-4]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - validating NPC message against XSD schema has been done successfully
+06-07-2020 14:10:40.014 DEBUG [http-nio-9090-exec-6]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 14:10:40.015 DEBUG [http-nio-9090-exec-6]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 14:10:54.795 DEBUG [http-nio-9090-exec-6]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 15:01:49.657 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 15:01:49.658 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 15:01:49.660 DEBUG [http-nio-9090-exec-7]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 15:03:21.153 DEBUG [http-nio-9090-exec-9]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 15:03:21.154 DEBUG [http-nio-9090-exec-9]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 15:03:21.155 DEBUG [http-nio-9090-exec-9]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 15:06:41.398 DEBUG [main]
+				c.a.v.n.w.NPCWebServiceApplication.logStarting - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+06-07-2020 15:07:12.805 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 15:07:12.809 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 15:07:12.811 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Start Initializing Database Connection..
+06-07-2020 15:07:16.011 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.getDBConnection - Initializing Database Connection has been done Successfully...
+06-07-2020 15:07:16.013 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 15:07:16.081 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 15:07:16.188 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema
+06-07-2020 15:07:16.199 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - validating NPC message against XSD schema has been done successfully
+06-07-2020 15:08:13.025 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Parsing message XML  has done successfully with NPC Message ID: 4498765 
+06-07-2020 15:08:13.171 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into NPC_MESSAGE table with NPC Message ID 4498765
+06-07-2020 15:08:13.883 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into NPC_MESSAGE table successfully
+06-07-2020 15:08:15.017 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into PORT_MESSAGE table with NPC Message ID 4498765
+06-07-2020 15:08:15.833 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - NPC message has been insterted into PORT_MESSAGE table successfully
+06-07-2020 15:08:15.834 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting into SUBSCRIBER_DATA table with NPC Message ID 4498765
+06-07-2020 15:08:16.372 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Subscriber data has been inserted into SUBSCRIBER_DATA table successfully  
+06-07-2020 15:08:16.373 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Start inserting number data into NUMBERSTOPORT table with NPC Message ID 4498765
+06-07-2020 15:08:16.535 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.insertNPCMessage - Number data has been inserted into NUMBERSTOPORT table  successfully
+06-07-2020 15:08:16.536 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.handler.NPCWSHandler.parsingAndUpdatingMessageTimeFrame - Inserting message into Database has done successfully with NPC Message ID: 4498765  and Internal Port ID: 4498344
+06-07-2020 15:08:16.703 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.updatePortData - Start Update PORT_DATA table 
+06-07-2020 15:08:17.243 DEBUG [http-nio-9090-exec-1]
+				c.a.v.npc.core.service.NPCService.updatePortData - Updating PORT_DATA table for NPC Message ID: 4498765  and Internal Port ID: 4498344 has been done successfully and the port Status updated with Status " 20-Request-R "
+06-07-2020 15:08:25.838 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start validating the web service credentail for user: voda 
+06-07-2020 15:08:25.838 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Validating service credential has been done successully for user : voda
+06-07-2020 15:08:25.840 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.processNPCMessage - Start Parsing Received Message from user : voda
+06-07-2020 15:08:25.927 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Loading XSD schema files to validate NPC message
+06-07-2020 15:08:25.940 DEBUG [http-nio-9090-exec-2]
+				c.a.v.npc.core.handler.NPCWSHandler.parseMessage - Start validating NPC message against xsd schema

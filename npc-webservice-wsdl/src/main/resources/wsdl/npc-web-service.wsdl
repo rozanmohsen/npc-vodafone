@@ -71,7 +71,7 @@
 		<port name="NPCWebServiceInterfacePort"
 			binding="tns:NPCWebServiceInterfacePortBinding">
 			<soap:address
-				location="https://10.10.23.25:9443/NPC-SOAP/NPCWebService" />
+				location="https://localhost:443/NPC-SOAP/NPCWebService" />
 		</port>
 	</service>
 </definitions>

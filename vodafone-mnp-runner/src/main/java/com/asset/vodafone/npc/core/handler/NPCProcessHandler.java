@@ -413,6 +413,7 @@ public class NPCProcessHandler {
 				logResponseData(npcMessageModel);
 
 				npcService.processActivationStatus(npcMessageModel);
+
 				npcService.processDeactivationDone(npcMessageModel);
 
 				npcService.saveSyncMessageByNPCMessage(npcMessageModel, npcService.getPortDataModel(npcMessageModel));
@@ -739,9 +740,9 @@ public class NPCProcessHandler {
 		String encypted = "";
 		for (int i = 1; i >= 1 && i < plainText.length; i++) {
 			encypted = handler.encrypt(plainText[i]);
-			
-			logger.debug("Encrypted Value of {} = \" {} \" " ,plainText[i], encypted);
-		
+
+			logger.debug("Encrypted Value of {} = \" {} \" ", plainText[i], encypted);
+
 		}
 	}
 

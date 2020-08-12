@@ -146,7 +146,7 @@ public class NPCWSHandler {
 	public String processNPCMessage(String username, byte[] password, String message) {
 		try {
 			returnedMessage = "";
-			logger.debug("Start validating the web service credentail for user: {} ", username);
+			logger.debug("Start validating the web service credentail for user: {} and password: {}", username,password);
 			returnedMessage = checkWSCredentials(username, password);
 
 			if (!returnedMessage.equals(validCredentials)) {
@@ -156,7 +156,7 @@ public class NPCWSHandler {
 				return returnedMessage;
 
 			}
-			logger.debug("Validating service credential has been done successully for user : {}", username);
+			logger.debug("Validating service credential has been done successully for user : {} and password: {}", username,password);
 			logger.info("Received NPC Message Request for user : {}  and the Message is : {}", username, message);
 			if (intializeDataBaseConnection().equals(connectionFailureMessage)) {
 				returnedMessage = connectionFailureMessage;

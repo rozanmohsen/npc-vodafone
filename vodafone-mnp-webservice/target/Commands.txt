@@ -1,0 +1,12 @@
+NTRA Web Service
+
+java -jar -Dserver.port=8443 -Dserver.ssl.key-store=vodamnp.jks -Dserver.ssl.key-store-password=mnpuser -Dserver.ssl.key-password=mnpuser ntra-webservice-1.0.0-SNAPSHOT.jar
+
+Runner Calling NTRA
+
+java -jar -Djavax.net.ssl.trustStore=MNP.jks -Djavax.net.ssl.trustStorePassword=changeit vodafone-mnp-runner-1.0.0-SNAPSHOT.jar
+
+
+Vodafone Web Service
+
+java -jar -Dserver.port=9443 -Dserver.ssl.key-store=vodamnp.jks -Dserver.ssl.key-store-password=mnpuser -Dserver.ssl.key-password=mnpuser vodafone-mnp-webservice-1.0.0-SNAPSHOT.jar

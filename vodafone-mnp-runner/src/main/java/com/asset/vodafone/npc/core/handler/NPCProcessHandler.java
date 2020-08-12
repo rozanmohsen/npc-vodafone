@@ -329,7 +329,7 @@ public class NPCProcessHandler {
 
 		String returnedMessage = "";
 		try {
-			logger.debug("Start sending NPC message...");
+			logger.debug("Start sending NPC message with username: {} and password: {} " ,username,password);
 			logger.info("Sending NPC Message to NTRA : {}", messageXML);
 			returnedMessage = sendMessage(username, password, messageXML, true);
 

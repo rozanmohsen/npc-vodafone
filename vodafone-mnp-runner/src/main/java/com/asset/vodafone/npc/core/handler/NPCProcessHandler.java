@@ -11,6 +11,7 @@ import java.net.ServerSocket;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.PropertyResourceBundle;
@@ -310,9 +311,9 @@ public class NPCProcessHandler {
 		String internalPassword = System.getenv("INTERNAL_PASSWORD");
 		NPCData npcData = null;
 		if (internalUserName == null)
-			internalUserName = npcProperties.getString("INTERNAL_USER_NAME");
+			internalUserName = NPCProcessHandler.npcProperties.getString("INTERNAL_USER_NAME");
 		if (internalPassword == null)
-			internalPassword = npcProperties.getString("INTERNAL_PASSWORD");
+			internalPassword = NPCProcessHandler.npcProperties.getString("INTERNAL_PASSWORD");
 		try {
 			if (npcMessageModel instanceof PortMessageModel)
 				npcData = processPortMessage((PortMessageModel) npcMessageModel);
@@ -329,7 +330,7 @@ public class NPCProcessHandler {
 
 		String returnedMessage = "";
 		try {
-			logger.debug("Start sending NPC message with username: {} and password: {} " ,username,password);
+			logger.debug("Start sending NPC message with username: {} and password: {}" ,username,new String(password));
 			logger.info("Sending NPC Message to NTRA : {}", messageXML);
 			returnedMessage = sendMessage(username, password, messageXML, true);
 

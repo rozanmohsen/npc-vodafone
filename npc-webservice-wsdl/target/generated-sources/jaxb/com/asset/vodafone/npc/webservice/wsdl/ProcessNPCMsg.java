@@ -12,7 +12,6 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -49,7 +48,7 @@ public class ProcessNPCMsg {
 
     @XmlElement(name = "String_1")
     protected String string1;
-    @XmlElementRef(name = "arrayOfbyte_2")
+    @XmlElement(name = "arrayOfbyte_2")
     protected byte[] arrayOfbyte2;
     @XmlElement(name = "String_3")
     protected String string3;

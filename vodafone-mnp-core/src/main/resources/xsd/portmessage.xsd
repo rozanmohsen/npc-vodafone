@@ -177,7 +177,7 @@
 		<xsd:sequence>
 			<xsd:element name="CompanyFlag" type="Flag" minOccurs="1"/>
 			<xsd:element name="CorporationName" type="Len100Str" minOccurs="0"/>
-			<xsd:element name="Name" type="Len50Str" minOccurs="1"/>
+			<xsd:element name="Name" type="Len50Str" minOccurs="0"/>
 			<xsd:element name="AccountNum" type="Len24Str" minOccurs="1"/>
 			<xsd:element name="SIMCardNum" type="SIMCardNumType" minOccurs="0"/>
 			<xsd:element name="NIC" type="DigitsLen14" minOccurs="0"/>

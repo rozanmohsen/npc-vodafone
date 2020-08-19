@@ -8,15 +8,12 @@ com\asset\vodafone\npc\core\models\ParticipantModel.class
 com\asset\vodafone\npc\core\models\TimeSlotModel.class
 com\asset\vodafone\npc\webservice\xsd\portmessage\BulkSyncMessageType.class
 com\asset\vodafone\npc\core\utils\DBTypeConverter.class
-com\asset\vodafone\npc\webservice\xsd\bulksyncmessage\ActivatedNumbersType.class
-com\asset\vodafone\npc\webservice\xsd\bulksyncmessage\NPCBulkSyncData.class
 com\asset\vodafone\npc\webservice\xsd\portmessage\PortMessageType.class
 com\asset\vodafone\npc\core\models\BulkSyncMessageModel.class
 com\asset\vodafone\npc\core\models\PortDataModel.class
 com\asset\vodafone\npc\core\dao\TimeSlotDAO.class
 com\asset\vodafone\npc\core\models\PortMessageModel.class
 com\asset\vodafone\npc\core\utils\BusinessWorkTime.class
-com\asset\vodafone\npc\webservice\xsd\bulksyncmessage\ActivatedNumberType.class
 com\asset\vodafone\npc\webservice\xsd\portmessage\NumberDataType.class
 com\asset\vodafone\npc\core\dao\FailedMessagesDAO.class
 com\asset\vodafone\npc\core\models\SubscriberDataModel.class
@@ -25,7 +22,6 @@ com\asset\vodafone\npc\webservice\xsd\portmessage\ObjectFactory.class
 com\asset\vodafone\npc\core\models\NPCMessageModel.class
 com\asset\vodafone\npc\core\exception\NPCException.class
 com\asset\vodafone\npc\webservice\xsd\portmessage\NPCData.class
-com\asset\vodafone\npc\webservice\xsd\bulksyncmessage\ObjectFactory.class
 com\asset\vodafone\npc\core\dao\SyncHistoryDAO.class
 com\asset\vodafone\npc\webservice\xsd\portmessage\NPCMessageType.class
 com\asset\vodafone\npc\core\dao\SubscriberDataDAO.class

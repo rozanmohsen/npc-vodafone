@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -37,6 +38,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "processNPCMsg", propOrder = {
     "string1",
@@ -47,7 +49,7 @@ public class ProcessNPCMsg {
 
     @XmlElement(name = "String_1")
     protected String string1;
-    @XmlElementRef(name = "arrayOfbyte_2", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "arrayOfbyte_2")
     protected byte[] arrayOfbyte2;
     @XmlElement(name = "String_3")
     protected String string3;

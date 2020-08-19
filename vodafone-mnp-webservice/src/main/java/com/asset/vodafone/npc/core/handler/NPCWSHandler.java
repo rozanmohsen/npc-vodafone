@@ -146,7 +146,7 @@ public class NPCWSHandler {
 	public String processNPCMessage(String username, byte[] password, String message) {
 		try {
 			returnedMessage = "";
-			logger.debug("Start validating the web service credentail for user: {} and password: {}", username,(new String((password))));
+			logger.debug("Start validating the web service credentail for user: {} ", username);
 			returnedMessage = checkWSCredentials(username, password);
 
 			if (!returnedMessage.equals(validCredentials)) {
@@ -156,7 +156,7 @@ public class NPCWSHandler {
 				return returnedMessage;
 
 			}
-			logger.debug("Validating service credential has been done successully for user : {} and password: {}", username,(new String((password))));
+			logger.debug("Validating service credential has been done successully for user : {} ", username);
 			logger.info("Received NPC Message Request for user : {}  and the Message is : {}", username, message);
 			if (intializeDataBaseConnection().equals(connectionFailureMessage)) {
 				returnedMessage = connectionFailureMessage;
@@ -320,12 +320,10 @@ public class NPCWSHandler {
 			return MessageFormat.format(npcProperties.getString("RETURNED_MESSAGE_INVALID_USER_NAME").trim(), username);
 
 		if (!decrypt(npcPassword.trim()).equals(new String((password)))) {
-			logger.debug("Value of Encrypted Password in Properties file : {}",(decrypt(npcPassword.trim())));
-			logger.debug("Value of Password Received from NTRA: {}",(new String((password))));
+	
 			return npcProperties.getString("RETURNED_MESSAGE_INVALID_PASSWORD").trim();
 		}
-		logger.debug("Value of Encrypted Password in Properties file : {}",(decrypt(npcPassword.trim())));
-		logger.debug("Value of Password Received from NTRA: {}",(new String((password))));
+	
 		return validCredentials;
 	}
 
